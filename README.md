@@ -2,9 +2,9 @@
 
 A frontend skill for deliberate design, concise copy, and motion that feels part of the product. Build anything from a quiet workspace to a scroll-controlled product story, with drawing effects, spatial animation, and original mascots.
 
-[![A live CSS 3D assembly beside the heading Pieces find their place](assets/scroll-study.png)](examples/index.html)
+[![Pip, an original lime-green SVG mascot, beside its Say hello interaction](assets/mascot-study.png)](examples/index.html#character)
 
-A still from the runnable scroll study. Scroll position controls the live layers; no video is used.
+A character with a little personality. Pip notices hover or keyboard focus and responds to “Say hello” with a brief greeting animation. Try it in the motion lab.
 
 ## Try it
 

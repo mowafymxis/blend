@@ -17,4 +17,4 @@ Visit [the local lab](http://127.0.0.1:8765/examples/). No packages, build step,
 
 These are focused demonstration components, not a complete product or a WebGL benchmark. For true mesh-based 3D and app-connected mascot states, follow [3D and mascots](../references/3d-and-mascots.md). Browser coverage and remaining limits are recorded in [AUDIT.md](../AUDIT.md).
 
-The README preview was captured on 2026-09-08 in Edge at 1440 × 900, halfway through the enhanced assembly's scroll range. To regenerate, serve the lab, use that viewport, scroll to `section.offsetTop + (section.offsetHeight - innerHeight) / 2`, and capture the viewport after the next animation frame. The image is a still, not motion evidence.
+The README mascot preview was captured on 2026-09-08 in Edge at a 1100 × 800 viewport. To regenerate, serve the lab, keyboard-focus “Say hello,” press Enter, wait 800 ms for the greeting to settle, and capture the `#character` element. The image is a still, not motion evidence.
