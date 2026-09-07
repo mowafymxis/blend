@@ -1,10 +1,10 @@
 # Sources and attribution
 
-Blend incorporates ideas and adapted guidance from [Taste Skill](https://github.com/Leonxlnx/taste-skill), by Leonxlnx, under the MIT license. The reviewed revision is `ccbc15639c97057cbfcf32ecebc38ef716e4bb37`; both the current `skills/taste-skill/SKILL.md` and original `skills/taste-skill-v1/SKILL.md` were reviewed. Its license notice is retained below.
+Blend incorporates ideas and adapted guidance from [Taste Skill](https://github.com/Leonxlnx/taste-skill), by Leonxlnx, under the MIT license. Source revision: `ccbc15639c97057cbfcf32ecebc38ef716e4bb37`, including the current and original v1 frontend skills. Its license notice is retained below.
 
-The user also supplied their local `premium-frontend` and `frontend-motion-design` skills for this combination. Snapshot fingerprints and the changes made to their guidance are in [AUDIT.md](AUDIT.md). They are not required at runtime. No separate third-party license notice was present in those supplied skill folders.
+Blend also incorporates the project's premium-frontend and frontend-motion-design guidance. Neither skill is required as a separate installation.
 
-The example mascot and scribble are original illustrations. Claude/Anthropic are mentioned only as reference context for the user's requested character quality; no affiliation or endorsement is implied and no Claude artwork is included.
+The example mascot, scribble, and music cover artwork are original. The architectural concept image is AI-generated. References to third-party brands do not imply affiliation or endorsement; no Claude artwork is included.
 
 ## Taste Skill license
 

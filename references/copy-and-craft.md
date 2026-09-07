@@ -28,6 +28,6 @@ These are examples of editing judgment, not strings to insert into every app. In
 
 ## Reference example: a hand-drawn Skills mark
 
-The supplied screenshot shows a compact icon, the word “Skills,” and a chevron on a dark row. It does not establish animation duration or stroke order. The requested behavior establishes that a scribble appears smoothly on hover.
+Consider a compact navigation row with an icon, the label “Skills,” and a chevron. A hand-drawn accent can appear smoothly on hover without changing the row's layout.
 
 Translate that into a stable row with an original, slightly irregular SVG mark that starts undrawn and traces on hover/focus. Keep the word readable throughout; do not shift the row or animate the text into nonsense. On touch, the control works immediately. If the drawing is part of recognizable branding, keep that essential base mark visible and animate only an extra accent.
