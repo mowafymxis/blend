@@ -2,9 +2,16 @@
 
 A frontend skill for deliberate design, concise copy, and motion that feels part of the product. Build anything from a quiet workspace to a scroll-controlled product story, with drawing effects, spatial animation, and original mascots.
 
-[![Pip, an original lime-green SVG mascot, beside its Say hello interaction](assets/mascot-study.png)](examples/index.html#character)
+## Example
 
-A character with a little personality. Pip notices hover or keyboard focus and responds to “Say hello” with a brief greeting animation. Try it in the motion lab.
+```text
+Use $blend to build a photography portfolio with oversized image crops,
+compact navigation, and a contact link that draws its underline on hover.
+Let selected work expand into view as I scroll. Keep the copy minimal,
+make keyboard interaction equally polished, and respect reduced motion.
+```
+
+Blend turns that brief into a consistent layout and interaction system: art direction shaped by the photographs, a drawn link accent, scroll-linked image transitions, and accessible static alternatives. The same approach adapts to dense apps, product launches, and editorial sites.
 
 ## Try it
 
