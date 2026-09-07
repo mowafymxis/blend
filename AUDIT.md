@@ -75,4 +75,10 @@ Limitations: no physical mobile device, Safari/Firefox run, screen-reader sessio
 
 ## Repository organization
 
+### Added frontend showcases
+
+On 2026-09-08, added Frequency and Forma Atelier as independent runnable frontend examples and replaced the README's prompt-only example with real screenshots. Edge browser checks passed for architecture dialog opening, Escape dismissal/focus return; music search, filters, save/unsave, empty states, audio progress and stop; 390 px mobile overflow; and reduced-motion styles. Desktop and mobile captures were visually inspected. The architecture mobile navigation was recomposed after that inspection. JavaScript syntax checks passed for both scripts.
+
+The audio checks establish context playback state and progress, not a human listening assessment. Music saves are session-local. The studio and its project are fictional; its contact address is illustrative. The architectural concept asset is generated, with its prompt recorded in the example notes. Neither new example is a full production service. The original motion lab remains available separately.
+
 Repo read: a newly initialized, public, single-skill repository for Codex users, with an existing MIT license and minimal README. Cleanup / documentation / modernization dials: **3 / 6 / 1**. Keep the root skill entry point, a short README, source notices, this requested audit, focused references, and runnable examples. Preserve the original license. No broad cleanup or toolchain migration was needed.

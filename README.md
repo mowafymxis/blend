@@ -2,16 +2,21 @@
 
 A frontend skill for deliberate design, concise copy, and motion that feels part of the product. Build anything from a quiet workspace to a scroll-controlled product story, with drawing effects, spatial animation, and original mascots.
 
-## Example
+## Built with Blend
 
-```text
-Use $blend to build a photography portfolio with oversized image crops,
-compact navigation, and a contact link that draws its underline on hover.
-Let selected work expand into view as I scroll. Keep the copy minimal,
-make keyboard interaction equally polished, and respect reduced motion.
-```
+### Frequency — music discovery
 
-Blend turns that brief into a consistent layout and interaction system: art direction shaped by the photographs, a drawn link accent, scroll-linked image transitions, and accessible static alternatives. The same approach adapts to dense apps, product launches, and editorial sites.
+[![Frequency: a dark music discovery interface with original cover art, mix filters, and a preview player](assets/frequency-preview.png)](examples/frequency/index.html)
+
+A compact listening workspace with original cover art, searchable mixes, genre filters, saved selections, and playable synth sketches. [Explore the example](examples/frequency/index.html).
+
+### Forma Atelier — architecture portfolio
+
+[![Forma Atelier: editorial typography above a sunlit stone courtyard and reflecting pool](assets/forma-preview.png)](examples/architecture/index.html)
+
+A quiet architectural portfolio with large image crops, warm typography, and an accessible project dialog. Original AI-generated concept imagery. [Explore the example](examples/architecture/index.html).
+
+These are screenshots of runnable pages, not image mockups. Both are fictional concept projects. [Run them locally](examples/README.md).
 
 ## Try it
 
