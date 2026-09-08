@@ -4,7 +4,7 @@ Blend incorporates ideas and adapted guidance from [Taste Skill](https://github.
 
 Blend also incorporates the project's premium-frontend and frontend-motion-design guidance. Neither skill is required as a separate installation.
 
-The example mascot, scribble, and music cover artwork are original. The architectural concept image is AI-generated. References to third-party brands do not imply affiliation or endorsement; no Claude artwork is included.
+The example mascot, scribble, illustrated map, and pottery silhouettes are original. The Common Clay ceramic still life is AI-generated. References to third-party brands do not imply affiliation or endorsement; no Claude artwork is included.
 
 ## Taste Skill license
 

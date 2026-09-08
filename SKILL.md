@@ -51,7 +51,7 @@ Read only the relevant recipe:
 - [Pinned scroll scenes](references/scroll-scenes.md): a fixed-looking stage that transforms as the page scrolls, including live DOM/SVG/3D narratives with no video.
 - [3D and mascots](references/3d-and-mascots.md): spatial scenes, rigs, expression states, original character animation, and resource lifecycle.
 - [Runnable motion lab](examples/index.html): original hover-drawn mark, reversible scroll assembly in CSS 3D, and an event-driven SVG mascot. Read [example notes](examples/README.md) before adapting it.
-- [Built frontend examples](examples/README.md): a music discovery workspace and an architectural portfolio demonstrate distinct art directions and working product interactions. They are examples to adapt, not house templates.
+- [Built frontend examples](examples/README.md): an outdoor day planner and a ceramics notebook landing page demonstrate distinct art directions and working product interactions. They are examples to adapt, not house templates.
 
 ## Make every mode complete
 

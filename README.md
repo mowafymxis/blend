@@ -4,19 +4,19 @@ A frontend skill for deliberate design, concise copy, and motion that feels part
 
 ## Built with Blend
 
-### Frequency — music discovery
+### Trailhead — outdoor day planner
 
-[![Frequency: a dark music discovery interface with original cover art, mix filters, and a preview player](assets/frequency-preview.png)](examples/frequency/index.html)
+[![Trailhead: a forest-green route planner beside an original illustrated trail map](assets/trailhead-preview.png)](examples/trailhead/index.html)
 
-A compact listening workspace with original cover art, searchable mixes, genre filters, saved selections, and playable synth sketches. [Explore the example](examples/frequency/index.html).
+Choose a fictional route, filter by difficulty, build a packing checklist, and download a day plan. [Explore Trailhead](examples/trailhead/index.html).
 
-### Forma Atelier — architecture portfolio
+### Common Clay — ceramics notebook
 
-[![Forma Atelier: editorial typography above a sunlit stone courtyard and reflecting pool](assets/forma-preview.png)](examples/architecture/index.html)
+[![Common Clay: expressive serif typography beside a sunlit ceramic still life](assets/common-clay-preview.png)](examples/common-clay/index.html)
 
-A quiet architectural portfolio with large image crops, warm typography, and an accessible project dialog. Original AI-generated concept imagery. [Explore the example](examples/architecture/index.html).
+An editorial landing page with interactive form studies and three free, downloadable practice worksheets. Original AI-generated concept photography. [Explore Common Clay](examples/common-clay/index.html).
 
-Both examples are runnable concept projects. [Run them locally](examples/README.md).
+Both are runnable concept projects with visible disclosures. The [field studies index](examples/index.html) also includes a hover-drawn mark, a reversible paper assembly, and Dot, an original paper character. [Run the examples locally](examples/README.md).
 
 ## Try it
 

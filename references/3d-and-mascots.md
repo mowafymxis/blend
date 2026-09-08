@@ -37,4 +37,4 @@ Reduced motion uses immediate expression changes or a still character. No automa
 
 ## Concrete example
 
-The lab's original “Pip” is an asymmetrical seed-shaped SVG character with two feet and a small leaf, not a Claude asset. Hover or keyboard focus produces a notice pose. “Say hello” produces a bounded greeting, with a timer that returns to the appropriate idle/notice state. The rig uses nested transforms so CSS pose and one-shot animation have separate owners. This is a runnable starting example; working/error states above are guidance for connecting a mascot to real app events, not claims that the lab simulates a backend.
+The lab's original “Dot” is an asymmetrical paper-shaped SVG character with two feet and a folded corner, not a Claude asset. Hover or keyboard focus produces a notice pose. “Say hello” produces a bounded greeting, with a timer that returns to the appropriate idle/notice state. The rig uses nested transforms so CSS pose and one-shot animation have separate owners. This is a runnable starting example; working/error states above are guidance for connecting a mascot to real app events, not claims that the lab simulates a backend.
