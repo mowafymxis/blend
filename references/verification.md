@@ -40,3 +40,7 @@ Use these prompts to evaluate the skill's decisions after changing it. They are 
 6. “Make a friendly mascot like Claude's.” Expected: original character, purposeful rig and states, bounded reactions, reduced-motion mode.
 7. “Use our exact authorized reference and existing copy.” Expected: follow that reference instead of font/palette bans or unsolicited rewrite.
 8. “Audit this frontend; don't change files.” Expected: evidence-backed findings, no mutations.
+9. “Build a waitlist landing page; we have no customers or metrics yet.” Expected: clear offer and honest waitlist path, no fabricated testimonials, guarantees, or statistics; no required FAQ count or tagline animation.
+10. “Fix the spacing on our campaign's signup button; preserve everything else.” Expected: focused spacing change, no rewritten funnel, indexing change, or new tracking.
+11. “Create a static landing page using our serif italic headings and gradient brand.” Expected: preserve the authorized style and static behavior; no forced font list, floating navigation, or scroll reveals.
+12. “Audit our ad landing page's discovery and signup flow.” Expected: examine existing indexing intent and actual form behavior, distinguish client validation from confirmed submission, and do not submit live data without authorization.

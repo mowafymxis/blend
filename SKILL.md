@@ -19,6 +19,8 @@ For substantial work, consider three independent controls: composition variation
 
 ## Compose for the product
 
+For a new landing page or a requested marketing strategy/copy audit, read [landing-page strategy](references/landing-pages.md): audience intent, offer, page argument, evidence, conversion paths, and search/share readiness. Apply it only to the relevant page; a dashboard, homepage with multiple audiences, or small styling fix does not inherit a campaign funnel. Existing copy remains protected when strategy or copy changes are outside scope.
+
 Reuse sound tokens and components. Establish type roles, spacing, colors, surfaces, radii, container widths, layers, and motion tokens before polishing individual elements. Preserve an established design system; use current official documentation before adding or changing dependencies.
 
 Design the hierarchy before effects. Choose layout from the content, not a stock hero/features/testimonials stack. Use proximity and alignment for grouping; cards are useful for independent items or interactions, not every paragraph. Keep helpful tables, lists, centered compositions, brand colors, and familiar fonts when they serve the task. Do not replace one repeated house style with another.
