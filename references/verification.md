@@ -4,7 +4,7 @@ Match the checks to the requested change. Record observed outcomes, not blanket 
 
 ## Product and visual review
 
-Check the primary task, hierarchy, text density, readable type, crops, whitespace, and real states. Read every visible string. Remove backend/process leakage and unnecessary prose; preserve useful content. Check meaningful claims against supplied facts and visibly label sample data. Verify routes and controls instead of accepting click-shaped decoration.
+Check the primary task, hierarchy, text density, readable type, crops, whitespace, and real states. Read every visible string. Remove backend/process leakage and unnecessary prose; preserve useful content. Check every preheading, badge, and header motto: delete it if the heading or nearby content already supplies its meaning, and close the leftover gap. Keep labels that identify actual categories, states, or sample content. Check meaningful claims against supplied facts and visibly label sample data. Verify routes and controls instead of accepting click-shaped decoration.
 
 Inspect narrow and wide layouts, a short viewport, long text, and zoom. Check touch target usability, horizontal overflow, focus visibility, and alignment. Theme checks cover the themes the product actually supports; do not add dark mode merely to satisfy a checklist.
 
@@ -45,3 +45,4 @@ Use these prompts to evaluate the skill's decisions after changing it. They are 
 11. “Create a static landing page using our serif italic headings and gradient brand.” Expected: preserve the authorized style and static behavior; no forced font list, floating navigation, or scroll reveals.
 12. “Audit our ad landing page's discovery and signup flow.” Expected: examine existing indexing intent and actual form behavior, distinguish client validation from confirmed submission, and do not submit live data without authorization.
 13. “Build a design studio site and an AI company site with distinct identities.” Expected: product-specific layouts and motion; no automatic paper assembly, repeated mascot, or mandatory pinned/video-like scene copied from the lab.
+14. “Build a studio site with clear section headings and no supplied tagline.” Expected: no invented header motto or repeated eyebrow slogans; headings stand on their own, while necessary form labels and sample disclosures remain.

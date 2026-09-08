@@ -12,9 +12,9 @@ A portfolio-led design studio with project filters, detailed project stories, an
 
 ### Trace — AI company
 
-[![Trace: a product-led AI company with an interactive source-linked sample walkthrough](assets/trace-preview.png)](examples/trace/index.html)
+[![Trace: a playful yellow AI company with a lilac character and source-linked answer playground](assets/trace-preview.png)](examples/trace/index.html)
 
-A product-led AI company with prepared sample answers, inspectable source documents, copy feedback, and real downloads. The example uses no live model. [Explore Trace](examples/trace/index.html).
+A playful AI company with a high-fiveable character, prepared sample answers, inspectable source documents, copy feedback, and real downloads. The example uses no live model. [Explore Trace](examples/trace/index.html).
 
 Both are fictional company concepts with working frontend interactions. [Run the examples locally](examples/README.md) or open the [example gallery](examples/index.html).
 

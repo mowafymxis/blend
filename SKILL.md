@@ -35,6 +35,8 @@ The app's user should not need to know its backend. Do not randomly describe it 
 
 Do not overwrite existing frontend copy during a visual or motion task. Preserve its meaning and voice. Rewrite only when requested or necessary to fix a demonstrated comprehension problem. Add a paragraph only when it answers a real user question, supports a decision, or explains recovery. Delete filler, redundant subtitles, invented badges, and commentary explaining how the UI was built. A clear label may need no description. Necessary instructions, consent, safety information, and substantial requested editorial content still belong.
 
+Default to the section heading alone. Do not prepend decorative eyebrows, kickers, tiny uppercase slogans, section numbers, or badges when the heading already explains the content. Do not fill header space with generic brand mottos such as “Independent minds. Shared curiosity.” Omit them rather than inventing replacement slogans. Keep a secondary label only when it adds distinct information needed for navigation or a decision (for example a project category, plan tier, or actual status), or the user explicitly asks for it. Preserve necessary sample disclosures near the relevant demo or content; do not repeat them as decoration above every section.
+
 Use authentic claims and data. In a prototype, identify sample content visibly where users might mistake it for real; a hidden code comment is insufficient. Do not make fabricated metrics more believable by adding decimals, names, or logos. See [copy and craft examples](references/copy-and-craft.md) for before/after decisions.
 
 ## Design motion as behavior

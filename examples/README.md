@@ -5,7 +5,7 @@ Two independent sites show how Blend adapts to different companies:
 | Example | Direction | Working interactions |
 |---|---|---|
 | [Oddfield](oddfield/index.html) | Expressive design studio, bold orange type, original concept projects | Project filters, project-detail dialogs, keyboard dismissal and focus return, validated brief builder, text download |
-| [Trace](trace/index.html) | Product-led AI company, cool neutral canvas, source-linked walkthrough | Three prepared sample answers, source previews and matching downloads, copy feedback, keyboard-operable disclosures |
+| [Trace](trace/index.html) | Playful AI company, sunny yellow canvas, original lilac character, source-linked answer playground | User-triggered high-five, three prepared sample answers, source previews and matching downloads, copy feedback, keyboard-operable disclosures |
 
 Oddfield is a fictional studio with self-initiated concept work. Its Yuzu Club image is AI-generated; Night School and Still are original graphic/interface studies. The Still mockup is not an audio player. Its controls are part of a clearly labeled visual concept, inside the project-details button.
 
@@ -39,11 +39,11 @@ In the lab:
 Follow [the verification guide](../references/verification.md), with these example-specific checks:
 
 - **Oddfield:** filter each category, open each project, dismiss by Escape and the close button, check focus returns, submit an empty brief, then download a completed brief and inspect its contents. Nothing should be sent.
-- **Trace:** try all questions, inspect their citations, compare each source preview with its downloaded file, copy an answer, and verify clipboard-denied feedback. The sample's unresolved decisions must remain unresolved.
+- **Trace:** trigger the character high-five by keyboard and touch, check its text feedback and reduced-motion behavior, try all questions, inspect their citations, compare each source preview with its downloaded file, copy an answer, and verify clipboard-denied feedback. The sample's unresolved decisions must remain unresolved.
 - **Both:** keyboard and touch operation, narrow layouts, readable contrast, reduced motion, dialog scroll and focus, missing assets, and no-JavaScript fallbacks. Static content and direct downloads remain available; enhanced controls start disabled until initialized.
 - **Optional lab:** forward/reverse scroll, resize, rapid hover, greeting, and live reduced-motion collapse after loading its separate route.
 
-The sites use neither long pinned scenes nor repeated paper-assembly motion. Their motion belongs to the actual interactions: portfolio images, filters and dialogs for Oddfield; answer changes and source inspection for Trace.
+The sites use neither long pinned scenes nor repeated paper-assembly motion. Their motion belongs to the actual interactions: portfolio images, filters and dialogs for Oddfield; a bounded character greeting, answer changes, and source inspection for Trace.
 
 ## Updating previews
 

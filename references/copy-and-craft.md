@@ -11,6 +11,9 @@ Use this for writing, polish, and reference translation. Preserve supplied wordi
 | Technical connection settings | Conceal the service the operator must configure | Name the actual service and required fields here; keep credentials protected. |
 | Educational article | Enforce a 25-word paragraph limit | Preserve the explanation, improve reading measure and navigation. |
 | Prototype analytics | Believable invented revenue, hidden `mock` comment | An obvious “Sample data” label and illustrative values, no implied real customers. |
+| Self-explanatory section | “GOOD QUESTIONS COME FIRST” above a studio heading, or “OUR PROCESS” above “How it works” | Start with the heading; remove the redundant preheading and its empty spacing. |
+| Header beside the logo | Invented “Independent minds. Shared curiosity.” motto | Logo and useful navigation, with no replacement slogan. |
+| Necessary context | Remove all small text indiscriminately | Keep a meaningful project category, form label, or “Sample demo · No live model” beside the relevant content. |
 | Feature label already clear | “Projects” plus “Manage all of your projects in one place” | “Projects” alone. |
 
 These are examples of editing judgment, not strings to insert into every app. Interface text, accessible names, and error text should agree. Status feedback may use a polite live region after a real change; do not announce every animation frame.
