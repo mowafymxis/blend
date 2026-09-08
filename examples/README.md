@@ -1,13 +1,15 @@
-# Field studies
+# Company examples
 
-Two independent frontend concepts demonstrate different uses of Blend:
+Two independent sites show how Blend adapts to different companies:
 
 | Example | Direction | Working interactions |
 |---|---|---|
-| [Trailhead](trailhead/index.html) | Forest green, field-note typography, original illustrated terrain | Search and difficulty filters, empty/reset state, route and map selection, date and packing checklist, text-file download |
-| [Common Clay](common-clay/index.html) | Warm paper, expressive serif type, sunlit ceramics | Shape selection, synchronized worksheet choice, three actual downloads, keyboard-operable disclosures |
+| [Oddfield](oddfield/index.html) | Expressive design studio, bold orange type, original concept projects | Project filters, project-detail dialogs, keyboard dismissal and focus return, validated brief builder, text download |
+| [Trace](trace/index.html) | Product-led AI company, cool neutral canvas, source-linked walkthrough | Three prepared sample answers, source previews and matching downloads, copy feedback, keyboard-operable disclosures |
 
-Trailhead's routes, distances, and travel times are fictional. Its map is an illustration, not navigation. Common Clay is a fictional editorial project with an AI-generated still life; its practice worksheets are real local files. Neither example collects personal information or sends data to a service. Selections last in the current page only.
+Oddfield is a fictional studio with self-initiated concept work. Its Yuzu Club image is AI-generated; Night School and Still are original graphic/interface studies. The Still mockup is not an audio player. Its controls are part of a clearly labeled visual concept, inside the project-details button.
+
+Trace is a fictional AI company. Its walkthrough uses fictional documents and prepared sample answers, visibly labeled as a demo without a live model. It does not connect to an AI service or search a real workspace. The product brief describes the boundary. Neither site sends form content or documents to a service. Oddfield's brief stays in the page until downloaded; Trace copies only when the user requests it.
 
 ## Run locally
 
@@ -17,27 +19,32 @@ From the repository root, with Python 3 installed:
 python -m http.server 8789 --bind 127.0.0.1
 ```
 
-Open [the field studies](http://127.0.0.1:8789/examples/), [Trailhead](http://127.0.0.1:8789/examples/trailhead/), or [Common Clay](http://127.0.0.1:8789/examples/common-clay/). Choose another unused port if needed. All assets are local; no package installation or build step is required. Each `index.html` can also be opened directly, although download behavior depends on the browser's local-file rules.
+Open [the gallery](http://127.0.0.1:8789/examples/), [Oddfield](http://127.0.0.1:8789/examples/oddfield/), or [Trace](http://127.0.0.1:8789/examples/trace/). Choose another unused port if needed. All assets are local; no package installation or build step is required. Direct `index.html` opening also works, with browser-dependent local-file download and clipboard restrictions.
 
-## Drawing, depth, and character
+## The paper assembly is optional
 
-The [index](index.html) is also a motion lab:
+The [motion lab](motion-lab/index.html) is separate from both company sites. Its paper assembly demonstrates one way to control a reversible CSS 3D scene with scroll. It is not a required page section, default brand treatment, or animation to copy into every project. Choose the motion story for the product, or omit pinned/video-like scrolling.
 
-- Hover or keyboard-focus **Explore the studies** to draw the original ink mark. Rapid enter/leave reverses the stroke from its current pose.
-- Scroll through **An idea. Taking shape.** on a wide, tall viewport. Three paper planes gather into an edition, rotate, and settle. Reverse scroll to reverse the scene. This is live CSS 3D, not a WebGL model or video.
-- Hover/focus **Say hello**, then activate it for Dot's bounded greeting. Dot is an original folded-paper SVG character.
-- Narrow/short viewports and reduced motion get a compact static paper edition. Changing reduced motion while the page is open updates the behavior and removes pin spacing.
+In the lab:
 
-`lab.css` owns local feedback and character poses. `lab.js` owns scroll transforms and character state. Nested SVG groups keep the greeting animation separate from the attention pose. Without JavaScript, the index remains readable, Trailhead's action buttons are disabled, and Common Clay still offers its default bowl worksheet as a normal download link.
+- Hover or keyboard-focus **Explore the techniques** to draw the original ink mark; rapid enter/leave reverses the stroke.
+- Scroll through **An idea. Taking shape.** on a wide, tall viewport. Three paper planes gather, rotate, and settle. Reverse scroll to reverse the scene.
+- Hover/focus **Say hello**, then activate Dot's bounded greeting.
+- Narrow/short viewports and reduced motion use a compact static edition. A runtime reduced-motion change removes pin spacing as well as animation.
 
-For mesh-based 3D and app-connected character states, see [3D and mascots](../references/3d-and-mascots.md).
+`motion-lab/lab.css` owns local feedback and character poses; `motion-lab/lab.js` owns continuous scene transforms and character state. The lab is live CSS/SVG, not a video or WebGL model. See [3D and mascots](../references/3d-and-mascots.md) for other techniques.
 
 ## Verify changes
 
-Use the [verification guide](../references/verification.md) and exercise the actual interactions. For Trailhead, combine search and difficulty filters, reset an empty result, select a route by keyboard, and inspect a downloaded plan with a date and checked items. For Common Clay, select each form, check the illustration and worksheet agree, open disclosures by keyboard, and inspect the downloaded text. Check the index's reverse scroll, rapid hover, greeting, and live reduced-motion change.
+Follow [the verification guide](../references/verification.md), with these example-specific checks:
 
-Check desktop and narrow layouts, focus visibility, direct links, missing assets, and the no-JavaScript fallback. Automated accessibility checks supplement manual interaction checks; they do not establish complete accessibility coverage.
+- **Oddfield:** filter each category, open each project, dismiss by Escape and the close button, check focus returns, submit an empty brief, then download a completed brief and inspect its contents. Nothing should be sent.
+- **Trace:** try all questions, inspect their citations, compare each source preview with its downloaded file, copy an answer, and verify clipboard-denied feedback. The sample's unresolved decisions must remain unresolved.
+- **Both:** keyboard and touch operation, narrow layouts, readable contrast, reduced motion, dialog scroll and focus, missing assets, and no-JavaScript fallbacks. Static content and direct downloads remain available; enhanced controls start disabled until initialized.
+- **Optional lab:** forward/reverse scroll, resize, rapid hover, greeting, and live reduced-motion collapse after loading its separate route.
+
+The sites use neither long pinned scenes nor repeated paper-assembly motion. Their motion belongs to the actual interactions: portfolio images, filters and dialogs for Oddfield; answer changes and source inspection for Trace.
 
 ## Updating previews
 
-Capture Trailhead at 1440 × 1050 and Common Clay at 1440 × 1000, at the top of the page. Wait for images and entrance motion to finish, keep the default selections, and save viewport screenshots to `assets/trailhead-preview.png` and `assets/common-clay-preview.png`. Review the captures and README links. The current captures were refreshed on 2026-09-08. Exercise motion separately; screenshots cannot verify it.
+Capture each company at 1440 × 1050, at the top of the page. Wait for the image and entrance motion to finish, leave the default selections, and save viewport screenshots to `assets/oddfield-preview.png` and `assets/trace-preview.png`. Review the captures and README links. Current previews were refreshed on 2026-09-08. Exercise motion separately; screenshots cannot verify it.

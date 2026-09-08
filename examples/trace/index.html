@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trace — Answers with a way back</title>
+    <meta
+      name="description"
+      content="Explore a fictional AI knowledge company through a source-linked sample product walkthrough."
+    />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#f5f7fa" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="header">
+      <a class="brand" href="./"
+        ><svg viewBox="0 0 28 28" aria-hidden="true">
+          <path d="M4 5H24M4 13H18M4 21H12" /></svg
+        >trace<span>AI</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#demo">Product</a><a href="#how">How it works</a
+        ><a href="#principles">Our principles</a>
+      </nav>
+      <a class="header-cta" href="#demo"
+        >Explore the demo <span aria-hidden="true">↗</span></a
+      >
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div class="hero-kicker">
+          <span class="kicker-dot"></span> A CLEARER WAY TO WORK WITH KNOWLEDGE
+        </div>
+        <h1>Less searching.<br /><span>More understanding.</span></h1>
+        <p>
+          The answer is somewhere in your team's work.<br />Bring it into
+          focus—with the sources to back it up.
+        </p>
+        <div class="hero-actions">
+          <a class="primary" href="#demo"
+            >See Trace in action <span aria-hidden="true">→</span></a
+          ><a class="secondary" href="product-brief.txt" download
+            >Read the product brief <span aria-hidden="true">↓</span></a
+          >
+        </div>
+        <span class="concept-note"
+          >An AI company concept. Explore the sample experience below.</span
+        >
+      </section>
+      <section id="demo" class="demo-section" aria-labelledby="demo-title">
+        <div class="demo-label">
+          <h2 id="demo-title">A question. An answer. A clear trail.</h2>
+          <span>INTERACTIVE WALKTHROUGH</span>
+        </div>
+        <div class="product">
+          <aside class="product-sidebar">
+            <div class="workspace-name">
+              <span class="workspace-icon" aria-hidden="true">N</span
+              ><span>Northstar workspace<small>Sample project</small></span
+              ><span aria-hidden="true">⌄</span>
+            </div>
+            <div class="sidebar-view">
+              <span aria-hidden="true">✧</span> Ask Trace
+            </div>
+            <div class="source-heading">YOUR SOURCES <span>03</span></div>
+            <button class="source-button" data-source="notes" disabled>
+              <span class="doc-icon" aria-hidden="true">▤</span
+              ><span
+                >Launch notes<small>Product / Sample document</small></span
+              ></button
+            ><button class="source-button" data-source="plan" disabled>
+              <span class="doc-icon" aria-hidden="true">▤</span
+              ><span
+                >Project plan<small>Planning / Sample document</small></span
+              ></button
+            ><button class="source-button" data-source="decisions" disabled>
+              <span class="doc-icon" aria-hidden="true">▤</span
+              ><span>Decision log<small>Team / Sample document</small></span>
+            </button>
+            <div class="sidebar-bottom">
+              <span class="small-check" aria-hidden="true">✓</span> Three
+              documents to explore
+            </div>
+          </aside>
+          <div class="product-main">
+            <div class="product-top">
+              <span
+                ><span class="small-spark" aria-hidden="true">✧</span> Ask your
+                workspace</span
+              ><span class="demo-badge">Sample demo · No live model</span>
+            </div>
+            <div class="conversation">
+              <div class="question-icon" aria-hidden="true">↗</div>
+              <h3>What would you like to know?</h3>
+              <p>Choose a question about the sample launch.</p>
+              <div class="questions" role="group" aria-label="Sample questions">
+                <button data-question="launch" aria-pressed="true" disabled>
+                  What ships first?</button
+                ><button data-question="owner" aria-pressed="false" disabled>
+                  Who owns the launch?</button
+                ><button data-question="open" aria-pressed="false" disabled>
+                  What's still open?
+                </button>
+              </div>
+              <div class="answer-card">
+                <div class="answer-label">
+                  <svg viewBox="0 0 28 28" aria-hidden="true">
+                    <path d="M4 5H24M4 13H18M4 21H12" />
+                  </svg>
+                  A grounded answer <span>PREPARED SAMPLE</span>
+                </div>
+                <div id="answer-content">
+                  <h4>Start with a focused pilot.</h4>
+                  <p>
+                    The first release brings workspace search to a small
+                    internal group. Shared folders and external guests are left
+                    for a later release.
+                  </p>
+                  <ul>
+                    <li>
+                      <strong>In:</strong> search, source previews, and
+                      feedback.
+                    </li>
+                    <li>
+                      <strong>Later:</strong> shared folders and guest access.
+                    </li>
+                  </ul>
+                </div>
+                <div class="answer-sources">
+                  <span>BASED ON</span>
+                  <div id="citations">
+                    <button class="citation" data-source="notes" disabled>
+                      1 <span>Launch notes</span> ↗</button
+                    ><button class="citation" data-source="decisions" disabled>
+                      2 <span>Decision log</span> ↗
+                    </button>
+                  </div>
+                </div>
+                <div class="answer-footer">
+                  <span id="answer-caption"
+                    >Open a source to check the context.</span
+                  ><button
+                    id="copy-answer"
+                    disabled
+                    aria-label="Copy sample answer"
+                  >
+                    <svg viewBox="0 0 20 20" aria-hidden="true">
+                      <rect x="7" y="7" width="10" height="10" rx="1" />
+                      <path d="M13 5V3H3V13H5" /></svg
+                    ><span>Copy</span>
+                  </button>
+                </div>
+              </div>
+              <p class="answer-status" id="answer-status" role="status"></p>
+            </div>
+          </div>
+        </div>
+        <p class="demo-disclosure">
+          This walkthrough uses fictional documents and prepared answers.
+          Nothing is uploaded or sent to an AI service.
+        </p>
+      </section>
+      <section id="how" class="how">
+        <div class="section-heading">
+          <span class="eyebrow">FROM SCATTERED TO UNDERSTOOD</span>
+          <h2>Keep the context.<br />Lose the search party.</h2>
+          <p>
+            A product idea built around the way teams actually ask questions.
+          </p>
+        </div>
+        <div class="steps">
+          <article>
+            <span class="step-number">01</span>
+            <div class="step-drawing collect" aria-hidden="true">
+              <span>Notes</span><span>Plans</span><span>Decisions</span><i></i>
+            </div>
+            <h3>Start with your sources.</h3>
+            <p>
+              Bring the relevant notes and decisions into one place. Keep each
+              document's identity and context.
+            </p>
+          </article>
+          <article>
+            <span class="step-number">02</span>
+            <div class="step-drawing question-drawing" aria-hidden="true">
+              <span>What changed?</span><span>↗</span>
+            </div>
+            <h3>Ask the useful question.</h3>
+            <p>
+              Use the words you would use with a colleague. Begin with the
+              question, not a folder structure.
+            </p>
+          </article>
+          <article>
+            <span class="step-number">03</span>
+            <div class="step-drawing evidence" aria-hidden="true">
+              <span></span><span></span><span></span><b>1</b><b>2</b>
+            </div>
+            <h3>Follow the evidence.</h3>
+            <p>
+              Read the answer, then open the source. A useful summary should
+              give you a way to look closer.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="principles" class="principles">
+        <div>
+          <span class="eyebrow">BUILT AROUND A SIMPLE BELIEF</span>
+          <h2>An answer should<br />earn your confidence.</h2>
+        </div>
+        <div class="principle-list">
+          <details open>
+            <summary>
+              Show where it came from.<span aria-hidden="true">−</span>
+            </summary>
+            <p>
+              Source references belong beside the answer. In the demo, every
+              citation opens the sample document that supports it.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Make uncertainty visible.<span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              A missing decision is still missing. The sample answer for open
+              questions points to unresolved work rather than inventing an
+              outcome.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Keep people in the loop.<span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Give people the context to make their own decisions. A summary is
+              a starting point for review, not a substitute for judgment.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="closing">
+        <span class="eyebrow">LESS HUNTING. A CLEARER NEXT STEP.</span>
+        <h2>See what a little<br />context can change.</h2>
+        <a class="primary" href="#demo"
+          >Explore the sample workspace <span aria-hidden="true">↑</span></a
+        >
+        <p>No account. No upload. Just the walkthrough.</p>
+      </section>
+    </main>
+    <footer>
+      <a class="brand" href="./"
+        ><svg viewBox="0 0 28 28" aria-hidden="true">
+          <path d="M4 5H24M4 13H18M4 21H12" /></svg
+        >trace<span>AI</span></a
+      >
+      <p>
+        A fictional AI-company concept.<br />Original sample content and
+        interface, built with Blend.
+      </p>
+      <a href="../oddfield/">Oddfield design studio ↗</a
+      ><a href="../">All examples ↗</a>
+    </footer>
+    <dialog id="source-dialog" aria-labelledby="source-title">
+      <div class="source-dialog-header">
+        <span class="doc-icon" aria-hidden="true">▤</span
+        ><span>WORKSPACE SOURCE</span
+        ><button id="close-source" aria-label="Close source">×</button>
+      </div>
+      <div class="source-document">
+        <span class="eyebrow">FICTIONAL SAMPLE DOCUMENT</span>
+        <h2 id="source-title">Launch notes</h2>
+        <div id="source-content"></div>
+        <a id="download-source" href="sources/notes.txt" download
+          >Download this sample document ↓</a
+        >
+      </div>
+    </dialog>
+    <noscript
+      ><p class="noscript">
+        The default sample answer is readable above. Enable JavaScript to change
+        questions and open source previews, or read the
+        <a href="sources/notes.txt">launch notes</a> and
+        <a href="sources/decisions.txt">decision log</a> directly.
+      </p></noscript
+    >
+  </body>
+</html>

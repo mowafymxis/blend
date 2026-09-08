@@ -4,19 +4,21 @@ A frontend skill for deliberate design, concise copy, and motion that feels part
 
 ## Built with Blend
 
-### Trailhead — outdoor day planner
+### Oddfield — design company
 
-[![Trailhead: a forest-green route planner beside an original illustrated trail map](assets/trailhead-preview.png)](examples/trailhead/index.html)
+[![Oddfield: bold orange typography and original design-studio concept projects](assets/oddfield-preview.png)](examples/oddfield/index.html)
 
-Choose a fictional route, filter by difficulty, build a packing checklist, and download a day plan. [Explore Trailhead](examples/trailhead/index.html).
+A portfolio-led design studio with project filters, detailed project stories, and a downloadable brief builder. [Explore Oddfield](examples/oddfield/index.html).
 
-### Common Clay — ceramics notebook
+### Trace — AI company
 
-[![Common Clay: expressive serif typography beside a sunlit ceramic still life](assets/common-clay-preview.png)](examples/common-clay/index.html)
+[![Trace: a product-led AI company with an interactive source-linked sample walkthrough](assets/trace-preview.png)](examples/trace/index.html)
 
-An editorial landing page with interactive form studies and three free, downloadable practice worksheets. Original AI-generated concept photography. [Explore Common Clay](examples/common-clay/index.html).
+A product-led AI company with prepared sample answers, inspectable source documents, copy feedback, and real downloads. The example uses no live model. [Explore Trace](examples/trace/index.html).
 
-Both are runnable concept projects with visible disclosures. The [field studies index](examples/index.html) also includes a hover-drawn mark, a reversible paper assembly, and Dot, an original paper character. [Run the examples locally](examples/README.md).
+Both are fictional company concepts with working frontend interactions. [Run the examples locally](examples/README.md) or open the [example gallery](examples/index.html).
+
+The [optional motion lab](examples/motion-lab/index.html) demonstrates drawing, a reversible paper assembly, and an original character. The paper assembly is one example, **not a default pattern or required section**. Neither company site uses it.
 
 ## Try it
 

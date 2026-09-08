@@ -1,0 +1,19 @@
+TRACE / PRODUCT CONCEPT
+
+AI knowledge tools should make it easier to understand shared work and check the evidence behind an answer.
+
+The proposed experience:
+1. Bring relevant notes, plans, and decisions together.
+2. Ask a question in ordinary language.
+3. Read the answer and follow its references back to the source.
+
+Design principles:
+- Show sources beside the answer.
+- Keep missing or unresolved information visible.
+- Help people make decisions with context.
+
+About this example:
+Trace is a fictional AI-company concept built with Blend.
+The included walkthrough uses fictional documents and prepared sample answers.
+It does not connect to a live model, upload documents, or send data to a service.
+Search across real workspaces, model inference, identity, permissions, and integrations are not implemented in this static example.

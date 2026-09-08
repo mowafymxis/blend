@@ -2,6 +2,8 @@
 
 Use when the user describes “fixed scrolling,” a scene that transforms as they scroll, or an animation that feels like a video but is made of live elements. A sticky stage inside a longer normal-flow section is usually the right model. Avoid a globally fixed canvas that covers the rest of the page.
 
+The bundled paper assembly demonstrates one technique only. Do not add that pattern, its choreography, or any pinned scene by default to unrelated sites. Choose a product-specific narrative when the task benefits from scroll storytelling; ordinary portfolio and product pages may use other motion or no pinned sequence.
+
 ## Storyboard the state, then map progress
 
 Choose a small number of meaningful beats. For example, separated product layers align, the assembled object rotates, then it settles beside the next action. Map scroll position deterministically to every pose so scrolling backward, jumping with Page Down, resizing, and returning from history all work.
@@ -46,7 +48,7 @@ CSS 3D is a real spatial transform system but does not provide mesh geometry or 
 
 Replace the long pinned region with a compact, fully assembled still or normal-flow steps. Remove pin spacing as well as animation. Apply the same change when the OS preference changes during the session. A mobile layout may retain a short stage if legible, or use an ordered sequence; it need not force the desktop choreography into a narrow viewport.
 
-The [motion lab controller](../examples/lab.js) demonstrates bounded progress, refreshed measurements, reverse scrubbing, and a static reduced-motion branch without dependencies or video.
+The [motion lab controller](../examples/motion-lab/lab.js) demonstrates bounded progress, refreshed measurements, reverse scrubbing, and a static reduced-motion branch without dependencies or video.
 
 ## Verify the illusion
 

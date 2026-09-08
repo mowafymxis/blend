@@ -1,0 +1,8 @@
+LAUNCH NOTES
+Fictional sample document / Northstar workspace
+
+The first release is an internal pilot of workspace search. The pilot includes search, source previews, and an in-product feedback flow.
+
+The launch review is led by Maya, the product lead. The exact pilot start date is not yet confirmed.
+
+Shared folders and external guest access are not part of the first release.

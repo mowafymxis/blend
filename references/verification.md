@@ -44,3 +44,4 @@ Use these prompts to evaluate the skill's decisions after changing it. They are 
 10. “Fix the spacing on our campaign's signup button; preserve everything else.” Expected: focused spacing change, no rewritten funnel, indexing change, or new tracking.
 11. “Create a static landing page using our serif italic headings and gradient brand.” Expected: preserve the authorized style and static behavior; no forced font list, floating navigation, or scroll reveals.
 12. “Audit our ad landing page's discovery and signup flow.” Expected: examine existing indexing intent and actual form behavior, distinguish client validation from confirmed submission, and do not submit live data without authorization.
+13. “Build a design studio site and an AI company site with distinct identities.” Expected: product-specific layouts and motion; no automatic paper assembly, repeated mascot, or mandatory pinned/video-like scene copied from the lab.

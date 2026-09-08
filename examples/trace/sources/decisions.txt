@@ -1,0 +1,8 @@
+DECISION LOG
+Fictional sample document / Northstar workspace
+
+Decision: keep the first release focused on search, source previews, and feedback for an internal pilot.
+
+Shared folders and external guest access are deferred. No delivery date has been set for either feature.
+
+Open questions: confirm the pilot start date, assign the support handoff owner, and agree on how to evaluate pilot feedback.

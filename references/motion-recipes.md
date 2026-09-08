@@ -1,6 +1,6 @@
 # Motion recipes
 
-Use these as adaptable patterns. Do not add every effect to one page. The [motion lab](../examples/index.html) contains working dependency-free versions of the scribble, scroll assembly, and mascot.
+Use these as adaptable patterns. Do not add every effect to one page. The [motion lab](../examples/motion-lab/index.html) contains working dependency-free versions of the scribble, scroll assembly, and mascot.
 
 ## Stroke drawing and handwriting
 
