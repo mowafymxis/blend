@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Trace — Find your aha!</title>
+    <title>Trace — Knowledge, in context</title>
     <meta
       name="description"
       content="Explore a fictional AI knowledge company through a source-linked sample product walkthrough."
     />
     <meta name="robots" content="noindex" />
-    <meta name="theme-color" content="#ffdf38" />
+    <meta name="theme-color" content="#f5f3ed" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
@@ -32,109 +32,23 @@
     </header>
     <main id="main">
       <section class="hero">
-        <div class="hero-copy">
-          <h1>Big questions.<br />Little <em>aha!</em></h1>
-          <p>
-            Good ideas get buried in docs. Trace digs out the answers—and brings
-            the receipts.
-          </p>
-          <div class="hero-actions">
-            <a class="primary" href="#demo"
-              >Find your aha <span aria-hidden="true">↗</span></a
-            >
-            <a class="secondary" href="product-brief.txt" download
-              >Meet the idea <span aria-hidden="true">↓</span></a
-            >
-          </div>
-          <span class="concept-note">A fictional AI company.</span>
-        </div>
-        <div class="hero-art">
-          <div class="scrap scrap-notes" aria-hidden="true">
-            <span>THE NOTES</span><i></i><i></i><b>That one thing…</b>
-          </div>
-          <div class="scrap scrap-answer" aria-hidden="true">
-            <span>THE AHA!</span><b>Found it. ↗</b
-            ><small>Source included. Obviously.</small>
-          </div>
-          <svg
-            class="trace-pal"
-            viewBox="0 0 480 460"
-            fill="none"
-            aria-hidden="true"
+        <h1>A clearer view<br />of what you know.</h1>
+        <p>
+          Bring your team's knowledge into the conversation.<br />Find an
+          answer, understand the context, and follow it to the source.
+        </p>
+        <div class="hero-actions">
+          <a class="primary" href="#demo"
+            >Explore Trace <span aria-hidden="true">↗</span></a
           >
-            <ellipse
-              cx="246"
-              cy="420"
-              rx="136"
-              ry="15"
-              fill="#211f25"
-              opacity=".12"
-            />
-            <g
-              class="pal-body"
-              stroke="#211f25"
-              stroke-width="5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path
-                d="M147 274C113 311 74 309 67 278C60 250 77 239 86 252"
-                fill="none"
-              />
-              <path
-                class="pal-hand"
-                d="M340 252C382 263 407 231 405 207M405 207L392 188M405 207L415 181M405 207L428 194"
-                fill="none"
-              />
-              <path d="M208 349L192 401L160 403M282 352L295 401L325 405" />
-              <path
-                d="M137 225C112 186 132 126 176 121C174 74 237 56 267 89C307 62 355 95 348 139C400 149 409 208 372 237C396 278 359 321 320 314C307 366 245 383 216 345C170 365 125 335 137 292C105 278 112 240 137 225Z"
-                fill="#b49aff"
-              />
-              <g class="pal-eyes">
-                <ellipse cx="222" cy="199" rx="23" ry="31" fill="#fffdf5" />
-                <ellipse cx="280" cy="199" rx="23" ry="31" fill="#fffdf5" />
-                <ellipse
-                  class="pupil"
-                  cx="229"
-                  cy="203"
-                  rx="8"
-                  ry="13"
-                  fill="#211f25"
-                  stroke="none"
-                />
-                <ellipse
-                  class="pupil"
-                  cx="287"
-                  cy="203"
-                  rx="8"
-                  ry="13"
-                  fill="#211f25"
-                  stroke="none"
-                />
-              </g>
-              <path class="pal-smile" d="M229 249Q254 274 277 245" />
-              <path d="M188 234L198 237M307 232L317 228" stroke="#7550b1" />
-            </g>
-            <g
-              class="high-five-sparks"
-              stroke="#211f25"
-              stroke-width="5"
-              stroke-linecap="round"
-            >
-              <path d="M424 154L430 139M448 171L463 165M445 197L460 202" />
-            </g>
-          </svg>
-          <div class="pal-control">
-            <button id="high-five" disabled>
-              High-five Trace <span aria-hidden="true">✋</span></button
-            ><span id="pal-status" role="status">Try a high-five.</span>
-          </div>
+          <a class="secondary" href="product-brief.txt" download
+            >Read the product brief <span aria-hidden="true">↓</span></a
+          >
         </div>
       </section>
       <section id="demo" class="demo-section" aria-labelledby="demo-title">
         <div class="demo-label">
-          <h2 id="demo-title">Go on. Ask the little guy.</h2>
+          <h2 id="demo-title">See the context behind the answer.</h2>
         </div>
         <div class="product">
           <aside class="product-sidebar">
@@ -175,7 +89,7 @@
             </div>
             <div class="conversation">
               <div class="question-icon" aria-hidden="true">↗</div>
-              <h3>Pick a question. Get an aha.</h3>
+              <h3>What would you like to understand?</h3>
               <p>Choose a question about the sample launch.</p>
               <div class="questions" role="group" aria-label="Sample questions">
                 <button data-question="launch" aria-pressed="true" disabled>
@@ -191,7 +105,7 @@
                   <svg viewBox="0 0 28 28" aria-hidden="true">
                     <path d="M4 5H24M4 13H18M4 21H12" />
                   </svg>
-                  Here’s the scoop <span>PREPARED SAMPLE</span>
+                  Answer <span>PREPARED SAMPLE</span>
                 </div>
                 <div id="answer-content">
                   <h4>Start with a focused pilot.</h4>
@@ -246,10 +160,8 @@
       </section>
       <section id="how" class="how">
         <div class="section-heading">
-          <h2>A curious mind.<br />A very good paper trail.</h2>
-          <p>
-            A product idea built around the way teams actually ask questions.
-          </p>
+          <h2>From shared knowledge<br />to a considered answer.</h2>
+          <p>Work through a question without losing the detail that matters.</p>
         </div>
         <div class="steps">
           <article>
@@ -289,7 +201,7 @@
       </section>
       <section id="principles" class="principles">
         <div>
-          <h2>Fun personality.<br />Serious about sources.</h2>
+          <h2>Useful answers.<br />Open to inspection.</h2>
         </div>
         <div class="principle-list">
           <details open>
@@ -323,7 +235,7 @@
         </div>
       </section>
       <section class="closing">
-        <h2>Less head-scratching.<br /><em>More aha!</em></h2>
+        <h2>Make room for<br />a clearer understanding.</h2>
         <a class="primary" href="#demo"
           >Explore the sample workspace <span aria-hidden="true">↑</span></a
         >

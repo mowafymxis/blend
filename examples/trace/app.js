@@ -213,29 +213,3 @@ document
 document
   .querySelectorAll("button[disabled]")
   .forEach((button) => (button.disabled = false));
-
-// A short, user-triggered greeting; no idle loop or pointer tracking.
-const pal = document.querySelector(".hero-art");
-const highFive = document.querySelector("#high-five");
-let greetingTimer;
-let greetings = 0;
-highFive.addEventListener("click", () => {
-  if (greetingTimer) return;
-  greetings += 1;
-  document.querySelector("#pal-status").textContent =
-    greetings % 2
-      ? "Right back at you. Now, let’s find an aha!"
-      : "Teamwork: confirmed. Sources: still included.";
-  if (reduce.matches) return;
-  pal.classList.add("is-greeting");
-  greetingTimer = setTimeout(() => {
-    pal.classList.remove("is-greeting");
-    greetingTimer = undefined;
-  }, 700);
-});
-reduce.addEventListener("change", () => {
-  if (!reduce.matches) return;
-  clearTimeout(greetingTimer);
-  greetingTimer = undefined;
-  pal.classList.remove("is-greeting");
-});
