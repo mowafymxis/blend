@@ -1,50 +1,38 @@
-# Company examples
+# Frontend examples
 
-Two independent sites show how Blend adapts to different companies:
-
-| Example | Direction | Working interactions |
+| Example | Design decision | Working flow |
 |---|---|---|
-| [Oddfield](oddfield/index.html) | Expressive design studio, bold orange type, original concept projects | Project filters, project-detail dialogs, keyboard dismissal and focus return, validated brief builder, text download |
-| [Trace](trace/index.html) | Restrained AI company, warm neutral canvas, serif headings, source-linked product demo | Three prepared sample answers, source previews and matching downloads, copy feedback, keyboard-operable disclosures |
+| [Bench](bench/index.html) | Compact green workspace with comparable rows and persistent repair details | Search/filter, inspect a repair, save status, add a validated sample job, reset |
+| [Afterlight](afterlight/index.html) | Dark editorial page with warm serif type and original observatory illustration | Choose arrival and activity, inspect the schedule, download a matching text plan |
 
-Oddfield is a fictional studio with self-initiated concept work. Its Yuzu Club image is AI-generated; Night School and Still are original graphic/interface studies. The Still mockup is not an audio player. Its controls are part of a clearly labeled visual concept, inside the project-details button.
+These are independent domains and compositions, not templates to repeat. Bench demonstrates repeated work; Afterlight demonstrates discovery and a bounded planning task. Neither requires photography, a motion library, a build step, or a network service.
 
-Trace is a fictional AI company. Its walkthrough uses fictional documents and prepared sample answers, visibly labeled as a demo without a live model. It does not connect to an AI service or search a real workspace. The product brief describes the boundary. Neither site sends form content or documents to a service. Oddfield's brief stays in the page until downloaded; Trace copies only when the user requests it.
+## Run
 
-## Run locally
-
-From the repository root, with Python 3 installed:
+From the repository root with Python 3:
 
 ```sh
-python -m http.server 8789 --bind 127.0.0.1
+python -m http.server 18789 --bind 127.0.0.1
 ```
 
-Open [the gallery](http://127.0.0.1:8789/examples/), [Oddfield](http://127.0.0.1:8789/examples/oddfield/), or [Trace](http://127.0.0.1:8789/examples/trace/). Choose another unused port if needed. All assets are local; no package installation or build step is required. Direct `index.html` opening also works, with browser-dependent local-file download and clipboard restrictions.
+Open [the gallery](http://127.0.0.1:18789/examples/), [Bench](http://127.0.0.1:18789/examples/bench/), or [Afterlight](http://127.0.0.1:18789/examples/afterlight/). Choose another unused port if necessary. All assets are local. Direct file opening may have browser-dependent download restrictions; local serving is the verified path.
 
-## The paper assembly is optional
+## Demonstration boundaries
 
-The [motion lab](motion-lab/index.html) is separate from both company sites. Its paper assembly demonstrates one way to control a reversible CSS 3D scene with scroll. It is not a required page section, default brand treatment, or animation to copy into every project. Choose the motion story for the product, or omit pinned/video-like scrolling.
+Bench has six fictional repair records. Changes remain in memory until reload; the reset action restores the sample queue. It sends no notifications and stores no customer data. Without JavaScript the layout explains the demo and controls remain disabled; editing requires JavaScript.
 
-In the lab:
+Afterlight describes a fictional event with an illustrative schedule. It provides no tickets, live availability, weather, accessibility guarantee, or astronomical predictions. The original SVG is illustration, not a sky map. Without JavaScript, the event content and default schedule remain readable; interactive planning stays disabled. Downloading uses a local text file and sends nothing.
 
-- Hover or keyboard-focus **Explore the techniques** to draw the original ink mark; rapid enter/leave reverses the stroke.
-- Scroll through **An idea. Taking shape.** on a wide, tall viewport. Three paper planes gather, rotate, and settle. Reverse scroll to reverse the scene.
-- Hover/focus **Say hello**, then activate Dot's bounded greeting.
-- Narrow/short viewports and reduced motion use a compact static edition. A runtime reduced-motion change removes pin spacing as well as animation.
+## Verify
 
-`motion-lab/lab.css` owns local feedback and character poses; `motion-lab/lab.js` owns continuous scene transforms and character state. The lab is live CSS/SVG, not a video or WebGL model. See [3D and mascots](../references/3d-and-mascots.md) for other techniques.
+- **Bench:** search by customer, bike, repair, and ticket number; combine search and status filters; clear no-match results; select a job; change its status; verify counts and retained filters. If an edit removes the job from the filtered set, select the next visible job and retain keyboard focus in the interface. Add a job with empty, whitespace-only, long, and ordinary input. Check dialog Escape, focus return, and reset. Reload to confirm the stated session boundary.
+- **Afterlight:** choose each activity and both ends of the arrival range using pointer and keyboard. Verify start time plus 15 minutes and the activity duration against the displayed finish time. Download the text and compare it with the selected schedule. Check disclosures, links, and native expandable questions.
+- **Both:** inspect desktop, 390px and 320px layouts, long text, keyboard focus, reduced motion before load and toggled live, missing assets, console errors, and JavaScript-disabled states. These examples have only brief optional feedback; they do not demonstrate pinned scroll or a mascot rig.
 
-## Verify changes
+Use [the wider verification guide](../references/verification.md) for other task types. Showcases alone do not establish that skill revisions improve fresh model outputs.
 
-Follow [the verification guide](../references/verification.md), with these example-specific checks:
+## Refresh previews
 
-- **Oddfield:** filter each category, open each project, dismiss by Escape and the close button, check focus returns, submit an empty brief, then download a completed brief and inspect its contents. Nothing should be sent.
-- **Trace:** try all questions, inspect their citations, compare each source preview with its downloaded file, copy an answer, and verify clipboard-denied feedback. The sample's unresolved decisions must remain unresolved.
-- **Both:** keyboard and touch operation, narrow layouts, readable contrast, reduced motion, dialog scroll and focus, missing assets, and no-JavaScript fallbacks. Static content and direct downloads remain available; enhanced controls start disabled until initialized.
-- **Optional lab:** forward/reverse scroll, resize, rapid hover, greeting, and live reduced-motion collapse after loading its separate route.
+Serve locally, load each default route at 1440 × 1050, and capture the viewport at the top of the page. Save the reviewed images to `assets/bench-preview.png` and `assets/afterlight-preview.png`. Check the gallery and README links after replacement. Interactions need separate testing; a screenshot is not proof that a task works.
 
-The sites use neither long pinned scenes nor repeated paper-assembly motion. Their motion belongs to the actual interactions: portfolio images, filters and dialogs for Oddfield; answer changes and source inspection for Trace.
-
-## Updating previews
-
-Capture each company at 1440 × 1050, at the top of the page. Wait for the image and entrance motion to finish, leave the default selections, and save viewport screenshots to `assets/oddfield-preview.png` and `assets/trace-preview.png`. Review the captures and README links. Current previews were refreshed on 2026-09-08. Exercise motion separately; screenshots cannot verify it.
+Selected previews were refreshed on 2026-09-09.

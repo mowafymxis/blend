@@ -34,7 +34,3 @@ Resolve competing events with a clear priority, such as error/success above noti
 Apply anticipation and follow-through sparingly: a small compression before a hop, a slight body settle after landing, eyes leading a turn. Keep the face readable and the character anchored. Test the actual small size; attractive large artwork may collapse at 24 px.
 
 Reduced motion uses immediate expression changes or a still character. No automatic bouncing, spins, or parallax. If purely decorative, hide it from assistive technology. If it communicates application status, provide concise DOM status text; a face alone is not adequate feedback. An interactive mascot needs a named button and meaningful action, not a clickable unlabelled canvas.
-
-## Concrete example
-
-The lab's original “Dot” is an asymmetrical paper-shaped SVG character with two feet and a folded corner, not a Claude asset. Hover or keyboard focus produces a notice pose. “Say hello” produces a bounded greeting, with a timer that returns to the appropriate idle/notice state. The rig uses nested transforms so CSS pose and one-shot animation have separate owners. This is a runnable starting example; working/error states above are guidance for connecting a mascot to real app events, not claims that the lab simulates a backend.

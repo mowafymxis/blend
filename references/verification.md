@@ -30,10 +30,29 @@ Run the existing build/type checks and relevant tests where code changed. Inspec
 
 ## Skill regression scenarios
 
+### Evaluate draft quality as well as compliance
+
+For substantial skill revisions, compare fresh outputs from the baseline and revised skill on the same briefs, assets, tools, and effort allowance. Use multiple independent runs when feasible; a single attractive output is not evidence of consistent improvement. Keep generated runs and historical reports in the ignored `.maintainer/` area rather than shipping them as examples or instructions. Never run an obsolete skill by silently replacing the user's installed copy.
+
+Include a dense scheduling or repair tool, an unfamiliar offer without customer proof, an editorial event page, a supplied-brand redesign, and a narrow fix. Vary content length and viewport. Review without knowing which version produced each result when practical. Judge these dimensions using the rendered artifact and task behavior:
+
+| Dimension | Evidence of a strong draft |
+|---|---|
+| Comprehension | A new visitor can explain the purpose, next action, and consequences from the interface |
+| Composition and hierarchy | Attention follows task importance; spacing and grouping make relationships clear |
+| Typography and assets | Real content fits; crops, type roles, and imagery support the chosen direction |
+| Coherence and distinctiveness | Decisions fit the brief and form a recognizable whole without repeating a house template |
+| Task completion | The primary flow, recovery, and navigation work with keyboard and narrow layouts |
+| Scope and honesty | Existing contracts are preserved; claims and prototype boundaries are accurate |
+
+Record concrete strengths and defects, using weak / adequate / strong only as a summary of evidence. Report regressions separately rather than hiding broken behavior behind an average aesthetic score. Note model/tool versions, tested views, and limitations. Hand-authored showcases demonstrate possible outcomes; they do not establish that the skill reliably generates those outcomes.
+
+For implementation, use these dimensions in the final visual revision pass. Correct the largest observed issues within scope, then recheck affected views and interactions. For a small fix, evaluate only the affected control and surrounding context.
+
 Use these prompts to evaluate the skill's decisions after changing it. They are test inputs, not product copy. Static review alone does not establish model behavior; a real forward test requires running a fresh agent with the changed skill and reviewing its output.
 
 1. “Only fix this button's alignment.” Expected scope: alignment fix, no new hero, text, dependencies, or motion overhaul.
-2. “Keep our purple Inter dashboard and improve empty states.” Expected: preserve brand and density, concise empty states, no invented data or looping bento showcase.
+2. “Keep our purple Inter dashboard and improve empty states.” Expected: preserve brand and density, concise empty states, no invented data or unrelated animated showcase.
 3. “This is a notes app using Turso. Polish the frontend.” Expected: no database badge in normal screens; architecture remains in implementation context.
 4. “Make this product assemble as I scroll. No video.” Expected: reversible pinned live scene, readable fallback, no video substitution.
 5. “Draw the little scribble on hover.” Expected: original path draw with focus parity, stable label/hit box, interruption behavior.
@@ -44,5 +63,8 @@ Use these prompts to evaluate the skill's decisions after changing it. They are 
 10. “Fix the spacing on our campaign's signup button; preserve everything else.” Expected: focused spacing change, no rewritten funnel, indexing change, or new tracking.
 11. “Create a static landing page using our serif italic headings and gradient brand.” Expected: preserve the authorized style and static behavior; no forced font list, floating navigation, or scroll reveals.
 12. “Audit our ad landing page's discovery and signup flow.” Expected: examine existing indexing intent and actual form behavior, distinguish client validation from confirmed submission, and do not submit live data without authorization.
-13. “Build a design studio site and an AI company site with distinct identities.” Expected: product-specific layouts and motion; no automatic paper assembly, repeated mascot, or mandatory pinned/video-like scene copied from the lab.
+13. “Build a repair coordination tool and an observatory visit planner with distinct identities.” Expected: different information architecture, composition, and task flows; no automatic reuse of bundled artwork or layouts.
 14. “Build a studio site with clear section headings and no supplied tagline.” Expected: no invented header motto or repeated eyebrow slogans; headings stand on their own, while necessary form labels and sample disclosures remain.
+15. “Build a tool for finding repair jobs, editing a job, and returning to the filtered queue.” Expected: meaningful record identity, retained filters, visible completion, and a usable narrow layout.
+16. “Explain our unfamiliar product to new visitors, using only these supplied facts.” Expected: enough concrete explanation to understand the offer and next step; brevity does not remove essential context.
+17. “Build an illustrated event page; we have no photos.” Expected: intentional original illustration or a complete content-led alternative; no missing hero image or unrelated stock asset.

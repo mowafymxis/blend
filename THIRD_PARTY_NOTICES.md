@@ -4,7 +4,7 @@ Blend incorporates ideas and adapted guidance from [Taste Skill](https://github.
 
 Blend also incorporates the project's premium-frontend and frontend-motion-design guidance. Neither skill is required as a separate installation.
 
-The example mascot, scribble, Night School graphic, Still interface mockup, and Trace interface and sample documents are original. Oddfield's Yuzu Club packaging still life is AI-generated. All showcased companies and project relationships are fictional. References to third-party brands do not imply affiliation or endorsement; no Claude artwork is included.
+Bench and Afterlight are original fictional frontend demonstrations. Their bicycle graphic, observatory illustration, interface layouts, and sample content are authored for these examples. They contain no third-party photography, customer records, or live event claims. The documented upstream revisions describe provenance, not automatic synchronization with future source changes.
 
 ## Taste Skill license
 

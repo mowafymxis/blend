@@ -19,6 +19,10 @@ For substantial work, consider three independent controls: composition variation
 
 ## Compose for the product
 
+For a substantial new design or authorized overhaul, read [art direction](references/art-direction.md). Before coding, form a compact internal direction: audience and task, intended visual character, composition, type roles, and the role of imagery, each grounded in the brief. Compare plausible alternatives internally when the brief is open, choose one, and briefly explain the visible choice without creating an approval gate. Focused fixes inherit the existing direction.
+
+For apps with repeated tasks, records, forms, or navigation, read [product workflows](references/product-workflows.md). Design the primary task from entry through completion and recovery before adding decorative scenes.
+
 For a new landing page or a requested marketing strategy/copy audit, read [landing-page strategy](references/landing-pages.md): audience intent, offer, page argument, evidence, conversion paths, and search/share readiness. Apply it only to the relevant page; a dashboard, homepage with multiple audiences, or small styling fix does not inherit a campaign funnel. Existing copy remains protected when strategy or copy changes are outside scope.
 
 Reuse sound tokens and components. Establish type roles, spacing, colors, surfaces, radii, container widths, layers, and motion tokens before polishing individual elements. Preserve an established design system; use current official documentation before adding or changing dependencies.
@@ -29,13 +33,15 @@ Typography must hold up with real text, long names, localization, zoom, and narr
 
 Use original or authorized imagery, illustrations, SVG marks, and real product previews when they add meaning. Create custom assets when useful and available; do not force photography onto a typographic design. Reserve media dimensions, check crops and contrast, and provide informative alt text where needed. Never invent customer endorsements or present a decorative mockup as a shipped product.
 
+Resolve important assets early: define what each must communicate, its placement and crop, its source, and an intentional fallback. Verify the actual asset in the composition before building the page around it. Use the asset decisions in [art direction](references/art-direction.md) when suitable material is missing.
+
 ## Keep visible copy short and user-facing
 
 The app's user should not need to know its backend. Do not randomly describe it as “Turso-backed,” “powered by Supabase,” “API-driven,” or “serverless.” Hide database names, architecture, implementation notes, prompt wording, and build-process explanations from ordinary product screens. Mention a technical detail only when the user explicitly requests it or it is necessary to a real technical/admin task. Translate failures into useful outcomes and recovery actions; keep raw traces and secrets out of the UI.
 
 Do not overwrite existing frontend copy during a visual or motion task. Preserve its meaning and voice. Rewrite only when requested or necessary to fix a demonstrated comprehension problem. Add a paragraph only when it answers a real user question, supports a decision, or explains recovery. Delete filler, redundant subtitles, invented badges, and commentary explaining how the UI was built. A clear label may need no description. Necessary instructions, consent, safety information, and substantial requested editorial content still belong.
 
-Default to the section heading alone. Do not prepend decorative eyebrows, kickers, tiny uppercase slogans, section numbers, or badges when the heading already explains the content. Do not fill header space with generic brand mottos such as “Independent minds. Shared curiosity.” Omit them rather than inventing replacement slogans. Keep a secondary label only when it adds distinct information needed for navigation or a decision (for example a project category, plan tier, or actual status), or the user explicitly asks for it. Preserve necessary sample disclosures near the relevant demo or content; do not repeat them as decoration above every section.
+Start with the section heading and add only information needed to understand or act. Test comprehension: can a first-time visitor explain the offer or task, the next action, and any material consequence? Add a concrete explanation or example where that answer is unclear. Do not prepend decorative eyebrows, kickers, tiny uppercase slogans, section numbers, or badges when the heading already explains the content. Do not fill header space with generic brand mottos such as “Independent minds. Shared curiosity.” Keep a secondary label when it adds distinct information needed for navigation or a decision (for example a project category, plan tier, or actual status), or the user explicitly asks for it. Preserve necessary sample disclosures near the relevant demo or content; do not repeat them as decoration above every section.
 
 Use authentic claims and data. In a prototype, identify sample content visibly where users might mistake it for real; a hidden code comment is insufficient. Do not make fabricated metrics more believable by adding decimals, names, or logos. See [copy and craft examples](references/copy-and-craft.md) for before/after decisions.
 
@@ -43,7 +49,7 @@ Use authentic claims and data. In a prototype, identify sample content visibly w
 
 For a substantial build or motion task, map applicable entry, interaction, state change, navigation, and signature motion. Implement what the interface needs; never invent features to fill the map. Small fixes retain existing motion. A repeated app visit should not replay a long intro. A static or reduced-motion request remains valid.
 
-The motion lab's paper-assembly pattern is only an example of reversible scroll choreography, not a default design, required section, or effect to implement on every site. Do not automatically reuse its sheets, sequence, mascot, or visual treatment. Choose motion from the current product and user intent; use a different story when justified, or omit pinned/video-like scrolling entirely. Examples demonstrate techniques, not a house template.
+Choose motion from the current product and user intent. Examples demonstrate decisions, not a house template: do not automatically reuse their layouts, illustrations, or interactions. A complete quiet interface is a valid outcome; pinned storytelling belongs only where it explains something useful.
 
 Give each motion an origin, destination, trigger, duration or scroll range, interruption rule, and accessible fallback. Start with roughly 90–180 ms direct feedback, 160–360 ms component transitions, and 280–700 ms scene transitions, then tune by travel and product character. These are starting ranges, not limits on requested narratives. Scroll progression uses distance, not playback duration. Use linear mapping for direct scrubbing and eased sub-beats where appropriate; springs are not mandatory everywhere.
 
@@ -54,8 +60,7 @@ Read only the relevant recipe:
 - [Motion recipes](references/motion-recipes.md): hover scribbles, handwriting reveals, menus, tabs, and interruptible component motion.
 - [Pinned scroll scenes](references/scroll-scenes.md): a fixed-looking stage that transforms as the page scrolls, including live DOM/SVG/3D narratives with no video.
 - [3D and mascots](references/3d-and-mascots.md): spatial scenes, rigs, expression states, original character animation, and resource lifecycle.
-- [Optional motion lab](examples/motion-lab/index.html): an isolated demonstration of a hover-drawn mark, reversible paper assembly in CSS 3D, and an event-driven SVG mascot. Read [example notes](examples/README.md) before adapting a relevant technique; the paper scene is not a required feature.
-- [Built frontend examples](examples/README.md): a design company and an AI company demonstrate distinct art directions and working product interactions. They are examples to adapt, not house templates.
+- [Built frontend examples](examples/README.md): a bicycle repair queue and an observatory visit planner demonstrate different densities, compositions, and working task flows. They are examples to study, not house templates.
 
 ## Make every mode complete
 
@@ -70,5 +75,7 @@ Prefer transform/opacity on large moving regions, but allow measured SVG strokes
 For an audit, report concrete issues with location, impact, and a proportionate fix; do not silently redesign. For implementation, fix issues inside scope and exercise the result. Read [verification](references/verification.md) for the relevant checks, including reverse scroll, rapid hover, runtime reduced motion, mobile, keyboard, and lifecycle behavior.
 
 Inspect actual rendered output and interactions when tools allow. Report exactly what ran and what remains unverified. A still screenshot cannot prove motion quality; a successful build cannot prove accessibility or smoothness. Do not claim “60 fps,” production readiness, or passing browser coverage without evidence.
+
+Before delivering a substantial implementation, perform a visual revision pass on the rendered result. Identify the largest weaknesses in hierarchy, composition, typography, assets, and task clarity; fix the highest-impact issues within scope and recheck the affected views. Compare against the chosen direction and actual content, not a generic style checklist. Do not churn a sound design to satisfy a change quota. If rendering is unavailable, review the source and explicitly report the missing visual verification. See [verification](references/verification.md) for draft-quality evaluation.
 
 Deliver the working artifact and a short handoff covering the visible change, meaningful verification, and any material limitation. Explain implementation only when it helps the requester maintain or assess the work. Do not paste the internal audit or backend details into the product itself.

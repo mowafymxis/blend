@@ -2,7 +2,7 @@
 
 Use when the user describes “fixed scrolling,” a scene that transforms as they scroll, or an animation that feels like a video but is made of live elements. A sticky stage inside a longer normal-flow section is usually the right model. Avoid a globally fixed canvas that covers the rest of the page.
 
-The bundled paper assembly demonstrates one technique only. Do not add that pattern, its choreography, or any pinned scene by default to unrelated sites. Choose a product-specific narrative when the task benefits from scroll storytelling; ordinary portfolio and product pages may use other motion or no pinned sequence.
+Do not add pinned scenes by default to unrelated sites. Choose a product-specific narrative when the task benefits from scroll storytelling; ordinary portfolio and product pages may use other motion or no pinned sequence.
 
 ## Storyboard the state, then map progress
 
@@ -48,10 +48,10 @@ CSS 3D is a real spatial transform system but does not provide mesh geometry or 
 
 Replace the long pinned region with a compact, fully assembled still or normal-flow steps. Remove pin spacing as well as animation. Apply the same change when the OS preference changes during the session. A mobile layout may retain a short stage if legible, or use an ordered sequence; it need not force the desktop choreography into a narrow viewport.
 
-The [motion lab controller](../examples/motion-lab/lab.js) demonstrates bounded progress, refreshed measurements, reverse scrubbing, and a static reduced-motion branch without dependencies or video.
+Implement the static branch before enabling pinning, and verify that both initial and runtime preference changes reach it.
 
 ## Verify the illusion
 
 Inspect start, quarter points, end, reverse direction, fast flicks, resize midway, direct anchor navigation, reduced motion, and no JavaScript. Check for pin-entry jumps, blank scroll runway, overlapping captions, cropped geometry, and unreachable controls. Measure on representative devices before claiming smooth frame rates.
 
-For library work, verify APIs against the installed version and [official ScrollTrigger documentation](https://gsap.com/docs/v3/Plugins/ScrollTrigger/). The dependency-free example is the executable reference here, not a guarantee about untested library versions.
+For library work, verify APIs against the installed version and [official ScrollTrigger documentation](https://gsap.com/docs/v3/Plugins/ScrollTrigger/). The pseudocode above explains progress mapping; it is not a complete controller or a guarantee about untested library versions.

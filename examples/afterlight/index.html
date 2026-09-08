@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta
+      name="description"
+      content="Afterlight: an illustrated observatory visit planner, built with Blend."
+    />
+    <title>Afterlight · An evening under the stars</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a href="#main" class="skip">Skip to the visit planner</a>
+    <header>
+      <a
+        class="brand"
+        href="../"
+        aria-label="Afterlight, back to Blend examples"
+        ><span aria-hidden="true">✳</span> afterlight</a
+      >
+      <nav aria-label="Main">
+        <a href="#evening">The evening</a
+        ><a href="#planner">Plan a visit <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="event-meta">Observatory open evening · Fictional event</p>
+          <h1>A little closer<br />to <em>the infinite.</em></h1>
+          <p class="intro">
+            Leave the bright streets behind. Find a place at the telescope,
+            learn your way around the sky, and take the long way home.
+          </p>
+          <a class="cta" href="#planner"
+            >Make an evening of it <span aria-hidden="true">↗</span></a
+          >
+          <div class="event-details">
+            <div><span>When</span><strong>Saturday, 17 October</strong></div>
+            <div>
+              <span>Where</span><strong>North Ridge Observatory</strong>
+            </div>
+          </div>
+        </div>
+        <div class="sky-art">
+          <svg
+            viewBox="0 0 620 650"
+            role="img"
+            aria-labelledby="sky-title sky-desc"
+          >
+            <title id="sky-title">An imagined night at North Ridge</title>
+            <desc id="sky-desc">
+              A cream moon over an observatory dome, drawn in coral and blue
+              against a dark star field. This illustration is not an
+              astronomical sky map.
+            </desc>
+            <defs>
+              <pattern
+                id="stars"
+                width="97"
+                height="113"
+                patternUnits="userSpaceOnUse"
+              >
+                <circle cx="18" cy="22" r="1" fill="#dfdccd" />
+                <circle cx="79" cy="77" r="1.4" fill="#dfdccd" opacity=".55" />
+              </pattern>
+              <clipPath id="arch">
+                <path d="M30 645V294a280 280 0 0 1 560 0v351Z" />
+              </clipPath>
+              <pattern
+                id="hatch"
+                width="9"
+                height="9"
+                patternUnits="userSpaceOnUse"
+              >
+                <path d="M0 9L9 0" stroke="#182641" stroke-width="2" />
+              </pattern>
+            </defs>
+            <g clip-path="url(#arch)">
+              <path d="M0 0h620v650H0z" fill="#20334d" />
+              <path d="M0 0h620v650H0z" fill="url(#stars)" />
+              <circle
+                cx="360"
+                cy="230"
+                r="133"
+                fill="none"
+                stroke="#8e9ca4"
+                opacity=".25"
+              />
+              <circle
+                cx="360"
+                cy="230"
+                r="199"
+                fill="none"
+                stroke="#8e9ca4"
+                opacity=".25"
+                stroke-dasharray="3 8"
+              />
+              <path
+                d="M68 352L202 231l121 47 130-142 95 54"
+                fill="none"
+                stroke="#adbcbd"
+                stroke-width="1"
+                opacity=".6"
+              />
+              <g fill="#eee7d2">
+                <circle cx="68" cy="352" r="3" />
+                <circle cx="202" cy="231" r="4" />
+                <circle cx="323" cy="278" r="3" />
+                <circle cx="453" cy="136" r="4" />
+                <circle cx="548" cy="190" r="3" />
+                <circle cx="365" cy="230" r="75" />
+              </g>
+              <path
+                d="M385 158a75 75 0 0 1 0 144c42-41 30-115 0-144"
+                fill="#b5bea9"
+              />
+              <path
+                d="M0 552l105-81 105 54 88-40 133 40 103-66 86 93v120H0Z"
+                fill="#17243b"
+              />
+              <path
+                d="M0 598l187-52 200 56 126-34 107 28v75H0Z"
+                fill="#344b56"
+              />
+              <path d="M104 591V486a145 145 0 0 1 290 0v105Z" fill="#db8268" />
+              <path d="M104 486a145 145 0 0 1 290 0Z" fill="#eda185" />
+              <path
+                d="M249 341c-65 42-83 89-83 145h44c0-58 14-109 39-145"
+                fill="#1c2b43"
+              />
+              <path
+                d="M264 342c53 50 69 95 68 144M104 486h290M111 506h277"
+                fill="none"
+                stroke="#a95849"
+                stroke-width="2"
+              />
+              <path d="M104 527h290v64H104Z" fill="url(#hatch)" opacity=".35" />
+              <path d="M237 591v-63h37v63" fill="#17243b" />
+              <path d="M63 595h385" stroke="#eee7d2" stroke-width="3" />
+              <path
+                d="M465 571v-76m-22 26 22-26 26 26m-32 0-22 25m34-25 27 27"
+                stroke="#a6af92"
+                stroke-width="3"
+                fill="none"
+              />
+              <path
+                d="M470 75v24m-12-12h24"
+                stroke="#eee7d2"
+                stroke-width="2"
+              />
+            </g>
+            <path
+              d="M30 645V294a280 280 0 0 1 560 0v351"
+              fill="none"
+              stroke="#7b8b9b"
+              opacity=".5"
+            /></svg
+          ><span class="art-caption"
+            >An imagined night at North Ridge · Original illustration</span
+          >
+        </div>
+      </section>
+      <section id="evening" class="evening">
+        <div class="section-intro">
+          <h2>There’s no wrong<br />place to begin.</h2>
+          <p>
+            No telescope of your own. No constellations to memorize. Just bring
+            your curiosity and something warm.
+          </p>
+        </div>
+        <div class="activities">
+          <article>
+            <span class="activity-symbol" aria-hidden="true">◉</span>
+            <h3>At the eyepiece</h3>
+            <p>
+              A guided look through the dome telescope, with time for the
+              questions you’ve always wanted to ask.
+            </p>
+            <span class="duration">45 minutes · Inside the dome</span>
+          </article>
+          <article>
+            <span class="activity-symbol" aria-hidden="true">✧</span>
+            <h3>Find your bearings</h3>
+            <p>
+              Step onto the terrace for an introduction to reading a star chart
+              and finding your way after dark.
+            </p>
+            <span class="duration">30 minutes · On the terrace</span>
+          </article>
+          <article>
+            <span class="activity-symbol" aria-hidden="true">☾</span>
+            <h3>Take the slow route</h3>
+            <p>
+              A gentle lantern walk around the grounds, ending back at the
+              courtyard for a warm drink.
+            </p>
+            <span class="duration">40 minutes · Around the grounds</span>
+          </article>
+        </div>
+      </section>
+      <section id="planner" class="planner">
+        <div class="planner-copy">
+          <p class="planner-note">
+            Interactive sample · No booking or live availability
+          </p>
+          <h2>Your kind<br />of evening.</h2>
+          <p>
+            Pick a starting time and the experience you’re most curious about.
+            Take a simple plan with you.
+          </p>
+          <div class="orbit" aria-hidden="true">
+            <span>✦</span><i></i><b></b>
+          </div>
+        </div>
+        <form id="plan-form">
+          <fieldset disabled id="planner-fields">
+            <legend>Build your visit plan</legend>
+            <div class="time-label">
+              <label for="arrival">Arrival time</label
+              ><output id="arrival-output" for="arrival">18:00</output>
+            </div>
+            <input
+              type="range"
+              id="arrival"
+              name="arrival"
+              min="0"
+              max="4"
+              step="1"
+              value="0"
+            />
+            <div class="range-labels"><span>18:00</span><span>20:00</span></div>
+            <fieldset class="experience">
+              <legend>Start with</legend>
+              <label
+                ><input
+                  type="radio"
+                  name="experience"
+                  value="telescope"
+                  checked
+                /><span
+                  >At the eyepiece<small>Dome telescope · 45 min</small></span
+                ><span aria-hidden="true">↗</span></label
+              ><label
+                ><input type="radio" name="experience" value="chart" /><span
+                  >Find your bearings<small>Star charts · 30 min</small></span
+                ><span aria-hidden="true">↗</span></label
+              ><label
+                ><input type="radio" name="experience" value="walk" /><span
+                  >Take the slow route<small>Lantern walk · 40 min</small></span
+                ><span aria-hidden="true">↗</span></label
+              >
+            </fieldset>
+            <div class="plan-summary">
+              <h3>Your evening</h3>
+              <ol id="itinerary">
+                <li><time>18:00</time><span>Arrive at the courtyard</span></li>
+                <li><time>18:15</time><span>At the eyepiece</span></li>
+                <li>
+                  <time>19:00</time
+                  ><span>Warm drink &amp; time to explore</span>
+                </li>
+              </ol>
+            </div>
+            <button type="submit">
+              Download my plan <span aria-hidden="true">↓</span>
+            </button>
+            <p class="download-note">
+              A text file for this fictional event. No reservation is made.
+            </p>
+          </fieldset>
+          <noscript
+            ><p>
+              The default plan is shown above. Enable JavaScript to change it
+              and download your plan.
+            </p></noscript
+          >
+          <p id="plan-status" role="status"></p>
+        </form>
+      </section>
+      <section class="before">
+        <h2>Before you head out.</h2>
+        <div>
+          <details>
+            <summary>What should I bring?</summary>
+            <p>
+              For this sample evening, plan for warm layers, comfortable shoes,
+              and a small torch pointed down toward the path.
+            </p>
+          </details>
+          <details>
+            <summary>What if the sky is cloudy?</summary>
+            <p>
+              The sample itinerary can still include a star-chart introduction.
+              Telescope viewing would depend on conditions; this demo does not
+              provide a weather forecast.
+            </p>
+          </details>
+          <details>
+            <summary>Can I book or check access here?</summary>
+            <p>
+              No. North Ridge is fictional, and this example does not offer
+              tickets, real availability, or verified access information. It
+              demonstrates choosing and downloading an itinerary.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a class="brand" href="../"
+        ><span aria-hidden="true">✳</span> afterlight</a
+      >
+      <p>A fictional observatory evening, built with Blend.</p>
+      <a href="../">Explore the examples ↗</a>
+    </footer>
+  </body>
+</html>

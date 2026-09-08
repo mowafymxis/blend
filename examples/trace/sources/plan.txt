@@ -1,8 +1,0 @@
-PROJECT PLAN
-Fictional sample document / Northstar workspace
-
-Maya owns the launch review and readiness decision. Rowan owns the pilot checklist and feedback collection.
-
-Eli owns the source-preview design review. The team will review pilot feedback before deciding on a broader release.
-
-The support handoff is still being planned. A final owner has not been assigned.

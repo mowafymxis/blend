@@ -1,62 +1,60 @@
 # Blend
 
-A frontend skill for deliberate design, concise copy, and motion that feels part of the product. Build anything from a quiet workspace to a scroll-controlled product story, with drawing effects, spatial animation, and original mascots.
+A design skill for frontends with a clear visual direction and working task flows. Blend helps an agent choose a composition, build with real content, and revise the rendered result before delivery. Motion is used where it serves the product.
 
-## Built with Blend
+## See it in use
 
-### Oddfield — design company
+### Bench · Bicycle workshop
 
-[![Oddfield: bold orange typography and original design-studio concept projects](assets/oddfield-preview.png)](examples/oddfield/index.html)
+[![Bench repair queue with green navigation, aligned job records, and an editable detail panel](assets/bench-preview.png)](examples/bench/index.html)
 
-A portfolio-led design studio with project filters, detailed project stories, and a downloadable brief builder. [Explore Oddfield](examples/oddfield/index.html).
+A dense workshop tool: find a repair, inspect it, update its status, or add a sample job. [Explore Bench](examples/bench/index.html).
 
-### Trace — AI company
+### Afterlight · Observatory evening
 
-[![Trace: a restrained AI company with warm neutrals, serif typography, and a source-linked product demo](assets/trace-preview.png)](examples/trace/index.html)
+[![Afterlight observatory page with expressive serif typography and an original illustrated night sky](assets/afterlight-preview.png)](examples/afterlight/index.html)
 
-An editorial AI-company example with prepared sample answers, inspectable source documents, copy feedback, and real downloads. The example uses no live model. [Explore Trace](examples/trace/index.html).
+An illustrated public-facing experience: choose an arrival time and activity, then download a matching visit plan. [Explore Afterlight](examples/afterlight/index.html).
 
-Both are fictional company concepts with working frontend interactions. [Run the examples locally](examples/README.md) or open the [example gallery](examples/index.html).
+Both are fictional, dependency-free demonstrations. They show possible design outcomes; they are not a benchmark of model reliability. No forms send data and no reservations are made. [Run the examples locally](examples/README.md).
 
-The [optional motion lab](examples/motion-lab/index.html) demonstrates drawing, a reversible paper assembly, and an original character. The paper assembly is one example, **not a default pattern or required section**. Neither company site uses it.
+## Use Blend
 
-## Try it
+Copy this repository into your Codex skills directory as a folder named `blend`. Keep `SKILL.md`, references, and examples together. No source skills need to be installed separately.
 
-Ask Codex:
-
-```text
-Use $skill-installer to install https://github.com/mowafymxis/blend
-from path . with the name blend.
-```
-
-Then, on your next turn:
+For a new design:
 
 ```text
-Use $blend to polish this frontend. Preserve the existing copy and brand.
-Draw the small accent on hover and focus, and make state changes feel coherent.
+Use $blend to build a repair scheduling tool. Make finding and updating
+a job easy, with a distinct visual direction and a usable mobile layout.
 ```
 
-Or copy this repository into your Codex skills directory as a folder named `blend`. The folder's `SKILL.md` is the entry point; keep its references and examples alongside it. The skill is self-contained and does not require the source skills to be installed.
-
-For a new landing page:
+For existing work:
 
 ```text
-Use $blend to build a landing page for this offer. Make the next step clear,
-address the audience's main objections, and use only the proof and terms
-I supplied. Choose the layout and motion to fit the brand.
+Use $blend to refine this frontend. Preserve our copy, brand, and routes.
+Inspect the render and fix the most important visual weaknesses.
 ```
 
-## What's inside
+## Inside the skill
 
-- [SKILL.md](SKILL.md): the core design and implementation workflow.
-- [References](references/verification.md): focused guidance for copy, motion, scroll scenes, 3D, mascots, and quality checks.
-- [Landing pages](references/landing-pages.md): offer strategy, evidence, page structure, conversion paths, and search/share checks, without a fixed visual style.
-- [Examples](examples/README.md): the two frontend showcases and a small motion lab.
+- [Core workflow](SKILL.md): scope, design, copy, behavior, and the visual revision pass.
+- [Art direction](references/art-direction.md): choose a composition, type roles, density, and assets from the brief.
+- [Product workflows](references/product-workflows.md): navigation, records, forms, and task continuity.
+- [Landing pages](references/landing-pages.md): offer, evidence, conversion paths, and discovery checks.
+- [Motion recipes](references/motion-recipes.md), [scroll scenes](references/scroll-scenes.md), and [3D and mascots](references/3d-and-mascots.md): conditional techniques, not required effects.
+- [Verification](references/verification.md): behavior checks and a method for evaluating draft quality across fresh runs.
 
-## Contributing
+## Develop and verify
 
-Keep the skill self-contained and changes scoped. Check relative links and exercise affected examples on desktop, mobile, keyboard, and reduced motion. Use the [verification guide](references/verification.md) when changing behavior.
+With Python 3 installed, serve the repository from its root:
+
+```sh
+python -m http.server 18789 --bind 127.0.0.1
+```
+
+Open [the example gallery](http://127.0.0.1:18789/examples/). There is no package installation or build step. Follow the [example checks and preview instructions](examples/README.md) after changes, and the [verification guide](references/verification.md) when revising the skill. Keep local captures and experiments in the ignored `.maintainer/` directory; commit only the selected documentation previews.
 
 ## Credits
 
-Blend combines premium-frontend and frontend-motion-design with ideas from [Taste Skill](https://github.com/Leonxlnx/taste-skill) and landing-page guidance adapted from [Elaya's AI Design Skills](https://github.com/elayadesign/ai-design-skills). See [attribution](THIRD_PARTY_NOTICES.md) and the [MIT license](LICENSE).
+Blend combines premium-frontend and frontend-motion-design guidance with ideas from [Taste Skill](https://github.com/Leonxlnx/taste-skill) and landing-page guidance adapted from [Elaya’s AI Design Skills](https://github.com/elayadesign/ai-design-skills). It selectively adapts these sources rather than inheriting every styling rule. See [attribution](THIRD_PARTY_NOTICES.md) and the [MIT license](LICENSE).
