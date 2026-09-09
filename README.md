@@ -1,8 +1,16 @@
 # Blend
 
-A coordinated suite of **10 frontend skills** for product-specific design, typography, interfaces, imagery, motion, and mascots. Use Blend for the whole project or invoke a specialist for a focused task.
+A coordinated suite of **11 frontend skills** that asks about your design preferences before building: typography, light/dark themes, layout, illustration, mascots, small animations, atmosphere, and scroll storytelling. Use Blend for a whole project or a specialist for a focused task.
 
-The suite helps an agent make connected design decisions. It does not prescribe one font pairing, palette, page structure, animation library, or level of spectacle. A busy app, an editorial site, and a product launch should have different reasons behind their form.
+New builds and substantial redesigns start with a staged interview, then a decision record the draft must follow. Existing answers are reused; narrow fixes stay narrow. You can ask for specimens, delegate a choice, or explicitly skip questions. The suite does not prescribe a font pairing, palette, page structure, animation library, or level of spectacle.
+
+```text
+You: Build a premium AI homepage with a mascot and clean drawn animations.
+Blend: Asks about product, reference roles, theme, typography, character,
+       local animation, and scroll behavior in manageable rounds.
+You: Choose dark, clean sans, an original pixel companion, and no pinned scroll.
+Blend: Records those choices, resolves remaining questions, then builds to them.
+```
 
 ## Install
 
@@ -14,7 +22,7 @@ cd blend
 python scripts/install.py
 ```
 
-The installer copies all ten folders into `$CODEX_HOME/skills`, or `~/.codex/skills` when `CODEX_HOME` is unset. It does not install the gallery, vendor files, or reference captures. Start a new task/session if your client caches its skill catalog.
+The installer copies all eleven folders into `$CODEX_HOME/skills`, or `~/.codex/skills` when `CODEX_HOME` is unset. It does not install the gallery or reference captures. Start a new task/session if your client caches its skill catalog.
 
 To update an existing installation, including the former single Blend skill:
 
@@ -30,7 +38,8 @@ For manual installation, copy **each folder inside `skills/`** into your skills 
 
 | Skill | Owns |
 |---|---|
-| [blend](skills/blend/SKILL.md) | Overall direction, scope, specialist selection, and integration |
+| [blend](skills/blend/SKILL.md) | Interview-first coordination, scope, specialist selection, and integration |
+| [blend-discovery](skills/blend-discovery/SKILL.md) | Staged questions, reference preferences, visual comparisons, and a user decision record |
 | [blend-art-direction](skills/blend-art-direction/SKILL.md) | Reference interpretation, composition, visual character, and stylistic range |
 | [blend-typography](skills/blend-typography/SKILL.md) | Type selection, real-text specimens, optical tuning, responsive and multilingual typesetting |
 | [blend-interface](skills/blend-interface/SKILL.md) | App workflows, records, forms, navigation, state continuity, and useful copy |
@@ -58,6 +67,8 @@ Preserve our brand and compare suitable type roles before choosing.
 
 Blend loads only relevant specialists. A specialist can be used directly without running the coordinator first. This is modular guidance, not a requirement to spawn multiple agents or apply every effect.
 
+For a detailed brief, start with [the question bank](skills/blend-discovery/references/question-bank.md). It separates pencil/ink mini scenes, character acting, ambient fields, and continuous scroll motion; these are independent choices. The [brief template](skills/blend-discovery/references/design-brief.md) keeps selected, delegated, proposed, and unresolved decisions distinct.
+
 ## What the references teach
 
 The [reference lenses](skills/blend-art-direction/references/reference-lenses.md) separate observed appearance, motion evidence, and reusable principles from the supplied Claude Design, Apple, OpenClaw, and mascot references. They teach stable reading surfaces around local animation, resolved product imagery, coherent visual worlds, and economical character acting. They do not bundle those sites' artwork or turn their styling into defaults.
@@ -68,11 +79,13 @@ The [quality calibration guide](skills/blend-art-direction/references/quality-ba
 
 The [staged illustration guide](skills/blend-micro-motion/references/staged-illustrations.md) closely analyzes the supplied card recording and separates observation from implementation. It covers a fixed frame, internal reconfiguration, accent return, mark resolution, recognition time, and explicit interruption/replay policies. A root-level bounce is not a substitute for that choreography.
 
-These criteria are carried through all ten skills in their respective roles, including product evidence, readable supporting type, modest mascot acting, and review of both still and moving states.
+The specialists also cover [drawn illustration craft](skills/blend-micro-motion/references/drawn-illustrations.md), [ambient fields](skills/blend-micro-motion/references/ambient-motion.md), [light/dark surfaces](skills/blend-art-direction/references/themes-and-surfaces.md), and [live, video, or frame-based cinematic scenes](skills/blend-scroll/references/cinematic-media.md). Quality review checks the user's selected direction as well as still and moving states.
 
 ## Technique examples
 
 Two original company landing pages apply the suite to different offers, reading structures, and visual material. They are handcrafted demonstrations, not default templates or evidence of consistent model output quality.
+
+The existing examples predate the interview workflow. Use the separate [Morrow and Format redesign questionnaires](examples/redesign-questions.md) to choose their next direction before rebuilding them.
 
 [![Morrow AI company landing page](assets/morrow-preview.png)](examples/morrow/index.html)
 

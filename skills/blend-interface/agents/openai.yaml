@@ -1,4 +1,4 @@
 interface:
   display_name: "Blend Interface"
   short_description: "Build coherent app workflows and UI states"
-  default_prompt: "Use $blend-interface to improve this part of the frontend while respecting the project direction and requested scope."
+  default_prompt: "Use $blend-interface to clarify unresolved workflow and design choices for this app, then build its interface while preserving existing scope and behavior."

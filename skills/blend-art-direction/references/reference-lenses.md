@@ -4,7 +4,7 @@ These lenses come from reference pages inspected on 2026-09-09. Sites change. Re
 
 ## Claude Design: calm structure and expressive detail
 
-The inspected [Claude Design page](https://claude.com/product/design) uses a light field, a prominent editorial serif heading, quieter sans-serif explanation, and a large media region. The useful relationship is the hierarchy: the words orient the visitor before the visual demonstration takes attention.
+The [Claude Design page](https://claude.com/product/design) uses a prominent editorial serif heading, quieter sans-serif explanation, and a large media region. This session rendered it on a dark field; an earlier suite observation recorded a light field. Theme is therefore an explicit interview choice, not a fixed property to infer from this reference. The useful relationship is the hierarchy: words orient the visitor before the demonstration takes attention.
 
 Transfer that separation of orientation and demonstration. Choose a different face, palette, alignment, or imagery when the brief warrants it. Do not make serif headlines, cream surfaces, hand-drawn accents, or identical hero proportions universal defaults. The page's media is not evidence that all of its effects are live DOM animation.
 
@@ -28,11 +28,11 @@ Transfer silhouette economy, consistent proportions, pose readability, and groun
 
 ## The supplied card recording: animate inside a stable frame
 
-In the user's short recording, the text and card stay in place while a small grid-and-badge illustration changes. The badge contracts away, the internal grid divisions shift, the badge returns at its anchor, and an arrow resolves within it. The sampled frames establish that local sequence; they do not establish the input trigger or precise easing.
+In the newly supplied 3.285-second recording, the text and card stay in place while a small grid-and-badge illustration changes. Sampled frames show the badge appearing and its interior arrow resolving, followed by a held result. An earlier, longer suite reference includes withdrawal and grid reorganization. Keep those observations separate; neither sampled sequence establishes the input trigger or precise easing.
 
 Transfer the division of labor: static information remains easy to read, while a small illustration performs a coherent visual action. Another product might use a connector linking nodes, a folded route revealing a destination, or a pair of objects aligning. Those are possible interpretations, not required motifs. The closer sampled analysis and an implementation model are in [staged illustration choreography](../../blend-micro-motion/references/staged-illustrations.md). Match the part relationships and pacing when requested, not merely the green palette or an icon scale effect.
 
-The supplied app screenshot offers a related static lesson: a small line illustration anchors a quiet empty state, with a clear heading, short explanation, and action. Its restrained scale leaves navigation and task orientation intact. The still image establishes composition, not whether the drawing animates. Empty states can carry character without becoming marketing heroes.
+The two supplied app screenshots offer a related static lesson: slightly irregular light outlines depict a hand and geometric objects on charcoal; small filled areas support the drawing. A clear heading, short explanation, and one rounded action sit below. The stills establish drawing language and composition, not whether or how the hands animate. Use [drawn illustration craft](../../blend-micro-motion/references/drawn-illustrations.md) for an original family in this language.
 
 ## Combine principles, not borrowed parts
 

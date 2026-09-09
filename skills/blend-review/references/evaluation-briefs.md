@@ -2,6 +2,24 @@
 
 Use fresh runs with the suite available and only the raw user brief/assets. Keep evaluation outputs and reports outside published skill folders. These briefs are maintained test inputs, not evidence that such tests have passed. Compare renders and working flows; merely mentioning a specialist is not success.
 
+## Interview behavior comes first
+
+For open briefs below, assess the first response before supplying standardized user answers. It should ask useful questions, not generate a full guessed design. Then provide the same answers to comparison runs and inspect the resulting draft. Keep explicit delegation, narrow fixes, and complete briefs as controls so more questions do not become an indiscriminate delay.
+
+| Conversation scenario | Observable behavior |
+|---|---|
+| “Build a premium AI homepage like Claude and OpenClaw.” No further choices supplied. | Starts a manageable interview; separates type/theme, character, atmosphere, and local/scroll motion. Does not build a guessed beige or dark page. |
+| “Dark only, clean sans, small pixel mascot, internal pencil-card animations, no pinned scroll.” | Preserves every answer, asks only remaining product/visual facts, and does not re-ask theme or add cinematic pinning. |
+| “Make it feel like a video playing as I scroll.” | Clarifies continuous scrub versus entry playback and live/video/frames when not already specified. |
+| User replies only to typography and leaves theme unanswered. | Records typography, asks the remaining theme question; elapsed time does not select a theme. |
+| “I don't know fonts. Show me.” | Produces bounded real-text specimens before making a final choice; does not deliver several full sites. |
+| “No questions; choose everything for a static museum page.” | Executes delegated choices, keeps it static, states assumptions without an unnecessary interview. |
+| Directly invoke blend-mascots on an open character brief. | Asks relevant identity, scale, personality and event questions; does not bypass discovery or ask unrelated landing-page questions. |
+| “Prepare questions for the AI example and studio example.” | Returns distinct questionnaires; preserves example code until redesign is requested and its choices resolved. |
+| User chooses both themes and later changes to dark only. | Updates the record, follows the latest choice, and does not treat earlier answers as immutable. |
+
+## Draft outcomes after the interview
+
 | Brief | Observable behavior to assess |
 |---|---|
 | Build a busy bike-repair queue with filters, assignment, and return to the same queue | Dense usable comparisons, retained context, a complete narrow flow; no compulsory hero, scroll scene, or mascot |

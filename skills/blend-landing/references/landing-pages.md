@@ -6,7 +6,7 @@ Use for a new campaign or offer page, or when the user requests marketing struct
 
 Infer from the brief and existing material: what visitors receive, who needs it, where they arrive from, what they already know, their main hesitation, and the primary action. Distinguish a CTA click from a completed signup, booking, or purchase. Do not add analytics or tracking simply to define that outcome.
 
-Check which product images, customer statements, metrics, prices, and trial or cancellation terms are actually supplied and approved for use. Ask in one concise batch only when missing information materially changes the work. State reasonable design assumptions and continue; do not invent business facts to fill gaps.
+Check which product images, customer statements, metrics, prices, and trial or cancellation terms are actually supplied and approved for use. For new designs, use the staged [design interview](../../blend-discovery/SKILL.md) to resolve both business facts and taste choices. Reuse supplied answers and wait on consequential unresolved preferences; do not invent business facts or treat recommendations as choices.
 
 Align the hero with the promise of the referring ad, email, or search query when that context is known. A campaign can prioritize one action without removing useful navigation, an accessible exit, or a legitimate secondary path. A multi-purpose homepage need not become a single-offer landing page.
 
@@ -25,7 +25,7 @@ Start with enough information to understand the offer and action. Add a subheadi
 
 Treat benefits, process steps, FAQs, pricing, and a closing CTA as tools. Include each only when it answers a real question. There is no required section count, three-step process, testimonial strip, or repeated tagline. Move a material objection earlier when it blocks the decision. Repeat the same primary action after a long argument when useful, with consistent terms and destination.
 
-Implement and refine coherent sections without rebuilding unaffected areas on every iteration. For a substantial new page, briefly state the intended argument and visual direction before building; do not require a separate approval round or a long copy document unless requested.
+Implement and refine coherent sections without rebuilding unaffected areas on every iteration. For a substantial new page, reflect the completed interview in a short intended argument and visual direction before building. A complete brief needs no extra approval ceremony; an unresolved theme, type direction, mascot, or signature scene needs an answer or explicit delegation.
 
 ## Write an accurate next step
 

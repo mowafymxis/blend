@@ -1,4 +1,4 @@
 interface:
   display_name: "Blend Art Direction"
   short_description: "Choose a visual world that fits the product"
-  default_prompt: "Use $blend-art-direction to improve this part of the frontend while respecting the project direction and requested scope."
+  default_prompt: "Use $blend-art-direction to establish the visual direction with me, clarifying reference roles, typography, themes, composition, and artwork before a substantial redesign."

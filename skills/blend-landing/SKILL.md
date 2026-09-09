@@ -7,6 +7,8 @@ description: Shape marketing and product landing pages around a clear offer, cre
 
 Own the page's argument and conversion behavior. Read [landing-page strategy](references/landing-pages.md) for audience intent, evidence, search/share readiness, and form verification. Existing copy and campaign goals remain protected when they are outside the requested change.
 
+For a new landing page or substantial redesign, use [discovery](../blend-discovery/SKILL.md). Ask about the offer and actual action, then reference roles, typography, theme, leading visual, illustration, mascot, atmosphere, and whether scroll storytelling is wanted. Separate an AI product demonstration from its mascot, and a studio's project work from its decorative process graphics. Carry existing answers forward instead of starting another questionnaire.
+
 Determine what a new visitor needs to understand, believe, compare, and do. Sequence sections by those questions. Do not require hero/features/testimonials/pricing/FAQ on every page. Use supplied facts; missing customer proof calls for an honest demonstration, sample, or explanation, never invented endorsements or numbers.
 
 Choose proof that visitors can inspect: a real product capture, a meaningful interactive example, an authorized object image, or clearly labeled conceptual illustration. Place the claim and relevant proof together. Large imagery earns space by showing something; motion earns time by making a relationship visible or strengthening the intended character.

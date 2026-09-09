@@ -1,4 +1,4 @@
 interface:
   display_name: "Blend Review"
   short_description: "Review rendered craft, behavior, and motion"
-  default_prompt: "Use $blend-review to inspect this frontend against its brief and report concrete visual and behavioral findings."
+  default_prompt: "Use $blend-review to compare this frontend with the user decision record and references, reporting concrete visual, behavioral, and motion findings."

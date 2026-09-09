@@ -4,7 +4,7 @@ Use for substantial builds, expressive interactions, and scroll stories. Small c
 
 ## Choose the experience, then the medium
 
-Read the page as a sequence of user intentions. Identify where attention should land, what is worth exploring, and how often someone repeats the task. Form a compact internal decision: **visual anchor; small interaction opportunities; signature scene or none; chosen medium and why; fallback**. Compare credible alternatives when the brief is open. Do not turn this into product copy or a new approval gate.
+Read the page as a sequence of user intentions. Identify where attention should land, what is worth exploring, and how often someone repeats the task. Use the [discovery answers](../../blend-discovery/SKILL.md) to record **visual anchor; selected local motion; atmosphere; signature scene or none; chosen medium and why; fallback**. Ask about unresolved behavior and explain credible alternatives before selecting. Keep this planning out of product copy; once the user has answered or delegated, implement without repeated approval.
 
 These questions decide different things; they are not an escalating ladder from static to 3D:
 

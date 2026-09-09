@@ -7,6 +7,8 @@ description: Design and implement usable app workflows, navigation, records, for
 
 Own task completion and interface structure. Start from the recurring user activity, not a landing-page hero. Read [product workflows](references/product-workflows.md) for records, navigation, forms, and continuity, and [copy and craft](references/copy-and-craft.md) when visible wording needs work.
 
+For a new app or broad redesign, use [discovery](../blend-discovery/SKILL.md) to ask about primary flows, density, type, themes, illustrated empty states, and desired motion. Ask which existing behavior must stay. Reuse answered preferences; a narrow fix inherits the surrounding interface. Empty-state drawings, mascot cameos, and animated controls are separate choices, not a bundled style.
+
 Trace entry, orientation, action, result, and recovery using actual data contracts. Keep filters, selection, drafts, scroll position, and relevant context when users move between list and detail. Design the narrow version around the same task; a table may need priority columns or a detail view rather than tiny text.
 
 Use density deliberately. Frequently compared records benefit from alignment and stable columns. Occasional high-consequence actions benefit from clear context and consequences. Match visual emphasis to importance, not component availability. Do not wrap every item in a floating card or add dashboard metrics without a real use.

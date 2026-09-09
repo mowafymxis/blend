@@ -7,6 +7,8 @@ description: Choose, create, and integrate frontend imagery, illustration, and l
 
 Own the visual medium and its fidelity in the final composition. Choose among supplied photography, product captures, generated imagery, code-native illustration, video, and live geometry based on the job. No medium is inherently more premium.
 
+Resolve asset preferences through [discovery](../blend-discovery/SKILL.md): exact or conceptual subject, pencil/ink versus precise drawing, photo/render/live geometry, theme variants, intended prominence, source availability, and production budget. Show a small direction specimen when the user cannot choose from words. Do not generate final hero art before unresolved visual preferences are answered. Preserve selected media rather than replacing difficult assets silently.
+
 ## Resolve the asset before dependent polish
 
 For a prominent visual, define what it communicates, its subject, scale, focal point, desktop/mobile crop, palette, lighting, source, and fallback. Inspect it in the actual layout early. A weak asset cannot be rescued by a dramatic entrance. Change the composition when a stronger available medium would improve the result.
@@ -28,7 +30,7 @@ Unify optical scale, line weight, perspective, lighting, saturation, and level o
 
 Use reserved dimensions, responsive sources, and intentional crops. Check transparent edges, sharpness, compressed gradients, contrast behind text, and dark/light surfaces actually supported. Meaningful descriptions belong in accessible text. Put interactive labels and controls in semantic DOM.
 
-For a family of small illustrations, create a shared drawing grammar before animation: optical size, contour thickness, caps/joins, fill-to-outline balance, deliberate irregularity, and overlap rules. Inspect several stills beside their text at actual card size. Separate the moving parts while authoring; one flattened icon cannot perform an internal reconfiguration. Use [part choreography](../blend-micro-motion/references/staged-illustrations.md) when the sequence depends on structure, accent body, and interior mark.
+For a family of small illustrations, create a shared drawing grammar before animation: optical size, contour thickness, caps/joins, fill-to-outline balance, deliberate irregularity, and overlap rules. Use [drawn illustration craft](../blend-micro-motion/references/drawn-illustrations.md) for pencil/ink-like references. Inspect several stills beside their text at actual card size in every chosen theme. Separate the moving parts while authoring; one flattened icon cannot perform an internal reconfiguration. Use [part choreography](../blend-micro-motion/references/staged-illustrations.md) when the sequence depends on structure, accent body, and interior mark.
 
 For a design studio or product company, the visual anchor must withstand close inspection. Show coherent identity applications, actual interface content, or an intentionally authored object. A collection of unrelated abstract tiles is weak evidence of design work. A generic mascot or primitive enlarged to hero scale is weak evidence of an AI product. Reduce its prominence or resolve a stronger asset; do not add more texture and motion to conceal the mismatch.
 

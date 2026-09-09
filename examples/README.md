@@ -2,6 +2,8 @@
 
 Two original company landing pages apply the Blend suite to different offers, compositions, and types of evidence. They are handcrafted demonstrations, not templates to repeat or proof of consistent model output quality.
 
+Their next redesign starts with the [Morrow and Format questionnaires](redesign-questions.md). These preserve open choices about themes, typography, illustration, mascot, atmosphere, and scroll behavior; the current examples are not claimed as outputs of the new interview workflow.
+
 | Example | Direction | Working behavior |
 |---|---|---|
 | [Morrow](morrow/index.html) | An AI-company concept; editorial Newsreader, quiet DM Sans UI, an original paper mascot, and articulated line illustrations | Three scripted conversations, response copy with a text-download fallback, mascot greeting, and finite illustration replay |

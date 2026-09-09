@@ -7,6 +7,8 @@ description: Establish product-specific visual direction and composition from a 
 
 Own visual character and composition. Produce decisions that can be seen in a render, not adjective lists or a menu of fashionable styles. In an established product, preserve its identity unless the user requests an overhaul.
 
+For new or substantially changed identity, use [discovery](../blend-discovery/SKILL.md) before choosing. Ask about reference roles, desired closeness, dislikes, visual density, leading subject, theme coverage, and material character. Direct invocation does not bypass the interview. Reuse an existing decision record; do not re-ask settled choices. For light/dark systems, read [themes and surfaces](references/themes-and-surfaces.md).
+
 ## Interpret references at three levels
 
 Separate appearance (scale, contrast, type, crop, spacing), behavior (trigger, sequence, pacing, interruption), and transferable principle (why attention or comprehension improves). Inspect the live page or supplied recording for behavior; a still establishes only appearance. Read [reference lenses](references/reference-lenses.md) when studying the suite's motivating examples. Do not infer hidden implementation from appearance.
@@ -17,7 +19,7 @@ For a requested resemblance or an off-taste result, read [quality calibration](r
 
 ## Choose a direction that has reasons
 
-Consider substantially different treatments when the brief is open. Distinguish them by content structure, hierarchy, type behavior, assets, and pacing, not only color or font substitutions. Select the one best suited to the audience, task frequency, content, brand, and available material. This is a thinking step, not a required multi-design deliverable or approval round.
+When taste is unresolved, describe or show a few meaningfully different directions and ask the user to choose or delegate. Distinguish them by content structure, hierarchy, type behavior, assets, and pacing, not only color. Use small specimens or storyboards when words are inadequate. Once a direction is selected, make routine composition decisions within it without repeated approval. Do not turn the user's request for a combination into a choice of only one reference.
 
 Make the choice concrete: what dominates the first view; how reading proceeds; how sections change density and scale; what carries personality; what stays quiet. Choose the page's silhouette before isolated components. A centered hero can be right; so can a compact workspace, image field, editorial column, or asymmetric composition. No one is the default.
 

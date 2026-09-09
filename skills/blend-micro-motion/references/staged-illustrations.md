@@ -2,9 +2,9 @@
 
 Use when a reference shows an object contracting, reorganizing, returning, and resolving inside a stationary card. The task is to direct a miniature sequence, not apply an entrance animation to an icon. Use the user's visual language; the shapes below are an explanation of mechanics, not assets to copy.
 
-## What the supplied recording actually shows
+## Earlier reference episode
 
-The inspected clip is about 4.87 seconds at 30 fps. A ten-frame-per-second crop gives this approximate reading:
+An earlier suite study described a roughly 4.87-second clip at 30 fps with the sequence below. This is historical reference analysis, not a timing measurement of every subsequently supplied recording. The newer 3.285-second clip is described separately below.
 
 | Approximate clip time | Observed change |
 |---|---|
@@ -16,6 +16,10 @@ The inspected clip is about 4.87 seconds at 30 fps. A ten-frame-per-second crop 
 | About 2.5 s onward | The complete illustration holds, giving the action time to be recognized. |
 
 These are sampled observations, not exact keyframe values or knowledge of the source code. The recording does not establish the trigger, easing function, event semantics, or whether it loops. Its slightly irregular lines do not establish that noise is regenerated each frame. Do not reproduce those unknowns as facts.
+
+## New supplied excerpt, 2026-09-09
+
+The 20:47:03 screen recording is approximately 3.285 seconds at 30 fps, 1698 × 422. Four samples per second show an initially visible grid without a substantial badge, the filled circular accent appearing near the lower-right grid corner by about 0.25 seconds, the internal line changing toward an upward arrow over the next samples, and a resolved pose from around one second onward. The surrounding card, words, and button stay stable. These samples do not establish a complete prior withdrawal episode, exact easing, the trigger, or loop behavior. Use the source clip for finer timing decisions rather than applying the earlier episode's timestamps to it.
 
 The important structure is **withdraw an accent → reorganize its supporting structure → return the accent → resolve its interior → rest**. The frame and reading layer remain stable. A slight scale change alone misses most of the sequence.
 

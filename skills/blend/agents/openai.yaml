@@ -1,4 +1,4 @@
 interface:
   display_name: "Blend"
-  short_description: "Coordinate a complete frontend design project"
-  default_prompt: "Use $blend to build or refine this frontend, choosing the relevant specialists and a direction that fits its product."
+  short_description: "Interview first, then build a coherent frontend"
+  default_prompt: "Use $blend to ask me the important design questions before building this frontend, then carry my choices through the relevant specialists."

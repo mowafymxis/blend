@@ -4,9 +4,9 @@ Use for a new design or an authorized visual overhaul. An existing brand or exac
 
 ## Make a direction concrete
 
-Write a short internal direction connecting evidence to decisions: who is using this, what they need to do, how the product should feel, and how composition, type, color, and imagery express that. Replace adjectives such as “premium” with visible choices and a reason. For example: “A repair coordinator scans many jobs repeatedly; use aligned rows, clear status text, compact controls, and a persistent detail panel. Reserve the accent for the next action.”
+Write a short direction from the user's [discovery answers](../../blend-discovery/SKILL.md): who is using this, what they need to do, how it should feel, and how composition, type, color, and imagery express that. Distinguish their selections from recommendations and delegated decisions. Replace “premium” with visible choices and a reason. For example: “A repair coordinator scans many jobs repeatedly; use aligned rows, clear status text, compact controls, and a persistent detail panel. Reserve the accent for the next action.”
 
-For an open brief, consider two plausible approaches internally and select the better fit. This is a decision aid, not a demand to generate multiple sites or seek approval. Preserve useful asymmetry, centered layouts, expressive type, or familiar patterns when the content supports them.
+For an open brief, help the user choose or delegate consequential visual preferences before selecting a direction. Use small comparisons when useful, not multiple unsolicited full websites. Preserve selected asymmetry, centered layouts, expressive type, or familiar patterns when the content supports them.
 
 | Content or task | Useful starting decision | Check before committing |
 |---|---|---|

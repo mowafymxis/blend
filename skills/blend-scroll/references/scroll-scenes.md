@@ -1,6 +1,8 @@
-# Pinned, scroll-controlled scenes without video
+# Pinned, scroll-controlled live scenes
 
 Use when the user describes “fixed scrolling,” a scene that transforms as they scroll, or an animation that feels like a video but is made of live elements. A sticky stage inside a longer normal-flow section is usually the right model. Avoid a globally fixed canvas that covers the rest of the page.
+
+Confirm that live elements are actually the selected medium. If the request only says “like a video,” use [cinematic medium choices](cinematic-media.md) first; video seeking and rendered frames are supported choices when accepted by the user.
 
 Do not add pinned scenes by default to unrelated sites. Choose a product-specific narrative when connected beats explain a relationship, reveal an object, or create a deliberate experience. Use the [decision table](motion-direction.md#choose-the-experience-then-the-medium) to decide whether the page earns one; ordinary portfolio and product pages may use smaller motion or no pinned sequence.
 

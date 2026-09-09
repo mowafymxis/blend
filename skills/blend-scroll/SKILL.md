@@ -7,6 +7,8 @@ description: Direct and implement continuous scroll storytelling with composed s
 
 Own a connected narrative controlled by scroll. Read [motion direction](references/motion-direction.md) for staging and medium decisions, and [scroll implementation](references/scroll-scenes.md) for measurement, pinning, progress, and lifecycle.
 
+Use the scroll branch of [discovery](../blend-discovery/SKILL.md) before selecting a signature scene. Ask whether scroll should scrub a continuous transformation or merely trigger a reveal, what changes and why, preferred prominence/length, live objects versus video/frames, and the mobile alternative. A premium reference does not answer those questions. When the user has already specified the scene and medium, use those answers directly. Read [cinematic medium choices](references/cinematic-media.md) if “like a video” is ambiguous or video/frame scrubbing is selected.
+
 Decide whether the page earns the scene. A transformation, spatial relation, process, or compelling visual story can justify a sustained stage. Lookup, urgent tasks, and short offers usually benefit from direct flow. Premium does not imply pinning. When the user explicitly requests a live scroll scene, implement that behavior rather than substituting fade-up sections or a video.
 
 Write a concrete visual sentence: subject, change, insight, destination. Compose opening, revealing intermediate poses, recognition hold, and landing frame. Carry the same subject or spatial anchor across beats. Keep type quiet during complex object motion; hold the object when readers need to absorb text.

@@ -7,6 +7,8 @@ description: Design and animate original or supplied interface mascots with expr
 
 Own a character's identity, acting, and relationship to the product. Mascots are especially useful when the user wants companionship, onboarding, or a memorable app identity; do not add one to every site. A request for general polish is not itself a character brief.
 
+Use the mascot branch of [discovery](../blend-discovery/SKILL.md) before inventing a character: supplied versus original identity, medium, silhouette, personality, prominence, placement, reactions, idle frequency, and useful interaction. A Claude-like request leaves these choices open. If the user wants help choosing, show a few silhouettes with neutral and expressive poses at intended size. Do not impose paper, pixel, orange, a tiny cameo, or a hero mascot without an answer or delegation. For animation-only changes to an established character, preserve its design and ask only about unresolved behavior.
+
 ## Establish a character that belongs
 
 Define role, temperament, silhouette, proportions, face, palette, and actual display size. Derive identity from the product world. References can suggest expressive economy or stepped geometry; they do not make the same orange block character appropriate everywhere. Preserve the user's supplied character when reproduction is requested and authorized; otherwise design an original identity rather than presenting another brand as the user's own.
@@ -19,7 +21,7 @@ Separate body placement, body deformation, face, eyes, mouth, limbs, and props. 
 
 For pixels, use a consistent unit grid and test at actual small sizes. Keep features readable, avoid hairline gaps and accidental edge shimmer, and choose stepped or smooth motion deliberately. With a supplied reference, retain recognizable proportions throughout deformation rather than rebuilding a vaguely similar face.
 
-Choose the character's attention budget alongside its silhouette. A quiet product companion often reads better as a small cameo near the task than as a dominant hero illustration. Test neutral, noticing, and resolved expressions at the actual size before elaborate acting. One eye shift, a restrained body adjustment, and a held expression can say more than simultaneous limbs, mouth, props, and bouncing.
+Choose the character's attention budget with the user alongside its silhouette. A quiet companion can be a small cameo; a character-led brand may deliberately choose a larger role. Keep the product understandable at either scale. Test neutral, noticing, and resolved expressions at the actual size before elaborate acting. One eye shift, a restrained body adjustment, and a held expression can say more than simultaneous limbs, mouth, props, and bouncing.
 
 Match the references' economy without copying their identity. Preserve facial spacing through deformation, keep a stable contact/attachment point, and make a brief reaction end in a deliberate rest. If the page uses staged line illustrations elsewhere, let the mascot share their line quality and pacing without making every graphic a character. In a scripted product sample, react to the actual selection or reveal; do not pretend a model is thinking.
 

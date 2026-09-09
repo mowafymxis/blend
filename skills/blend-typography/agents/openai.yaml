@@ -1,4 +1,4 @@
 interface:
   display_name: "Blend Typography"
   short_description: "Set expressive, readable, responsive typography"
-  default_prompt: "Use $blend-typography to improve this part of the frontend while respecting the project direction and requested scope."
+  default_prompt: "Use $blend-typography to clarify my type preferences and show real-text specimens where useful, then refine typography within the agreed direction."

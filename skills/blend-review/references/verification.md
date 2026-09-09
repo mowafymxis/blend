@@ -4,6 +4,8 @@ Match the checks to the requested change. Record observed outcomes, not blanket 
 
 ## Product and visual review
 
+Before visual scoring, compare the draft with the user's decision ledger. Verify selected themes/default behavior, type roles, illustration medium, mascot prominence, local-motion triggers, ambient treatment, scroll medium, and explicit dislikes. Record any material divergence and whether it was delegated. A technically polished draft in an unchosen style has not met the brief.
+
 Check the primary task, hierarchy, text density, readable type, crops, whitespace, and real states. Read every visible string. Remove backend/process leakage and unnecessary prose; preserve useful content. Check every preheading, badge, and header motto: delete it if the heading or nearby content already supplies its meaning, and close the leftover gap. Keep labels that identify actual categories, states, or sample content. Check meaningful claims against supplied facts and visibly label sample data. Verify routes and controls instead of accepting click-shaped decoration.
 
 Inspect narrow and wide layouts, a short viewport, long text, and zoom. Check touch target usability, horizontal overflow, focus visibility, and alignment. Theme checks cover the themes the product actually supports; do not add dark mode merely to satisfy a checklist.
