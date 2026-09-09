@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blend Micro Motion"
+  short_description: "Direct small illustrated and interactive sequences"
+  default_prompt: "Use $blend-micro-motion to improve this part of the frontend while respecting the project direction and requested scope."

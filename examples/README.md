@@ -43,4 +43,4 @@ For previews, capture the opening viewport at 1440 × 1050 after fonts, images, 
 
 For Three.js updates, replace both `three.module.js` and `three.core.js` from the same pinned npm version and preserve its license; rerun the scene checks. Do not add source maps or unused addons. The original files are distributed by [Three.js](https://www.npmjs.com/package/three).
 
-Use [the verification guide](../references/verification.md) for skill-level evaluation. These handcrafted examples do not establish improvements across future model runs.
+Use [the verification guide](../skills/blend-review/references/verification.md) for skill-level evaluation. These handcrafted examples do not establish improvements across future model runs.

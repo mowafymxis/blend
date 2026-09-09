@@ -6,9 +6,11 @@ Blend also incorporates the project's premium-frontend and frontend-motion-desig
 
 Postscript and Relay are original fictional frontend demonstrations. Postscript's poppy still life was generated for this example; its interface and handwriting paths are authored locally. Relay uses original procedural geometry and textures. Neither represents real products, customers, or businesses.
 
-Relay includes unmodified `three.module.js` and `three.core.js` from Three.js 0.186.0, Copyright 2010–2026 Three.js Authors, under the MIT license. The full license is retained in [examples/relay/vendor/LICENSE](examples/relay/vendor/LICENSE). These are runtime dependencies, not unused source archives.
+Relay includes unmodified `three.module.js` and `three.core.js` from Three.js 0.186.0, Copyright 2010–2026 Three.js Authors, under the MIT license. The full license is retained in [examples/relay/vendor/LICENSE](https://github.com/mowafymxis/blend/blob/main/examples/relay/vendor/LICENSE). These are runtime dependencies, not unused source archives.
 
-The documented upstream revisions describe provenance, not automatic synchronization with future source changes.
+The documented upstream revisions describe provenance, not automatic synchronization with future source changes. Adapted guidance now lives in the focused folders under `skills/`. The installer includes these notices and the project license with each installed skill.
+
+The Claude, Apple, OpenClaw, and mascot pages are linked design references. Their screenshots, recordings, source code, and character artwork are not distributed with the suite; observations inform general design decisions rather than reusable copies of their assets.
 
 ## Taste Skill license
 

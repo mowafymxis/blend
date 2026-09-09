@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blend Mascots"
+  short_description: "Create expressive characters for real app events"
+  default_prompt: "Use $blend-mascots to improve this part of the frontend while respecting the project direction and requested scope."

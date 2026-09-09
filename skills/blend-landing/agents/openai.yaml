@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blend Landing"
+  short_description: "Explain an offer and build a credible conversion path"
+  default_prompt: "Use $blend-landing to improve this part of the frontend while respecting the project direction and requested scope."

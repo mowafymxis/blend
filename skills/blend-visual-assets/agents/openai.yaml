@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blend Visual Assets"
+  short_description: "Choose and integrate imagery, illustration, and 3D"
+  default_prompt: "Use $blend-visual-assets to improve this part of the frontend while respecting the project direction and requested scope."

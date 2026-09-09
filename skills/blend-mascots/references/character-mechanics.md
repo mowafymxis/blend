@@ -1,16 +1,4 @@
-# 3D scenes and animated mascots
-
-Use for spatial storytelling, interactive objects, or a small character that responds to the app. Do not mistake an always-bouncing icon for a character system.
-
-## Choose the medium
-
-CSS 3D handles layered planes and simple solids. SVG is ideal for scalable line art and small articulated characters. Canvas can handle many sprites. WebGL is appropriate for mesh geometry, camera depth, materials, and lighting. Use an existing renderer where it fits; do not require React or a new animation stack.
-
-For genuine Three.js work, establish scene/camera/renderer ownership, size the canvas from its container, update camera aspect on resize, and cap pixel ratio based on measured performance. Load a real model or intentionally model simple geometry. Set a coherent light/material system and camera framing before motion. Provide a static poster or equivalent DOM content if WebGL creation, asset load, or context restoration fails. Do not claim CSS planes are a loaded 3D asset.
-
-Render on demand for static or scroll-driven scenes. Run a loop only while active animation requires it. Pause work when offscreen or the document is hidden, and resume without a time-step jump. Keep continuous transforms outside framework render state. Bound camera movement and pointer parallax; leave navigation usable on touch and keyboard. Keep text and primary controls in accessible DOM rather than solely on a canvas.
-
-On teardown, cancel frames, disconnect observers, remove listeners, stop animation mixers, and dispose owned geometries, materials, textures, render targets, and renderer resources. Shared resources need an ownership/ref-count policy so one unmount does not destroy another scene. Guard late loader callbacks after unmount. See [Three.js cleanup](https://threejs.org/manual/en/cleanup.html).
+# Character mechanics
 
 ## Design an original character
 

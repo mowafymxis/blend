@@ -10,7 +10,7 @@ Inspect narrow and wide layouts, a short viewport, long text, and zoom. Check to
 
 ## Motion review
 
-Before checking implementation correctness, judge the direction: can you follow one subject across the sequence, does its transformation explain anything, are the important intermediate frames composed, and is there time to recognize the result? If the brief asks for a cinematic live scene, a stack of reveal-on-scroll sections fails that brief even if its listeners and reduced-motion branch are correct. Use [motion direction](motion-direction.md) to revise the weakest beat.
+Before checking implementation correctness, judge the direction: can you follow one subject across the sequence, does its transformation explain anything, are the important intermediate frames composed, and is there time to recognize the result? If the brief asks for a cinematic live scene, a stack of reveal-on-scroll sections fails that brief even if its listeners and reduced-motion branch are correct. Use [motion direction](../../blend-scroll/references/motion-direction.md) to revise the weakest beat.
 
 For micro-interactions, inspect the actual stroke, pivot, crop, or indicator at normal size. Test the fourth activation as carefully as the first. A small crafted effect should feel attached to its object, reverse cleanly, and leave the action immediate. Review the medium choice too: does live 3D reveal something a still cannot, or would a stronger supplied/generated image improve this page? Do not reward more effects, more libraries, or more pin space by default.
 

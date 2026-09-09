@@ -1,0 +1,20 @@
+---
+name: blend-scroll
+description: Direct and implement continuous scroll storytelling with composed states, reversible progress, and complete mobile and reduced-motion alternatives.
+---
+
+# Blend Scroll
+
+Own a connected narrative controlled by scroll. Read [motion direction](references/motion-direction.md) for staging and medium decisions, and [scroll implementation](references/scroll-scenes.md) for measurement, pinning, progress, and lifecycle.
+
+Decide whether the page earns the scene. A transformation, spatial relation, process, or compelling visual story can justify a sustained stage. Lookup, urgent tasks, and short offers usually benefit from direct flow. Premium does not imply pinning. When the user explicitly requests a live scroll scene, implement that behavior rather than substituting fade-up sections or a video.
+
+Write a concrete visual sentence: subject, change, insight, destination. Compose opening, revealing intermediate poses, recognition hold, and landing frame. Carry the same subject or spatial anchor across beats. Keep type quiet during complex object motion; hold the object when readers need to absorb text.
+
+Choose the strongest adequate medium with the available assets. Real spatial inspection may earn WebGL; line explanation may need SVG; authorized media may best show an actual product. Do not describe a flat image tilt as live mesh geometry. Coordinate geometry and asset quality with blend-visual-assets when available.
+
+Map progress from measured geometry, not accumulated wheel deltas. Direct scrubbing owns pose; avoid long lag or transitions fighting it. Local easing can shape a beat while preserving reversible mapping. Allocate distance to actual information; remove empty runway. Match entry, sticky release, and final placement to surrounding flow.
+
+Mobile may use a different crop, fewer simultaneous parts, a compact sequence, or static sections. Reduced motion and renderer failure need complete understandable content with unused pin distance removed. Controls remain accessible outside the canvas; decorative scenes must not trap scrolling or focus.
+
+Verify forward/reverse traversal, direct jumps, restored scroll, resize, short screens, load failure, reduced-motion changes, and hidden-tab resume. Inspect intermediate frames and actual timing. A contact sheet supports composition review, not a smoothness claim.

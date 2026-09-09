@@ -38,7 +38,7 @@ Choose a motion vocabulary from the site's material and personality, then apply 
 
 These are starting points, not an effect shopping list. Choose the strongest opportunities already present in the page; leave nearby elements quiet. Related effects share material, easing, and distance, but need not move simultaneously. Novelty is not enough: inspect the effect repeatedly and with fast, messy input. Remove it if the fourth interaction feels worse than the first.
 
-For each chosen effect, specify the target, trigger, visual change, timing, interruption, and touch/focus/reduced-motion behavior. Keep the actual action's hit area fixed. Show functional state immediately even when a decorative layer is still settling. For optional pointer response, bound the range and stop work after settling; avoid global cursor followers and perpetual floating as default polish. See [motion recipes](motion-recipes.md) for implementation patterns.
+For each chosen effect, specify the target, trigger, visual change, timing, interruption, and touch/focus/reduced-motion behavior. Keep the actual action's hit area fixed. Show functional state immediately even when a decorative layer is still settling. For optional pointer response, bound the range and stop work after settling; avoid global cursor followers and perpetual floating as default polish. See [motion recipes](../../blend-micro-motion/references/motion-recipes.md) for implementation patterns.
 
 ## Find the visual sentence
 

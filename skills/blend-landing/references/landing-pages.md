@@ -41,7 +41,7 @@ Reuse the site's type and spacing tokens. Where no system exists, choose a small
 
 For closely nested rounded surfaces, an inner radius near `max(0, outer radius - inset)` can make the corners feel concentric. Treat this as an optical starting point for uniform insets, not a rule for every card or control. Check borders, unequal padding, and actual rendering.
 
-An optional scroll-emphasized benefit statement can suit an editorial narrative. Keep the whole sentence readable before activation, preserve its semantic reading order, and avoid per-word announcements. Choose progress from a bounded section controller when words must advance in reading order; independent word intersection events may activate a whole line at once. Reuse the [scroll-scene lifecycle guidance](scroll-scenes.md), show a fully readable static state for reduced motion or initialization failure, and never make the effect a required section.
+An optional scroll-emphasized benefit statement can suit an editorial narrative. Keep the whole sentence readable before activation, preserve its semantic reading order, and avoid per-word announcements. Choose progress from a bounded section controller when words must advance in reading order; independent word intersection events may activate a whole line at once. Reuse the [scroll-scene lifecycle guidance](../../blend-scroll/references/scroll-scenes.md), show a fully readable static state for reduced motion or initialization failure, and never make the effect a required section.
 
 ## Finish the conversion path and discovery settings
 
@@ -53,4 +53,4 @@ Use visible, useful answers for real questions. Consider structured data only wh
 
 Check applicable footer destinations, contact and policy links, route fallbacks, current-navigation indication, and a skip link for repeated navigation. Use approved policy content; do not generate legal promises or add a consent banner as decoration. Resolve requirements from actual data use and the requested release scope.
 
-For verification, follow [Blend's verification guide](verification.md). Add checks for agreement between offer, CTA, terms, and destination; evidence behind each claim; and the implemented search/share settings. Report observed defects and unverified integrations without claiming a measured conversion improvement from design changes alone.
+For verification, follow [Blend's verification guide](../../blend-review/references/verification.md). Add checks for agreement between offer, CTA, terms, and destination; evidence behind each claim; and the implemented search/share settings. Report observed defects and unverified integrations without claiming a measured conversion improvement from design changes alone.

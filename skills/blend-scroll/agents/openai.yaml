@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blend Scroll"
+  short_description: "Build coherent, reversible scroll narratives"
+  default_prompt: "Use $blend-scroll to improve this part of the frontend while respecting the project direction and requested scope."
