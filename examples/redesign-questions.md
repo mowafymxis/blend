@@ -22,7 +22,7 @@
 
 6. Would you like small drawn animations on this site?
 
-   Answer:
+   Answer: yes
 
 ## Format — design site
 
@@ -48,4 +48,4 @@
 
 6. Would you like small drawn animations on this site?
 
-   Answer:
+   Answer: yes
