@@ -1,4 +1,4 @@
 interface:
   display_name: "Blend Landing"
   short_description: "Explain an offer and build a credible conversion path"
-  default_prompt: "Use $blend-landing to clarify the offer, visual preferences, and selected motion before building this landing page."
+  default_prompt: "Use $blend-landing to infer my intended shape and feel from the brief and references, clarify only consequential uncertainties, and complete the requested work."

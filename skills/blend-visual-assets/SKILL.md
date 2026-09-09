@@ -9,6 +9,8 @@ Own the visual medium and its fidelity in the final composition. Choose among su
 
 Resolve asset preferences through [discovery](../blend-discovery/SKILL.md): exact or conceptual subject, pencil/ink versus precise drawing, photo/render/live geometry, theme variants, intended prominence, source availability, and production budget. Show a small direction specimen when the user cannot choose from words. Do not generate final hero art before unresolved visual preferences are answered. Preserve selected media rather than replacing difficult assets silently.
 
+
+Apply discovery selectively: infer shape and feel from the brief, references, and prior answers first. Topic lists below are internal considerations, not mandatory questions. Ask only about consequential uncertainty within the project's small question set; make routine craft choices yourself and do not start a new interview for each specialist.
 ## Resolve the asset before dependent polish
 
 For a prominent visual, define what it communicates, its subject, scale, focal point, desktop/mobile crop, palette, lighting, source, and fallback. Inspect it in the actual layout early. A weak asset cannot be rescued by a dramatic entrance. Change the composition when a stronger available medium would improve the result.

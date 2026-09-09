@@ -25,7 +25,7 @@ Start with enough information to understand the offer and action. Add a subheadi
 
 Treat benefits, process steps, FAQs, pricing, and a closing CTA as tools. Include each only when it answers a real question. There is no required section count, three-step process, testimonial strip, or repeated tagline. Move a material objection earlier when it blocks the decision. Repeat the same primary action after a long argument when useful, with consistent terms and destination.
 
-Implement and refine coherent sections without rebuilding unaffected areas on every iteration. For a substantial new page, reflect the completed interview in a short intended argument and visual direction before building. A complete brief needs no extra approval ceremony; an unresolved theme, type direction, mascot, or signature scene needs an answer or explicit delegation.
+Implement and refine coherent sections without rebuilding unaffected areas on every iteration. For a substantial new page, reflect the completed interview in a short intended argument and visual direction before building. A complete brief needs no extra approval ceremony; a consequential ambiguity needs clarification; supported stylistic inferences and routine decisions do not need explicit delegation.
 
 ## Write an accurate next step
 

@@ -7,8 +7,10 @@ description: Choose and refine frontend typography, font roles, responsive hiera
 
 Treat typography as layout and voice. Select type from actual words, script coverage, density, brand, and reading conditions. Do not keep a house pairing or rotate a fixed font list to simulate variety.
 
-Before a new type direction, use the typography questions in [discovery](../blend-discovery/SKILL.md): serif/sans/expressive/exact family, body and UI character, likes/dislikes, language coverage, and font availability. Offer actual headline/body/button specimens when the user cannot name a face. Do not silently choose a serif plus italic accent because a reference contains one. Preserve settled choices; narrow typesetting fixes need no full interview.
+For an unclear type direction, selectively use the typography questions in [discovery](../blend-discovery/SKILL.md): serif/sans/expressive/exact family, body and UI character, likes/dislikes, language coverage, and font availability. Offer actual headline/body/button specimens when the user cannot name a face. Do not silently choose a serif plus italic accent because a reference contains one. Preserve settled choices; narrow typesetting fixes need no full interview.
 
+
+Apply discovery selectively: infer shape and feel from the brief, references, and prior answers first. Topic lists below are internal considerations, not mandatory questions. Ask only about consequential uncertainty within the project's small question set; make routine craft choices yourself and do not start a new interview for each specialist.
 ## Establish roles with real specimens
 
 Collect the longest important headline, a normal paragraph, navigation, a primary action, a long label, and representative numbers. Add the required languages and scripts. Determine which roles need distinction: display, reading, interface, annotation, data. A single family can cover them; multiple families need an actual role difference.

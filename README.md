@@ -1,13 +1,13 @@
 # Blend
 
-A coordinated suite of **11 frontend skills** that asks about your design preferences before building: typography, light/dark themes, layout, illustration, mascots, small animations, atmosphere, and scroll storytelling. Use Blend for a whole project or a specialist for a focused task.
+A coordinated suite of **11 frontend skills** that understands your intended shape and feel, then clarifies the few choices that matter: typography, light/dark themes, layout, illustration, mascots, small animations, atmosphere, and scroll storytelling. Use Blend for a whole project or a specialist for a focused task.
 
-New builds and substantial redesigns start with a staged interview, then a decision record the draft must follow. Existing answers are reused; narrow fixes stay narrow. You can ask for specimens, delegate a choice, or explicitly skip questions. The suite does not prescribe a font pairing, palette, page structure, animation library, or level of spectacle.
+New builds and substantial redesigns start by interpreting your brief and references. Blend asks roughly three to five focused questions only when needed, then designs within that direction. Existing answers are reused; narrow fixes stay narrow. You can ask for specimens, delegate a choice, or explicitly skip questions. The suite does not prescribe a font pairing, palette, page structure, animation library, or level of spectacle.
 
 ```text
 You: Build a premium AI homepage with a mascot and clean drawn animations.
-Blend: Asks about product, reference roles, theme, typography, character,
-       local animation, and scroll behavior in manageable rounds.
+Blend: Infers the visual direction, then asks about the few unresolved choices,
+       such as theme, character identity, or a major scroll scene.
 You: Choose dark, clean sans, an original pixel companion, and no pinned scroll.
 Blend: Records those choices, resolves remaining questions, then builds to them.
 ```
@@ -38,8 +38,8 @@ For manual installation, copy **each folder inside `skills/`** into your skills 
 
 | Skill | Owns |
 |---|---|
-| [blend](skills/blend/SKILL.md) | Interview-first coordination, scope, specialist selection, and integration |
-| [blend-discovery](skills/blend-discovery/SKILL.md) | Staged questions, reference preferences, visual comparisons, and a user decision record |
+| [blend](skills/blend/SKILL.md) | Intent-led coordination, scope, specialist selection, and integration |
+| [blend-discovery](skills/blend-discovery/SKILL.md) | Shape/feel inference, focused questions, and a compact decision record |
 | [blend-art-direction](skills/blend-art-direction/SKILL.md) | Reference interpretation, composition, visual character, and stylistic range |
 | [blend-typography](skills/blend-typography/SKILL.md) | Type selection, real-text specimens, optical tuning, responsive and multilingual typesetting |
 | [blend-interface](skills/blend-interface/SKILL.md) | App workflows, records, forms, navigation, state continuity, and useful copy |
@@ -67,7 +67,7 @@ Preserve our brand and compare suitable type roles before choosing.
 
 Blend loads only relevant specialists. A specialist can be used directly without running the coordinator first. This is modular guidance, not a requirement to spawn multiple agents or apply every effect.
 
-For a detailed brief, start with [the question bank](skills/blend-discovery/references/question-bank.md). It separates pencil/ink mini scenes, character acting, ambient fields, and continuous scroll motion; these are independent choices. The [brief template](skills/blend-discovery/references/design-brief.md) keeps selected, delegated, proposed, and unresolved decisions distinct.
+The [question guide](skills/blend-discovery/references/question-bank.md) helps select only high-impact questions. The [internal brief](skills/blend-discovery/references/design-brief.md) distinguishes user answers from supported inferences and implementation choices. User-facing questionnaires contain only questions and answer spaces.
 
 ## What the references teach
 

@@ -1,4 +1,4 @@
 interface:
   display_name: "Blend Mascots"
   short_description: "Create expressive characters for real app events"
-  default_prompt: "Use $blend-mascots to ask about character style, personality, scale, placement, and reactions before designing and animating the mascot."
+  default_prompt: "Use $blend-mascots to infer my intended shape and feel from the brief and references, clarify only consequential uncertainties, and complete the requested work."

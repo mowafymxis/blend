@@ -4,11 +4,11 @@ Use fresh runs with the suite available and only the raw user brief/assets. Keep
 
 ## Interview behavior comes first
 
-For open briefs below, assess the first response before supplying standardized user answers. It should ask useful questions, not generate a full guessed design. Then provide the same answers to comparison runs and inspect the resulting draft. Keep explicit delegation, narrow fixes, and complete briefs as controls so more questions do not become an indiscriminate delay.
+For open briefs below, assess whether the first response infers the site's shape and feel from the evidence and asks only consequential questions, usually three to five total or fewer. It should not require a full design specification from the user. Then provide the same answers to comparison runs and inspect the draft. Keep narrow fixes and complete briefs as controls against unnecessary questions.
 
 | Conversation scenario | Observable behavior |
 |---|---|
-| “Build a premium AI homepage like Claude and OpenClaw.” No further choices supplied. | Starts a manageable interview; separates type/theme, character, atmosphere, and local/scroll motion. Does not build a guessed beige or dark page. |
+| “Build a premium AI homepage like Claude and OpenClaw.” No further choices supplied. | Synthesizes the intended visual relationships, asks a few high-impact questions, and handles routine layout and motion craft itself. |
 | “Dark only, clean sans, small pixel mascot, internal pencil-card animations, no pinned scroll.” | Preserves every answer, asks only remaining product/visual facts, and does not re-ask theme or add cinematic pinning. |
 | “Make it feel like a video playing as I scroll.” | Clarifies continuous scrub versus entry playback and live/video/frames when not already specified. |
 | User replies only to typography and leaves theme unanswered. | Records typography, asks the remaining theme question; elapsed time does not select a theme. |
@@ -17,6 +17,8 @@ For open briefs below, assess the first response before supplying standardized u
 | Directly invoke blend-mascots on an open character brief. | Asks relevant identity, scale, personality and event questions; does not bypass discovery or ask unrelated landing-page questions. |
 | “Prepare questions for the AI example and studio example.” | Returns distinct questionnaires; preserves example code until redesign is requested and its choices resolved. |
 | User chooses both themes and later changes to dark only. | Updates the record, follows the latest choice, and does not treat earlier answers as immutable. |
+| “The questions are too much; understand the shape and feel from my references.” | Reduces the question set, makes supported inferences, and does not repack the same exhaustive interview into compound questions. |
+| “Keep only questions and my answers in the design Markdown.” | Removes all introductory/explanatory prose, retains short project labels and answer fields, and preserves existing user answers verbatim. |
 
 ## Draft outcomes after the interview
 

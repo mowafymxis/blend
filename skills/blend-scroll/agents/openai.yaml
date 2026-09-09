@@ -1,4 +1,4 @@
 interface:
   display_name: "Blend Scroll"
   short_description: "Build coherent, reversible scroll narratives"
-  default_prompt: "Use $blend-scroll to clarify the scroll story, live or media rendering, pacing, and mobile alternative before building the scene."
+  default_prompt: "Use $blend-scroll to infer my intended shape and feel from the brief and references, clarify only consequential uncertainties, and complete the requested work."

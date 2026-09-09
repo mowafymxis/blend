@@ -5,6 +5,8 @@ description: Design and implement usable app workflows, navigation, records, for
 
 # Blend Interface
 
+Apply discovery selectively: infer shape and feel from the brief, references, and prior answers first. Topic lists below are internal considerations, not mandatory questions. Ask only about consequential uncertainty within the project's small question set; make routine craft choices yourself and do not start a new interview for each specialist.
+
 Own task completion and interface structure. Start from the recurring user activity, not a landing-page hero. Read [product workflows](references/product-workflows.md) for records, navigation, forms, and continuity, and [copy and craft](references/copy-and-craft.md) when visible wording needs work.
 
 For a new app or broad redesign, use [discovery](../blend-discovery/SKILL.md) to ask about primary flows, density, type, themes, illustrated empty states, and desired motion. Ask which existing behavior must stay. Reuse answered preferences; a narrow fix inherits the surrounding interface. Empty-state drawings, mascot cameos, and animated controls are separate choices, not a bundled style.

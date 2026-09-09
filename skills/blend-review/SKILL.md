@@ -9,6 +9,8 @@ Judge the result against its brief, not the reviewer's favorite style. Audit-onl
 
 Start with the [user decision record](../blend-discovery/references/design-brief.md). Verify chosen typography, theme coverage, reference roles, illustration style, mascot identity/prominence, motion triggers, scroll medium, and explicit dislikes against the render. Call out unchosen defaults and material deviations, even when individually attractive. A reviewer must not replace a selected style with personal taste. If a new design lacks consequential answers, request the missing preferences through discovery; keep audit-only work read-only.
 
+
+Apply discovery selectively: infer shape and feel from the brief, references, and prior answers first. Topic lists below are internal considerations, not mandatory questions. Ask only about consequential uncertainty within the project's small question set; make routine craft choices yourself and do not start a new interview for each specialist.
 ## Inspect in the order that changes the outcome
 
 First verify purpose and primary action. Then examine composition, type, assets, spacing and optical alignment. Finally inspect interaction, pacing, and fine detail. A beautiful easing curve does not compensate for an undersized subject or poorly set text.

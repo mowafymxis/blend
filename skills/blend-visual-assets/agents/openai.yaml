@@ -1,4 +1,4 @@
 interface:
   display_name: "Blend Visual Assets"
   short_description: "Choose and integrate imagery, illustration, and 3D"
-  default_prompt: "Use $blend-visual-assets to clarify the subject, medium, visual language, and theme needs before creating or integrating prominent imagery."
+  default_prompt: "Use $blend-visual-assets to infer my intended shape and feel from the brief and references, clarify only consequential uncertainties, and complete the requested work."

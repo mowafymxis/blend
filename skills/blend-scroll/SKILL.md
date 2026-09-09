@@ -5,6 +5,8 @@ description: Direct and implement continuous scroll storytelling with composed s
 
 # Blend Scroll
 
+Apply discovery selectively: infer shape and feel from the brief, references, and prior answers first. Topic lists below are internal considerations, not mandatory questions. Ask only about consequential uncertainty within the project's small question set; make routine craft choices yourself and do not start a new interview for each specialist.
+
 Own a connected narrative controlled by scroll. Read [motion direction](references/motion-direction.md) for staging and medium decisions, and [scroll implementation](references/scroll-scenes.md) for measurement, pinning, progress, and lifecycle.
 
 Use the scroll branch of [discovery](../blend-discovery/SKILL.md) before selecting a signature scene. Ask whether scroll should scrub a continuous transformation or merely trigger a reveal, what changes and why, preferred prominence/length, live objects versus video/frames, and the mobile alternative. A premium reference does not answer those questions. When the user has already specified the scene and medium, use those answers directly. Read [cinematic medium choices](references/cinematic-media.md) if “like a video” is ambiguous or video/frame scrubbing is selected.

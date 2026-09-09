@@ -1,4 +1,4 @@
 interface:
   display_name: "Blend Discovery"
-  short_description: "Ask the design questions before the first draft"
-  default_prompt: "Use $blend-discovery to interview me about this frontend, covering visual taste, typography, themes, illustration, mascots, and motion before drafting."
+  short_description: "Understand intent and ask only what matters"
+  default_prompt: "Use $blend-discovery to infer my intended shape and feel from the brief and references, clarify only consequential uncertainties, and complete the requested work."

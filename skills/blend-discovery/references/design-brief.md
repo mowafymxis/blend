@@ -1,6 +1,6 @@
 # A brief the implementation can follow
 
-Keep this in the project's working material, not its public UI. Omit inapplicable fields. Existing answers can complete it without another questionnaire.
+This is internal working material, not a user-facing questionnaire or required form to complete. Record only useful decisions. Infer shape and feel from the brief/references; ask about consequential gaps. User-facing design Markdown contains only questions and answer fields.
 
 ## Purpose and boundaries
 
@@ -14,7 +14,7 @@ Keep this in the project's working material, not its public UI. Omit inapplicabl
 
 | Decision | Value | Status | Source / unresolved question |
 |---|---|---|---|
-| Reference roles | Which reference governs which relationship | User-selected / inherited / delegated / proposed / unresolved | Quote or identify the relevant answer |
+| Reference roles | Which reference governs which relationship | User-selected / inherited / inferred / implementation choice / proposed / unresolved | Quote or identify the relevant answer |
 | Composition | Dominant subject, reading order, density, section rhythm | | |
 | Type | Display, body, UI, data roles; exact family or traits; fallback | | |
 | Themes | Light / dark / both; default, system preference, switch, persistence | | |
@@ -26,7 +26,7 @@ Keep this in the project's working material, not its public UI. Omit inapplicabl
 | Mobile | Recomposition and retained/simplified scenes | | |
 | Avoid | Explicit dislikes and rejected options | | |
 
-An unresolved item is not an implicit default. A delegated item may receive a reasoned implementation choice. Do not re-open inherited constraints merely to make the draft feel new.
+Supported inferences and routine implementation choices do not need explicit delegation. Record their rationale without attributing them to the user. Wait on consequential questions actually asked; do not require every field to be answered. Preserve inherited constraints.
 
 ## Motion map
 

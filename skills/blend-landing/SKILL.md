@@ -5,6 +5,8 @@ description: Shape marketing and product landing pages around a clear offer, cre
 
 # Blend Landing
 
+Apply discovery selectively: infer shape and feel from the brief, references, and prior answers first. Topic lists below are internal considerations, not mandatory questions. Ask only about consequential uncertainty within the project's small question set; make routine craft choices yourself and do not start a new interview for each specialist.
+
 Own the page's argument and conversion behavior. Read [landing-page strategy](references/landing-pages.md) for audience intent, evidence, search/share readiness, and form verification. Existing copy and campaign goals remain protected when they are outside the requested change.
 
 For a new landing page or substantial redesign, use [discovery](../blend-discovery/SKILL.md). Ask about the offer and actual action, then reference roles, typography, theme, leading visual, illustration, mascot, atmosphere, and whether scroll storytelling is wanted. Separate an AI product demonstration from its mascot, and a studio's project work from its decorative process graphics. Carry existing answers forward instead of starting another questionnaire.
