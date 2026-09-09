@@ -11,6 +11,10 @@ Determine what a new visitor needs to understand, believe, compare, and do. Sequ
 
 Choose proof that visitors can inspect: a real product capture, a meaningful interactive example, an authorized object image, or clearly labeled conceptual illustration. Place the claim and relevant proof together. Large imagery earns space by showing something; motion earns time by making a relationship visible or strengthening the intended character.
 
+Choose the visual demonstration from the business. An AI company's landing page should make an intelligible task and result easy to inspect; a mascot can accompany that evidence without replacing it. A design company's work should be the evidence, with coherent project artwork and enough context to understand the design decision. Label fictional projects or scripted demonstrations where they could be mistaken for customers or live capabilities. Avoid fabricated chat latency, simulated model work, and invented client results.
+
+The first viewport needs an offer and a reason to look further, not a quota of hero decoration. Remove repeated mottos, redundant eyebrows, and closing slogans that say no more than the heading. Use a clear primary destination and let section density vary with the argument. A landing page can contain a bounded product demo without turning the whole site into an application.
+
 Alternate emphasis and rest. A precise product reveal can coexist with small local illustration sequences, but they should share a visual language and not compete during reading. A short offer may be strongest with no major scene. Preserve the visitor's ability to reach the action without waiting through a spectacle.
 
 Use copy long enough to explain the unfamiliar and short enough to keep decisions visible. Distinguish a real sale, inquiry, waitlist, and local prototype action. Do not promise an integration or completed submission that the implementation does not provide.

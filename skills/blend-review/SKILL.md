@@ -15,6 +15,10 @@ Look at actual renders at reading size and as a whole page. Compare a wide, narr
 
 For taste concerns, state the visible defect and its effect: the display face overwhelms a compact workflow; the image's crop hides its subject; three animated areas compete with the action; the line-art weight conflicts with the other illustrations. Propose the smallest change that repairs the relationship. Vague judgments such as “make it more premium” are not actionable findings.
 
+For an explicit taste audit, compare the output and supplied references at matching view sizes using the [quality calibration guide](../blend-art-direction/references/quality-bar.md). Record the most consequential mismatches before editing: page silhouette, subject scale, type hierarchy, asset quality, and concentration of motion. A palette or font substitution alone is rarely enough when the underlying composition is generic.
+
+Distinguish a technical pass from a design judgment. No console errors, valid links, and accessible controls establish important behavior; they do not establish restraint, recognizable identity, convincing artwork, or good choreography. Rework a weak visual anchor or repetitive layout before polishing extra effects. For multiple examples, compare their actual information structure and visual material, not just colors.
+
 ## Motion requires temporal evidence
 
 Watch or exercise the actual sequence. Inspect anticipation, transformation, recognition, reset, and interrupted input at normal display size. Keep screenshots for composition evidence, not a claim of clean timing. Verify that semantic feedback remains immediate and reduced-motion alternatives communicate the same essentials.

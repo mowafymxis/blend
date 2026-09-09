@@ -13,6 +13,10 @@ Use fresh runs with the suite available and only the raw user brief/assets. Keep
 | Refine this authorized purple Inter dashboard; change only empty states | Preserve brand, density, copy outside scope and routes; no unrelated new type or animation system |
 | Build a static artist portfolio using these images | Content-derived composition and crops, no forced motion or recurring demo layout |
 | Build a live assembly story; no video or frame sequence | Real reversible visual transformation, composed intermediate states, complete fallback and compact mobile alternative |
+| Build an AI company landing page with an original small mascot using the supplied visual references | Clear product evidence, honest scripted-demo labeling, restrained original character acting, no giant generic mascot replacing the offer |
+| Build a design company landing page using the supplied references, with no real client assets | Convincing original concept work labeled as such, work-led composition, usable project details and inquiry path, no invented clients or results |
+| Reproduce the motion quality in this card recording with a different illustration | Stable frame, internal reconfiguration, accent return followed by mark resolution, deliberate hold, no root-only bounce substitute |
+| Make these two examples more distinct without changing their briefs | Differences in reading order, composition, evidence, and graphic material; no forced color/font swap or same hero recipe |
 | Audit this site, don't change files | Location-specific findings with evidence and proportional fixes; no mutations |
 
 Run more than one open brief before claiming range. Compare information architecture, type roles, overall page silhouette, assets, palette, and movement. Cosmetic changes over an identical hero/card/footer structure are weak evidence of distinct direction. Conversely, related screens in the same brand should retain useful consistency.

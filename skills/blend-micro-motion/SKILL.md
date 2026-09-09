@@ -13,6 +13,8 @@ Find a meaningful opportunity in the actual content: connect, collect, unfold, c
 
 For an illustrated vignette, separate the stable frame and reading layer from the parts that change. Design the resting image, revealing intermediate state, and resolved image before coding. Read [vignette direction](references/vignettes.md) for how to build a short coherent sequence. Read [motion recipes](references/motion-recipes.md) for strokes, handwriting, controls, and interruption mechanics.
 
+When the supplied example shows contracting parts, a reorganizing structure, and an interior mark resolving, read [staged illustration choreography](references/staged-illustrations.md). It explains the observed recording, part ownership, phase overlap, and replay policies. A root-level spin, scale, or bounce does not satisfy that request even when its easing is smooth.
+
 ## Direct a short sequence
 
 Establish attention, perform one readable transformation, settle, and allow recognition. Related parts can overlap in time when their causality remains clear. Do not stagger every child equally. A tiny accent may anticipate; the principal object carries the action; secondary strokes finish it. Exact milliseconds come from travel, scale, and feel, not a universal spring preset.

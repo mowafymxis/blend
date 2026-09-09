@@ -28,9 +28,9 @@ Transfer silhouette economy, consistent proportions, pose readability, and groun
 
 ## The supplied card recording: animate inside a stable frame
 
-In the user's short recording, the text and card stay in place while a small grid-and-badge illustration changes. The badge contracts away, returns, and an arrow resolves within it. The sampled frames establish that local sequence; they do not establish the input trigger or precise easing.
+In the user's short recording, the text and card stay in place while a small grid-and-badge illustration changes. The badge contracts away, the internal grid divisions shift, the badge returns at its anchor, and an arrow resolves within it. The sampled frames establish that local sequence; they do not establish the input trigger or precise easing.
 
-Transfer the division of labor: static information remains easy to read, while a small illustration performs a coherent visual action. Another product might use a connector linking nodes, a folded route revealing a destination, or a pair of objects aligning. Those are possible interpretations, not required motifs. See blend-micro-motion for directing and implementing vignettes.
+Transfer the division of labor: static information remains easy to read, while a small illustration performs a coherent visual action. Another product might use a connector linking nodes, a folded route revealing a destination, or a pair of objects aligning. Those are possible interpretations, not required motifs. The closer sampled analysis and an implementation model are in [staged illustration choreography](../../blend-micro-motion/references/staged-illustrations.md). Match the part relationships and pacing when requested, not merely the green palette or an icon scale effect.
 
 The supplied app screenshot offers a related static lesson: a small line illustration anchors a quiet empty state, with a clear heading, short explanation, and action. Its restrained scale leaves navigation and task orientation intact. The still image establishes composition, not whether the drawing animates. Empty states can carry character without becoming marketing heroes.
 

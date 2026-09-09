@@ -13,6 +13,8 @@ Separate appearance (scale, contrast, type, crop, spacing), behavior (trigger, s
 
 Extract relationships instead of motifs. A calm frame around animated line art suggests a stable reading layer and a localized expressive layer. It does not require off-white backgrounds, a serif, hand drawing, or that exact icon. A polished product image suggests resolved lighting, scale, crop, and material fidelity; it does not require 3D or a particular manufacturer’s layout.
 
+For a requested resemblance or an off-taste result, read [quality calibration](references/quality-bar.md). Match the reference at the same apparent scale: a small companion, a dominant product image, and a decorative icon have different jobs. Preserve the user's chosen style rather than treating “do not copy” as permission to ignore their visual preference. Transfer or reproduce the authorized visual relationships with content that belongs to the task.
+
 ## Choose a direction that has reasons
 
 Consider substantially different treatments when the brief is open. Distinguish them by content structure, hierarchy, type behavior, assets, and pacing, not only color or font substitutions. Select the one best suited to the audience, task frequency, content, brand, and available material. This is a thinking step, not a required multi-design deliverable or approval round.

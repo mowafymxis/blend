@@ -8,6 +8,12 @@ Check the primary task, hierarchy, text density, readable type, crops, whitespac
 
 Inspect narrow and wide layouts, a short viewport, long text, and zoom. Check touch target usability, horizontal overflow, focus visibility, and alignment. Theme checks cover the themes the product actually supports; do not add dark mode merely to satisfy a checklist.
 
+## Reference-led taste review
+
+Compare the same viewport and apparent scale. Inspect the first-view hierarchy, full-page silhouette, a close crop of artwork/type, and a complete motion episode. Record observed reference details separately from uncertain trigger/easing assumptions. When the user asks for a similar direction, check whether that preference survives in the result rather than rewarding novelty alone.
+
+For staged illustrations, verify an identifiable anchor, a meaningful intermediate state, separate accent/mark arrival, and enough time to recognize the outcome. For a mascot, check its relative prominence and resting behavior next to the actual product. For a design company, inspect the work itself; a polished container cannot substitute for credible project art. Use the [quality bar](../../blend-art-direction/references/quality-bar.md) to turn mismatches into concrete revisions.
+
 ## Motion review
 
 Before checking implementation correctness, judge the direction: can you follow one subject across the sequence, does its transformation explain anything, are the important intermediate frames composed, and is there time to recognize the result? If the brief asks for a cinematic live scene, a stack of reveal-on-scroll sections fails that brief even if its listeners and reduced-motion branch are correct. Use [motion direction](../../blend-scroll/references/motion-direction.md) to revise the weakest beat.

@@ -13,6 +13,8 @@ Use density deliberately. Frequently compared records benefit from alignment and
 
 Specify relevant idle, focused, selected, loading, empty, error, success, disabled, and interrupted states. Success follows confirmed work; a decorative animation is not confirmation. Make the primary flow work before expressive additions. Keep real actions accessible via semantic controls, keyboard, and touch.
 
+When the visual direction includes illustrated cards or empty states, size the art around the task. Keep the title, explanation, and primary control stable and immediately available. A concise original illustration can carry character without a marketing hero, floating mascot panel, or extra instruction layer. Use the same border, spacing, and type logic in empty, populated, and error states; do not design the empty state as a separate brand.
+
 Use small transitions to preserve selection, location, and causality. Semantic state updates immediately; visual settling may follow. Repeated actions must remain quick. A mascot can support onboarding or encouragement when requested or justified, but must never obscure errors, shame the user, invent progress, or become required navigation.
 
 Keep visible language about the user's task. Preserve existing copy unless rewriting is in scope or a demonstrated comprehension defect requires it. Remove implementation badges and filler when they add no user value. Keep necessary instructions and honest prototype disclosures; brevity must not conceal consequences.

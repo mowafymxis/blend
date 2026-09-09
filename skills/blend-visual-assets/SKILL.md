@@ -28,6 +28,10 @@ Unify optical scale, line weight, perspective, lighting, saturation, and level o
 
 Use reserved dimensions, responsive sources, and intentional crops. Check transparent edges, sharpness, compressed gradients, contrast behind text, and dark/light surfaces actually supported. Meaningful descriptions belong in accessible text. Put interactive labels and controls in semantic DOM.
 
+For a family of small illustrations, create a shared drawing grammar before animation: optical size, contour thickness, caps/joins, fill-to-outline balance, deliberate irregularity, and overlap rules. Inspect several stills beside their text at actual card size. Separate the moving parts while authoring; one flattened icon cannot perform an internal reconfiguration. Use [part choreography](../blend-micro-motion/references/staged-illustrations.md) when the sequence depends on structure, accent body, and interior mark.
+
+For a design studio or product company, the visual anchor must withstand close inspection. Show coherent identity applications, actual interface content, or an intentionally authored object. A collection of unrelated abstract tiles is weak evidence of design work. A generic mascot or primitive enlarged to hero scale is weak evidence of an AI product. Reduce its prominence or resolve a stronger asset; do not add more texture and motion to conceal the mismatch.
+
 ## Earn live 3D
 
 Read [spatial scene mechanics](references/spatial-scenes.md) for renderer ownership, load/context failures, and disposal. Establish a strong still first: recognizable silhouette, believable proportions, coherent perspective, light/material agreement, and a camera that reveals the subject. Only then add movement.

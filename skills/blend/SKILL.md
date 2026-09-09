@@ -13,6 +13,10 @@ Identify audience, primary action, real content, brand constraints, assets, stac
 
 For substantial open-ended work, form a compact direction in working notes: user intention; visual character expressed as concrete choices; composition; type roles; asset approach; motion role; constraints. Compare plausible directions internally, choose from the brief, and proceed without an unnecessary approval gate. Do not ask the user to choose every effect. If an unresolved fact changes the product fundamentally, ask while progressing independent work.
 
+For reference-led builds or a taste correction, use the art-direction [quality comparison](../blend-art-direction/references/quality-bar.md). Translate the reference into observable relationships before selecting components: the scale of the main subject, reading hierarchy, density, artwork language, and where motion is concentrated. A familiar “polished” kit is not a substitute for this comparison.
+
+Set a still-image quality bar and a motion quality bar separately. The still should already explain the product with resolved typography and artwork. The motion should add a readable event or relationship, not disguise weak composition. Finish one representative section and its local sequence early enough to correct the direction before repeating it across the page.
+
 ## Select by the decision that needs work
 
 Read the relevant specialist's SKILL.md using the relative paths below. These are sibling folders when the full suite is installed. Direct invocation of a specialist is also supported. If an optional sibling is absent, disclose that only if it affects completion and perform the scoped task with the available guidance; never claim to have loaded missing instructions.

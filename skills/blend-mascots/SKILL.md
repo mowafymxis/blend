@@ -19,6 +19,10 @@ Separate body placement, body deformation, face, eyes, mouth, limbs, and props. 
 
 For pixels, use a consistent unit grid and test at actual small sizes. Keep features readable, avoid hairline gaps and accidental edge shimmer, and choose stepped or smooth motion deliberately. With a supplied reference, retain recognizable proportions throughout deformation rather than rebuilding a vaguely similar face.
 
+Choose the character's attention budget alongside its silhouette. A quiet product companion often reads better as a small cameo near the task than as a dominant hero illustration. Test neutral, noticing, and resolved expressions at the actual size before elaborate acting. One eye shift, a restrained body adjustment, and a held expression can say more than simultaneous limbs, mouth, props, and bouncing.
+
+Match the references' economy without copying their identity. Preserve facial spacing through deformation, keep a stable contact/attachment point, and make a brief reaction end in a deliberate rest. If the page uses staged line illustrations elsewhere, let the mascot share their line quality and pacing without making every graphic a character. In a scripted product sample, react to the actual selection or reveal; do not pretend a model is thinking.
+
 ## Connect to real events
 
 Use a state machine with explicit event priority and interruption. Read [character mechanics](references/character-mechanics.md) for a baseline event table and lifecycle. Adapt states to the real app rather than implementing a quota of expressions.

@@ -1,11 +1,11 @@
-# Landing-page examples
+# Company landing-page examples
 
-Two original landing pages built with the Blend suite. Both lead with an offer, explain it through a visual demonstration, and provide a working local action. They are handcrafted examples, not templates to repeat or proof of consistent model output quality.
+Two original company landing pages apply the Blend suite to different offers, compositions, and types of evidence. They are handcrafted demonstrations, not templates to repeat or proof of consistent model output quality.
 
 | Example | Direction | Working behavior |
 |---|---|---|
-| [Fold](fold/index.html) | A playful animation tool; lavender paper shapes, DM Sans, and Newsreader accents | Flower replay, illustrated hover/focus gestures, three character personalities, timing control, and animated SVG export |
-| [Fieldwork](fieldwork/index.html) | An unhurried walking club; bold Manrope type, an original landscape illustration, and cartographic details | Three imagined trails, route drawing, field-note updates, and a text download for the selected walk |
+| [Morrow](morrow/index.html) | An AI-company concept; editorial Newsreader, quiet DM Sans UI, an original paper mascot, and articulated line illustrations | Three scripted conversations, response copy with a text-download fallback, mascot greeting, and finite illustration replay |
+| [Format](format/index.html) | A design-company concept; direct sans-serif typography and original festival/packaging artwork | Expandable project explanations, a print-registration sequence, and a project-brief builder with a local download |
 
 ## Run
 
@@ -15,34 +15,39 @@ From the repository root with Python 3:
 python -m http.server 18789 --bind 127.0.0.1
 ```
 
-Open [the gallery](http://127.0.0.1:18789/examples/), [Fold](http://127.0.0.1:18789/examples/fold/), or [Fieldwork](http://127.0.0.1:18789/examples/fieldwork/). No installation or build is required. Fonts and illustrations are local; there are no external asset requests or runtime dependencies.
+Open [the gallery](http://127.0.0.1:18789/examples/), [Morrow](http://127.0.0.1:18789/examples/morrow/), or [Format](http://127.0.0.1:18789/examples/format/). No build or package installation is required. Use HTTP for Morrow's JavaScript modules. Fonts and illustrations are local; there are no external asset requests or runtime libraries.
 
-## Fold: show the feeling
+## Morrow: product evidence with a small companion
 
-The landing page introduces a fictional motion tool through a large paper flower, three small original illustrations, and a hands-on playground. The scene boundaries and surrounding copy stay still. The flower performs one short greeting and can be replayed. Hover or keyboard focus changes each small illustration independently.
+The landing page introduces a fictional AI workspace through a clear offer and an inspectable conversation. The demo selector changes the prompt and complete response immediately. Its three examples are authored text, visibly labeled as scripted; there is no live model, fake latency, or network request. Copy writes the selected response to the clipboard. If clipboard access fails, the same response downloads as a text file.
 
-The playground's Curious, Sleepy, and Excited buttons choose distinct motion sequences. A timing slider adjusts duration; Replay repeats the chosen motion. The download button produces an SVG containing the selected character and a single CSS animation. Reopening the file replays it. Reduced-motion settings suppress animation in both the page and exported SVG.
+The original mascot is a small folded paper character with separately owned body, face, arm, and eye motion. It gives one short greeting and can be replayed through its named button. A sample selection can trigger a reaction while the character is visible. It does not loop indefinitely or pretend to communicate model progress.
 
-This is a working local demonstration, not a full animation editor or signup service. Nothing is uploaded or stored. JavaScript-disabled visitors can read the page and see the illustrations; dependent controls remain disabled with a visible explanation.
+The three feature illustrations perform different internal actions: sheets fan and collect into a tray, connections reroute around a fixed node structure, and document lines recompose before a seal resolves. The accent withdraws before the main change; its body returns before its interior mark finishes. The card, heading, and replay control stay still.
 
-## Fieldwork: make the invitation tangible
+One clock owns each finite episode. Pointer entry, replay-button focus, and click start it; repeated input during playback continues the same episode without queuing a restart. Opening and closing poses agree. Each episode lasts about two seconds, including its final recognition beat, then stops. Reduced motion, offscreen exit, document hiding, and teardown settle and cancel work.
 
-The landing page introduces a fictional walking club through an original layered landscape, a short explanation of its ethos, and three imagined walks. Its bold type, map contours, trail numbering, and signpost illustration belong to the outdoor identity.
+## Format: the work carries the page
 
-Choosing a walk updates the path, map title, starting marker, field-note number, descriptive text, and download label. The route draws once; repeated selection replaces the previous animation. The download contains the selected description and a clear fictional-route notice. All distances and routes are illustrative. There are no real outings, navigation directions, reservations, or member signups.
+Two self-initiated fictional identity systems provide the visual evidence. Common Ground is an architecture-festival identity with a poster, programme, and ticket. Good Measure is a pantry identity with original olive and tomato illustrations. These are authored DOM/CSS/SVG compositions, not photographs, live 3D models, or real client work.
 
-Reduced motion makes route changes immediate. Without JavaScript, all walk descriptions and the initial map remain readable, with a visible explanation of unavailable interaction. No data is collected or persisted.
+Each project's control expands a concise account of its idea and graphic system. The print-registration vignette keeps its crop marks fixed while two ink layers separate and realign; a finishing badge and check resolve afterward. Hover, replay-button focus, and click trigger a finite sequence. Repeated activation does not queue episodes. Hidden/offscreen and reduced-motion states stop the animation.
+
+The brief builder validates a project name and description, preserves entered content, and downloads those notes with the selected project type. It rejects whitespace-only required input. Nothing is submitted or persisted by the page. The download notice explains the actual local result.
 
 ## Verify a change
 
-- Follow each navigation and call-to-action link, including direct section links and the return to the gallery.
-- Fold: activate all three personalities, change timing, replay, interrupt a sequence, and download each variant. Open an exported SVG and check its artwork and animation.
-- Fold: hover and focus the small illustrations. Their text and containing surfaces should stay stable; leaving should restore the initial pose.
-- Fieldwork: choose all three walks, interrupt a route draw, and check that the map, copy, accessible title, and downloaded text agree.
-- Both: inspect desktop, narrow mobile, and short layouts; keyboard focus; failed asset requests; JavaScript-disabled behavior; and initial/live reduced motion.
+- Follow primary calls to action, project/section links, and the gallery return.
+- Morrow: choose all examples, verify prompt/response agreement, copy each response, and test the blocked-clipboard download fallback.
+- Morrow motion: replay each scene repeatedly and midway through playback; inspect contraction, reconfiguration, return, resolution, and rest. Check stationary frame/text bounds and the small mascot at its actual display size.
+- Format: open and close each project by pointer and keyboard; reject empty/whitespace input, enter a brief, download it, and inspect the file contents.
+- Format motion: inspect both ink layers and the finishing mark separately; replay during motion and after settling.
+- Both: check wide, narrow, and short views; readable supporting text; keyboard focus; initial/live reduced motion; hidden/offscreen behavior; asset/console errors; and JavaScript-disabled content.
 
-Use the [suite review guide](../skills/blend-review/references/verification.md) for broader evaluation. Local test scripts and trial captures belong in ignored `.maintainer/`; selected previews live in `assets/`.
+Without JavaScript, both pages retain complete readable content and disabled dependent controls. Format's project explanations are expanded in that branch; the brief fields remain disabled. Neither example collects data, creates an account, or sends an inquiry.
+
+Use the [suite review guide](../skills/blend-review/references/verification.md), [quality calibration](../skills/blend-art-direction/references/quality-bar.md), and [staged illustration guide](../skills/blend-micro-motion/references/staged-illustrations.md) for broader changes. Local scripts, captures, and audit reports belong in ignored `.maintainer/`; selected previews live in `assets/`.
 
 ## Asset provenance
 
-All example text, illustrations, characters, maps, and landscape artwork are original to this repository. DM Sans, Manrope, and Newsreader are bundled Latin font subsets from Google Fonts under the SIL Open Font License. Their notices are in [fonts/](fonts/). See [repository attribution](../THIRD_PARTY_NOTICES.md).
+All example text, mascot shapes, illustrations, diagrams, identity applications, and packaging artwork are original to this repository. Newsreader, DM Sans, and the gallery's Manrope are local Latin font subsets from Google Fonts under the SIL Open Font License. Their notices are in [fonts/](fonts/). See [repository attribution](../THIRD_PARTY_NOTICES.md).

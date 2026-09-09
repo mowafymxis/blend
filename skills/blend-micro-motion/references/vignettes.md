@@ -8,6 +8,8 @@ Choose one action the content suggests. Design a finished illustration that read
 
 Use consistent stroke weight, corner treatment, fill density, and optical size across related illustrations. Hand-drawn lines should have designed irregularity, not per-frame random noise. Avoid embedding essential words into paths. Keep the visual comprehensible at its final size; intricate full-screen artwork rarely survives shrinking unchanged.
 
+For a concrete contraction/reconfiguration/return sequence, read [staged illustrations](staged-illustrations.md). It separates sampled reference evidence from implementation choices and shows how one clock can own several parts.
+
 ## Make a beat sheet, not an effect list
 
 | Beat | Visual responsibility | What should remain quiet |

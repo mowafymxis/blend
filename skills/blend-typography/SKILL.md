@@ -32,6 +32,10 @@ Choose hierarchy from reading order and content weight, not a mandatory mathemat
 
 Align mixed sizes optically as well as mechanically. Match button text and icon visual centers; make repeated label baselines stable. Use tabular numbers where users compare values, and proportional text where it reads more naturally. Keep semantic heading order independent of visual size.
 
+Judge the type hierarchy as part of the reference's composition. A large serif headline plus an italic keyword is not automatically editorial; the paragraph measure, supporting weight, line endings, and surrounding space must also work. Do not apply an italic counterpoint to every headline or shrink navigation and captions into decorative microtext. Read the supporting copy at normal display scale, not only in an enlarged screenshot.
+
+Where the reference is quiet, let the dominant type treatment carry its role without a competing novelty face or repeated uppercase slogan. Where it is bold, preserve the intended mass rather than thinning everything into a generic “premium” look. Verify actual font weight/style loading before judging the render; fallback or synthetic styles can change the entire balance.
+
 ## Respect language and loading
 
 Check font licensing, actual files, available weights, and coverage before implementation. Do not label an unavailable font as installed or silently rely on a substitute in screenshots. If research or downloads are needed, use authoritative font/provider sources. Prefer an existing suitable stack when the change does not justify another dependency.

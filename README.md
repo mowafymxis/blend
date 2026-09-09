@@ -62,19 +62,27 @@ Blend loads only relevant specialists. A specialist can be used directly without
 
 The [reference lenses](skills/blend-art-direction/references/reference-lenses.md) separate observed appearance, motion evidence, and reusable principles from the supplied Claude Design, Apple, OpenClaw, and mascot references. They teach stable reading surfaces around local animation, resolved product imagery, coherent visual worlds, and economical character acting. They do not bundle those sites' artwork or turn their styling into defaults.
 
+## Reference-led quality
+
+The [quality calibration guide](skills/blend-art-direction/references/quality-bar.md) turns reference comparisons into visible decisions: subject scale, page composition, typography, artwork, reading density, and concentration of motion. It distinguishes an attractive surface treatment from a resolved design without imposing one house style.
+
+The [staged illustration guide](skills/blend-micro-motion/references/staged-illustrations.md) closely analyzes the supplied card recording and separates observation from implementation. It covers a fixed frame, internal reconfiguration, accent return, mark resolution, recognition time, and explicit interruption/replay policies. A root-level bounce is not a substitute for that choreography.
+
+These criteria are carried through all ten skills in their respective roles, including product evidence, readable supporting type, modest mascot acting, and review of both still and moving states.
+
 ## Technique examples
 
-Two handcrafted landing pages with different ideas, compositions, and interactive demonstrations. They are technique examples, not default templates or evidence of consistent model output quality.
+Two original company landing pages apply the suite to different offers, reading structures, and visual material. They are handcrafted demonstrations, not default templates or evidence of consistent model output quality.
 
-[![Fold animation tool landing page](assets/fold-preview.png)](examples/fold/index.html)
+[![Morrow AI company landing page](assets/morrow-preview.png)](examples/morrow/index.html)
 
-**Fold** introduces a playful motion tool through an original paper flower, small illustrated gestures, and a working animation playground. Choose a personality, change its timing, and download the result as an animated SVG. [Explore its source](examples/fold/index.html).
+**Morrow** is a fictional AI company. An original paper mascot accompanies a quiet editorial introduction and a working, explicitly scripted conversation demo. Three small illustrated scenes withdraw, reorganize, return, and resolve inside stationary cards. Switch the sample conversation, copy its response, or replay a drawing. [Explore its source](examples/morrow/index.html).
 
-[![Fieldwork walking club landing page](assets/fieldwork-preview.png)](examples/fieldwork/index.html)
+[![Format design company landing page](assets/format-preview.png)](examples/format/index.html)
 
-**Fieldwork** introduces an unhurried walking club through an original landscape illustration, bold typography, and a trail selector. Switch between three imagined routes, watch the map redraw, and download the selected field notes. [Explore its source](examples/fieldwork/index.html).
+**Format** is a fictional design company. Original festival and pantry identity systems lead the page; project details explain the work. A print-registration illustration separates and aligns its colour layers before a finishing mark resolves. The brief builder downloads the visitor's own project notes locally. [Explore its source](examples/format/index.html).
 
-Both brands are fictional. Fold exports a local demonstration, not a full animation editor. Fieldwork's routes and distances are illustrative; no real outings, navigation, bookings, or signups are offered.
+Morrow has no live model, and Format has no real clients or submission service. Both label their illustrative content and keep the interactive actions local. No signup, purchase, or inquiry is sent.
 
 ```sh
 python -m http.server 18789 --bind 127.0.0.1

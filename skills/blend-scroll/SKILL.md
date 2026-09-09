@@ -13,6 +13,8 @@ Write a concrete visual sentence: subject, change, insight, destination. Compose
 
 Choose the strongest adequate medium with the available assets. Real spatial inspection may earn WebGL; line explanation may need SVG; authorized media may best show an actual product. Do not describe a flat image tilt as live mesh geometry. Coordinate geometry and asset quality with blend-visual-assets when available.
 
+Do not mistake the references' overall finish for a request to animate every section. A small card recording informs local choreography, not scroll-trigger choice. Use the page's actual narrative to decide whether a sustained stage belongs. When a scene is warranted, inspect its payoff frame as critically as its hero: scale, materials, cropping, and a readable next step should stay convincing after motion stops.
+
 Map progress from measured geometry, not accumulated wheel deltas. Direct scrubbing owns pose; avoid long lag or transitions fighting it. Local easing can shape a beat while preserving reversible mapping. Allocate distance to actual information; remove empty runway. Match entry, sticky release, and final placement to surrounding flow.
 
 Mobile may use a different crop, fewer simultaneous parts, a compact sequence, or static sections. Reduced motion and renderer failure need complete understandable content with unused pin distance removed. Controls remain accessible outside the canvas; decorative scenes must not trap scrolling or focus.
