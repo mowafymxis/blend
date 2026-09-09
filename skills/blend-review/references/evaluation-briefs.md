@@ -19,6 +19,7 @@ For open briefs below, assess whether the first response infers the site's shape
 | User chooses both themes and later changes to dark only. | Updates the record, follows the latest choice, and does not treat earlier answers as immutable. |
 | “The questions are too much; understand the shape and feel from my references.” | Reduces the question set, makes supported inferences, and does not repack the same exhaustive interview into compound questions. |
 | “Keep only questions and my answers in the design Markdown.” | Removes all introductory/explanatory prose, retains short project labels and answer fields, and preserves existing user answers verbatim. |
+| User likes a drawn-motion reference and says yes to a scroll scene, but has not requested drawn mini animations. | Asks whether drawn mini animations are wanted; keeps the scroll answer separate and does not add the drawings by assumption. |
 
 ## Draft outcomes after the interview
 

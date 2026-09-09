@@ -7,6 +7,8 @@ description: Create clean local UI animations and small illustrated sequences, i
 
 Animate a small relationship with clarity. A static card can contain a miniature scene; animating its whole container is often the wrong target. This skill owns local behavior, not full-page scroll timelines or character state machines.
 
+Small drawn animations are optional, even in a reference-led or premium design. Before adding them, ask whether the user wants them unless their inclusion or exclusion is already explicit. Do not infer inclusion from a liked reference, a mascot request, or permission for a continuous scroll scene. A direct request to animate a supplied drawing already answers this question. Ordinary control feedback does not require a drawn illustration.
+
 Before inventing a sequence, use the relevant [discovery](../blend-discovery/SKILL.md) questions: drawn or precise material, subjects, target size, trigger, pace, replay, and areas that should stay still. When the user supplies a complete animation brief, proceed without re-asking it. For pencil/ink-like artwork, read [drawn illustration craft](references/drawn-illustrations.md); for a selected ambient text/particle field, read [ambient motion](references/ambient-motion.md). Do not equate either with scroll storytelling.
 
 

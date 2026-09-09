@@ -15,6 +15,8 @@ For a new frontend, substantial redesign, or taste correction, begin with [blend
 
 The user may explicitly delegate choices or ask for no questions; then state the chosen direction and proceed. A complete existing brief also needs no repeat interview. For questions-only requests, prepare the questions and stop before redesigning. Narrow fixes inherit the current system. Keep recommendations distinct from user selections.
 
+Small drawn animations are an optional design choice, not a default ingredient. Ask whether they are wanted when the user has not specified inclusion or exclusion; respect an explicit no-questions instruction. A reference illustrating good motion, a mascot, or an approved scroll scene does not automatically select drawn mini animations.
+
 For reference-led builds or a taste correction, use the art-direction [quality comparison](../blend-art-direction/references/quality-bar.md). Translate the reference into observable relationships before selecting components: the scale of the main subject, reading hierarchy, density, artwork language, and where motion is concentrated. A familiar “polished” kit is not a substitute for this comparison.
 
 Set a still-image quality bar and a motion quality bar separately. The still should already explain the product with resolved typography and artwork. The motion should add a readable event or relationship, not disguise weak composition. Finish one representative section and its local sequence early enough to correct the direction before repeating it across the page.
