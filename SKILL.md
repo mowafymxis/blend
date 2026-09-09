@@ -47,8 +47,6 @@ Use authentic claims and data. In a prototype, identify sample content visibly w
 
 ## Design motion as behavior
 
-For animation design, read [motion direction](references/motion-direction.md) before choosing effects. Establish what the viewer follows, what changes, and why the final frame matters. Motion quality comes from composition over time: clear staging, continuity, deliberate pace, and a convincing settle. A page full of entrance effects does not satisfy a request for a cinematic scroll sequence.
-
 For a substantial build or motion task, map applicable entry, interaction, state change, navigation, and signature motion. Implement what the interface needs; never invent features to fill the map. Small fixes retain existing motion. A repeated app visit should not replay a long intro. A static or reduced-motion request remains valid.
 
 Choose motion from the current product and user intent. Examples demonstrate decisions, not a house template: do not automatically reuse their layouts, illustrations, or interactions. A complete quiet interface is a valid outcome; pinned storytelling belongs only where it explains something useful.
@@ -62,7 +60,7 @@ Read only the relevant recipe:
 - [Motion recipes](references/motion-recipes.md): hover scribbles, handwriting reveals, menus, tabs, and interruptible component motion.
 - [Pinned scroll scenes](references/scroll-scenes.md): a fixed-looking stage that transforms as the page scrolls, including live DOM/SVG/3D narratives with no video.
 - [3D and mascots](references/3d-and-mascots.md): spatial scenes, rigs, expression states, original character animation, and resource lifecycle.
-- [Built frontend examples](examples/README.md): Aperture demonstrates a reversible live optical assembly; Waypoint demonstrates interruptible route selection and direct scrubbing. Study their timing and state ownership, not their palettes or layouts.
+- [Built frontend examples](examples/README.md): an optical assembly and a route planner demonstrate scroll-driven motion and working task flows. They are examples to study, not house templates.
 
 ## Make every mode complete
 

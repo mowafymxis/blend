@@ -6,8 +6,6 @@ Do not add pinned scenes by default to unrelated sites. Choose a product-specifi
 
 ## Storyboard the state, then map progress
 
-First apply [motion direction](motion-direction.md). Define a shot rather than a list of effects: subject, opening frame, transformation, recognition hold, and exit. Make the intermediate composition worth seeing. A scroll narrative can be modest in duration and still feel cinematic; full-screen pinning is not permission for a long, empty scroll.
-
 Choose a small number of meaningful beats. For example, separated product layers align, the assembled object rotates, then it settles beside the next action. Map scroll position deterministically to every pose so scrolling backward, jumping with Page Down, resizing, and returning from history all work.
 
 ```text
@@ -21,8 +19,6 @@ phase(p, start, end) = clamp((p - start) / (end - start), 0, 1)
 ```
 
 Use a single controller for the timeline. Separate camera movement, object movement, masks, and captions into tracks driven by the same progress. Direct scrub should feel attached to the user's scroll; excessive smoothing causes lag after reversals. Never accumulate pose with `rotation += ...` in a scroll renderer. Derive it from progress.
-
-Keep scrubbed properties free of CSS transitions. Ease local phases only when their arrivals need shaping, and use holds where the viewer needs to recognize a result. Do not crossfade every caption over every moving part. Keep semantic text available outside the decorative stage; avoid hidden duplicate headings in the accessible tree. See [Aperture](../examples/aperture/index.html) for an SVG assembly with a shared anchor, an optical payoff, and a normal-flow exit. It is a stylized diagram, not a physically accurate optical simulation.
 
 ## Pick the renderer
 
