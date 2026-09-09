@@ -80,4 +80,4 @@ These checks verify metadata, local Markdown links, installation, backups, and r
 
 ## License
 
-[MIT](LICENSE). Adapted guidance and font credits are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+[MIT](LICENSE).
