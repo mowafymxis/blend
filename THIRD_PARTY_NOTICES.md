@@ -4,7 +4,9 @@ Blend incorporates ideas and adapted guidance from [Taste Skill](https://github.
 
 Blend also incorporates the project's premium-frontend and frontend-motion-design guidance. Neither skill is required as a separate installation.
 
-Postscript and Relay are original fictional frontend demonstrations. Postscript's poppy still life was generated for this example; its interface and handwriting paths are authored locally. Relay uses original procedural geometry and textures. Neither represents real products, customers, or businesses.
+Margin and Relay are original fictional frontend demonstrations. Margin includes original sample essays, SVG illustrations, and a bookmark character. Relay uses original procedural geometry and textures. Neither represents real products, customers, or businesses.
+
+The examples bundle Latin WOFF2 subsets of Newsreader, DM Sans, and Manrope from Google Fonts, under the SIL Open Font License 1.1. Full notices are retained with the files: [Newsreader](https://github.com/mowafymxis/blend/blob/main/examples/fonts/newsreader-LICENSE.txt), [DM Sans](https://github.com/mowafymxis/blend/blob/main/examples/fonts/dm-sans-LICENSE.txt), and [Manrope](https://github.com/mowafymxis/blend/blob/main/examples/fonts/manrope-LICENSE.txt). Font files are distributed unmodified from the Google Fonts CSS service.
 
 Relay includes unmodified `three.module.js` and `three.core.js` from Three.js 0.186.0, Copyright 2010–2026 Three.js Authors, under the MIT license. The full license is retained in [examples/relay/vendor/LICENSE](https://github.com/mowafymxis/blend/blob/main/examples/relay/vendor/LICENSE). These are runtime dependencies, not unused source archives.
 

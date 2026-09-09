@@ -64,23 +64,23 @@ The [reference lenses](skills/blend-art-direction/references/reference-lenses.md
 
 ## Technique examples
 
-The existing handcrafted examples remain runnable. They demonstrate selected techniques; they are not comprehensive demonstrations of this suite or default starting templates.
+Two handcrafted frontends with different purposes, type systems, and motion. They demonstrate selected techniques; they are not default starting templates or evidence of consistent model output quality.
 
-[![Postscript stationery page](assets/postscript-preview.png)](examples/postscript/index.html)
+[![Margin reading library](assets/margin-preview.png)](examples/margin/index.html)
 
-**Postscript** combines generated still-life imagery with a drawn aside, paper lift, and note turn. [Explore its source](examples/postscript/index.html).
+**Margin** is a local reading library. Newsreader and DM Sans frame illustrated collections, a working note editor, favorites, archive, and search. A small original bookmark character responds to saving and favoriting. Hover or focus the collection cards to see their separate illustrated sequences. [Explore its source](examples/margin/index.html).
 
 [![Relay speaker concept](assets/relay-preview.png)](examples/relay/index.html)
 
-**Relay** uses live 3D geometry for a reversible assembly scene, finish selection, and viewpoint changes. [Explore its source](examples/relay/index.html).
+**Relay** gives a speaker concept a cool studio setting, Manrope typography, and a reversible live assembly scene. Change its finish and viewing angle; small technical illustrations respond independently below the main scene. [Explore its source](examples/relay/index.html).
 
-Both are fictional demonstrations. Postscript downloads a local keepsake; nothing is sent. Relay is an illustrative object, not an engineering model or a product for sale.
+Both are fictional. Margin's supplied essays are original sample content; notes stay in the current browser, with session-only behavior if storage is unavailable. Relay has no audio playback or sale flow and makes no performance claims.
 
 ```sh
 python -m http.server 18789 --bind 127.0.0.1
 ```
 
-Open [the local gallery](http://127.0.0.1:18789/examples/). There is no example build step. See [example behavior and checks](examples/README.md).
+Open [the local gallery](http://127.0.0.1:18789/examples/). There is no build step. Fonts and runtime dependencies are bundled; viewing requires no third-party asset requests. See [example behavior and checks](examples/README.md).
 
 ## Maintain and verify
 

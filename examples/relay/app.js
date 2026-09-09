@@ -18,7 +18,7 @@ let frame = 0,
   visible = true;
 let resizeObserver, intersectionObserver;
 const ownedTextures = new Set();
-const finishes = { clay: 0xc4512d, chalk: 0xd6cebc, ink: 0x343e42 };
+const finishes = { glacier: 0x9bbbcf, chalk: 0xdedbd1, ink: 0x38434a };
 
 function measure() {
   sectionTop = story.getBoundingClientRect().top + scrollY;
@@ -27,7 +27,7 @@ function measure() {
     const bounds = canvas.parentElement.getBoundingClientRect();
     renderer.setSize(bounds.width, bounds.height, false);
     camera.aspect = bounds.width / Math.max(1, bounds.height);
-    camera.fov = compact.matches ? 48 : 34;
+    camera.fov = compact.matches ? 26 : 24;
     camera.updateProjectionMatrix();
   }
   schedule();
@@ -52,10 +52,15 @@ function render() {
     ease(phase(progress, 0.16, 0.36)) * (1 - ease(phase(progress, 0.59, 0.8)));
   shell.position.z = -open * 0.95;
   drivers.position.z = open * 0.4;
-  grille.position.z = open * 1.6;
+  grille.position.z = open * 2.4;
+  grille.position.x = -open * 1.65;
+  grille.rotation.y = open * 0.08;
+  shell.position.x = open * 0.6;
+  camera.zoom = 1 - open * 0.14;
+  camera.updateProjectionMatrix();
   model.rotation.y =
     -0.16 +
-    open * 0.1 +
+    -open * 0.2 +
     ease(phase(progress, 0.64, 0.86)) * 0.28 +
     (+angle.value * Math.PI) / 180;
   model.rotation.x = 0.015;
@@ -65,14 +70,13 @@ function render() {
   ];
   const notes = [...document.querySelectorAll(".copy-notes p")];
   const beat = progress < 0.22 ? 0 : progress < 0.73 ? 1 : 2;
-  titles.forEach((title, i) => {
-    title.style.opacity = i === beat ? 1 : 0;
-  });
-  notes.forEach((note, i) => {
-    note.style.opacity = i === beat ? 1 : 0;
-  });
+  const blend1 = ease(phase(progress, 0.19, 0.25)),
+    blend2 = ease(phase(progress, 0.7, 0.76));
+  const alphas = [1 - blend1, blend1 * (1 - blend2), blend2];
+  titles.forEach((title, i) => (title.style.opacity = alphas[i]));
+  notes.forEach((note, i) => (note.style.opacity = alphas[i]));
   document.querySelector(".part-caption").textContent = [
-    "A familiar shape. A new perspective.",
+    "An everyday object, considered.",
     "Shell. Drivers. Grille. Every layer belongs.",
     "Back together. Down to the last detail.",
   ][beat];
@@ -96,14 +100,18 @@ function fail() {
     .querySelectorAll(".finish,#angle")
     .forEach((control) => (control.disabled = true));
   document.querySelectorAll(".finish").forEach((button) => {
-    const selected = button.dataset.finish === "clay";
+    const selected = button.dataset.finish === "glacier";
     button.classList.toggle("active", selected);
     button.setAttribute("aria-pressed", String(selected));
   });
+  document.querySelector("#finish-name").textContent = "Glacier";
+  document
+    .querySelector(".object-view")
+    .setAttribute("aria-label", "Glacier Relay tabletop speaker concept");
   angle.value = 0;
   document.querySelector("#angle-value").textContent = "0°";
   status.textContent =
-    "Showing a still view in Clay. Interactive 3D is unavailable.";
+    "Showing a still view in Glacier. Interactive 3D is unavailable.";
   document.querySelector("#reload").hidden = false;
 }
 function dispose() {
@@ -144,12 +152,12 @@ async function init() {
   renderer.toneMappingExposure = 1.15;
   scene = new T.Scene();
   camera = new T.PerspectiveCamera(34, 1, 0.1, 100);
-  camera.position.set(6.8, 4.4, 9);
+  camera.position.set(5.8, 3.5, 11.4);
   camera.lookAt(0, 0, 0);
-  scene.add(new T.HemisphereLight(0xfff7e8, 0x7e827b, 2.4));
-  const key = new T.DirectionalLight(0xfff6df, 3.2);
+  scene.add(new T.HemisphereLight(0xffffff, 0x939faa, 2.8));
+  const key = new T.DirectionalLight(0xfffdf5, 2.4);
   key.position.set(-3, 7, 6);
-  key.castShadow = true;
+  key.castShadow = false;
   key.shadow.mapSize.set(1024, 1024);
   key.shadow.camera.left = -7;
   key.shadow.camera.right = 7;
@@ -163,16 +171,16 @@ async function init() {
   rim.position.set(6, 4, -4);
   scene.add(rim);
   model = new T.Group();
-  model.position.set(0.25, 0.05, 0);
+  model.position.set(0, 0.05, 0);
   scene.add(model);
   shell = new T.Group();
   drivers = new T.Group();
   grille = new T.Group();
   model.add(shell, drivers, grille);
   shellMaterial = new T.MeshStandardMaterial({
-    color: finishes.clay,
-    roughness: 0.44,
-    metalness: 0.12,
+    color: finishes.glacier,
+    roughness: 0.58,
+    metalness: 0.08,
   });
   const dark = new T.MeshStandardMaterial({
     color: 0x202320,
@@ -207,7 +215,7 @@ async function init() {
     const geometry = new T.ExtrudeGeometry(rounded(w, h, r), {
       depth: d,
       bevelEnabled: true,
-      bevelSegments: 3,
+      bevelSegments: 8,
       steps: 1,
       bevelSize: 0.045,
       bevelThickness: 0.045,
@@ -226,7 +234,7 @@ async function init() {
   const caseGeometry = new T.ExtrudeGeometry(outline, {
     depth: 1.9,
     bevelEnabled: true,
-    bevelSegments: 3,
+    bevelSegments: 8,
     bevelSize: 0.035,
     bevelThickness: 0.035,
     curveSegments: 12,
@@ -311,7 +319,7 @@ async function init() {
   const textureCanvas = document.createElement("canvas");
   textureCanvas.width = textureCanvas.height = 256;
   const ctx = textureCanvas.getContext("2d");
-  ctx.fillStyle = "#676960";
+  ctx.fillStyle = "#555d53";
   ctx.fillRect(0, 0, 256, 256);
   ctx.fillStyle = "#141b16";
   for (let y = 0; y < 256; y += 8)
@@ -326,7 +334,7 @@ async function init() {
   texture.repeat.set(2.5, 1.5);
   ownedTextures.add(texture);
   const grillMaterial = new T.MeshStandardMaterial({
-    color: 0xbdbcb1,
+    color: 0xc3cbbd,
     map: texture,
     bumpMap: texture,
     bumpScale: 0.012,
@@ -368,13 +376,27 @@ async function init() {
   );
   label.position.set(1.66, -0.9, 1.117);
   grille.add(label);
+  const shadowCanvas = document.createElement("canvas");
+  shadowCanvas.width = shadowCanvas.height = 128;
+  const shadowContext = shadowCanvas.getContext("2d");
+  const gradient = shadowContext.createRadialGradient(64, 64, 8, 64, 64, 64);
+  gradient.addColorStop(0, "rgba(28,44,27,.24)");
+  gradient.addColorStop(0.45, "rgba(28,44,27,.12)");
+  gradient.addColorStop(1, "rgba(28,44,27,0)");
+  shadowContext.fillStyle = gradient;
+  shadowContext.fillRect(0, 0, 128, 128);
+  const shadowTexture = new T.CanvasTexture(shadowCanvas);
+  ownedTextures.add(shadowTexture);
   const ground = new T.Mesh(
-    new T.PlaneGeometry(200, 200),
-    new T.ShadowMaterial({ opacity: 0.16 }),
+    new T.PlaneGeometry(8, 5),
+    new T.MeshBasicMaterial({
+      map: shadowTexture,
+      transparent: true,
+      depthWrite: false,
+    }),
   );
   ground.rotation.x = -Math.PI / 2;
   ground.position.y = -1.56;
-  ground.receiveShadow = true;
   scene.add(ground);
   enabled = true;
   root.classList.add("ready");
@@ -424,7 +446,15 @@ document.querySelectorAll(".finish").forEach((button) =>
       item.classList.toggle("active", item === button);
       item.setAttribute("aria-pressed", String(item === button));
     });
-    status.textContent = `${button.textContent.trim()} finish selected. Return to the object to inspect it.`;
+    document.querySelector("#finish-name").textContent =
+      button.textContent.trim();
+    document
+      .querySelector(".object-view")
+      .setAttribute(
+        "aria-label",
+        `${button.textContent.trim()} Relay tabletop speaker concept`,
+      );
+    status.textContent = `${button.textContent.trim()} selected. Use “View your object” to see the finish.`;
     schedule();
   }),
 );
@@ -444,4 +474,47 @@ addEventListener("pagehide", (event) => {
 init().catch(() => {
   dispose();
   fail();
+});
+
+// The small construction drawings respond locally while their reading surfaces stay fixed.
+const featureAnimations = [];
+document.querySelectorAll(".feature").forEach((feature, index) => {
+  const part = feature.querySelector(".shell-line,.driver-rings,.dial-mark");
+  const frames =
+    index === 0
+      ? [{ transform: "translate(0,0)" }, { transform: "translate(7px,-6px)" }]
+      : index === 1
+        ? [
+            { transform: "scale(1)" },
+            { transform: "scale(1.08)", offset: 0.45 },
+            { transform: "scale(1)" },
+          ]
+        : [{ transform: "rotate(0)" }, { transform: "rotate(65deg)" }];
+  const animation = part.animate(frames, {
+    duration: index === 1 ? 1000 : 650,
+    easing: "cubic-bezier(.2,.7,.2,1)",
+    fill: "both",
+  });
+  animation.pause();
+  animation.currentTime = 0;
+  feature.addEventListener("pointerenter", () => {
+    if (reduced.matches) return;
+    animation.playbackRate = 1;
+    animation.play();
+  });
+  feature.addEventListener("pointerleave", () => {
+    animation.playbackRate = -1;
+    animation.play();
+  });
+  featureAnimations.push(animation);
+});
+reduced.addEventListener("change", () => {
+  if (reduced.matches)
+    featureAnimations.forEach((a) => {
+      a.pause();
+      a.currentTime = 0;
+    });
+});
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) featureAnimations.forEach((a) => a.pause());
 });

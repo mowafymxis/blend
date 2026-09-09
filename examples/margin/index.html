@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta
+      name="description"
+      content="A small, local reading library. Collect notes, find a favorite, and keep a little room for curiosity."
+    />
+    <title>Margin — Your library</title>
+    <link rel="icon" href="favicon.svg" />
+    <link
+      rel="preload"
+      href="../fonts/dm-sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to your library</a>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="wordmark" href="../"
+          ><span aria-hidden="true">m</span>margin</a
+        >
+        <div class="workspace">
+          <span class="workspace-icon">M</span>
+          <div>My reading space<small>Personal library</small></div>
+        </div>
+        <nav aria-label="Library">
+          <button
+            data-view="all"
+            class="nav-item active"
+            aria-pressed="true"
+            disabled
+          >
+            <span aria-hidden="true">▤</span> All notes
+            <b id="all-count">6</b></button
+          ><button
+            data-view="starred"
+            class="nav-item"
+            aria-pressed="false"
+            disabled
+          >
+            <span aria-hidden="true">☆</span> Favorites
+            <b id="starred-count">2</b></button
+          ><button
+            data-view="archive"
+            class="nav-item"
+            aria-pressed="false"
+            disabled
+          >
+            <span aria-hidden="true">▱</span> Archive
+            <b id="archive-count">0</b>
+          </button>
+        </nav>
+        <div class="sidebar-bottom">
+          <p>A fictional app demo.<br />Your changes stay in this browser.</p>
+          <a href="../">← All examples</a>
+        </div>
+      </aside>
+      <div class="surface">
+        <header class="topbar">
+          <span>My space <span class="slash">/</span> Library</span
+          ><button id="motion" aria-pressed="true" class="quiet" disabled>
+            Motion on <span aria-hidden="true">◌</span>
+          </button>
+        </header>
+        <main id="main">
+          <section class="welcome">
+            <div>
+              <h1>Your library</h1>
+              <p>Ideas, passages, and things to come back to.</p>
+            </div>
+            <div class="companion">
+              <svg id="pip" viewBox="0 0 150 130" aria-hidden="true">
+                <ellipse cx="76" cy="116" rx="38" ry="5" fill="#e8e4df" />
+                <path d="M38 106h79v7H38z" fill="#cbd5c5" />
+                <path d="M45 100h69v6H45z" fill="#e5cead" />
+                <g class="pip-body">
+                  <path
+                    d="M53 24Q53 19 58 19h37l14 15v69L81 89l-28 14Z"
+                    fill="#b6a5d0"
+                    stroke="#79658f"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M94 20v16h14"
+                    fill="#d9cde8"
+                    stroke="#79658f"
+                    stroke-width="1.8"
+                  />
+                  <g class="pip-face">
+                    <path
+                      class="eyes"
+                      d="M69 52v5m22-5v5"
+                      stroke="#392f43"
+                      stroke-width="3.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      class="smile"
+                      d="M75 65q6 6 12 0"
+                      fill="none"
+                      stroke="#392f43"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </g>
+                  <path
+                    d="M54 72q-11-3-13-11m67 11q10-3 12-11"
+                    fill="none"
+                    stroke="#79658f"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  />
+                </g>
+                <g class="spark" fill="none" stroke="#79658f" stroke-width="2">
+                  <path d="M28 34v10m-5-5h10M120 17v8m-4-4h8" />
+                </g></svg
+              ><span id="pip-caption">A good place to pause.</span>
+            </div>
+          </section>
+          <section class="collections" aria-labelledby="collections-title">
+            <div class="section-heading">
+              <h2 id="collections-title">Collections</h2>
+              <button id="clear-collection" class="quiet" hidden disabled>
+                Show everything ↗
+              </button>
+            </div>
+            <div class="collection-grid">
+              <button
+                class="collection"
+                data-collection="Design"
+                aria-pressed="false"
+                disabled
+              >
+                <div class="art art-design">
+                  <svg viewBox="0 0 300 150" aria-hidden="true">
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M91 97 149 115 209 94M92 105l57 18 60-20" />
+                      <g class="moving">
+                        <path d="m94 74 56-23 56 23-56 24Z" fill="#f0e5cf" />
+                        <path
+                          d="M94 74v14l56 22 56-22V74m-56 24v12M119 68l54 22"
+                        />
+                      </g>
+                      <g class="detail">
+                        <path d="m167 46 7-12m9 20 13-4m-44-8V29" />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="collection-label">
+                  <span>By design</span
+                  ><span class="collection-count"
+                    >3 notes <i aria-hidden="true">↗</i></span
+                  >
+                </div>
+              </button>
+              <button
+                class="collection"
+                data-collection="Nature"
+                aria-pressed="false"
+                disabled
+              >
+                <div class="art art-nature">
+                  <svg viewBox="0 0 300 150" aria-hidden="true">
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M116 113q32 7 67-1M148 112V65" />
+                      <g class="moving">
+                        <path
+                          class="leaf-left"
+                          d="M149 90c-27 0-35-16-37-28 25-1 37 13 37 28Z"
+                          fill="#d7e2c9"
+                        />
+                        <path
+                          class="leaf-right"
+                          d="M150 73c-2-27 17-39 34-41 3 23-12 40-34 41Z"
+                          fill="#d7e2c9"
+                        />
+                        <path d="m150 73 21-23m-23 39-23-16" />
+                      </g>
+                      <g class="detail">
+                        <circle cx="201" cy="78" r="12" />
+                        <path d="M201 58v-4m0 47v-4m20-19h4m-47 0h4" />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="collection-label">
+                  <span>Out of doors</span
+                  ><span class="collection-count"
+                    >2 notes <i aria-hidden="true">↗</i></span
+                  >
+                </div>
+              </button>
+              <button
+                class="collection"
+                data-collection="Ideas"
+                aria-pressed="false"
+                disabled
+              >
+                <div class="art art-ideas">
+                  <svg viewBox="0 0 300 150" aria-hidden="true">
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M117 104q30 16 65 0M125 115q24 10 48 0" />
+                      <g class="moving">
+                        <path
+                          d="M133 95c0-17-16-22-16-41a32 32 0 0 1 64 0c0 19-16 24-16 41Z"
+                          fill="#e7ddef"
+                        />
+                        <path
+                          class="filament"
+                          pathLength="100"
+                          d="m141 94-4-38 13 12 13-12-7 38m-23 7h32"
+                        />
+                      </g>
+                      <g class="detail">
+                        <path
+                          d="m104 38-11-6m100 6 11-6M150 9V2m-49 60H88m111 0h13"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="collection-label">
+                  <span>Loose threads</span
+                  ><span class="collection-count"
+                    >1 note <i aria-hidden="true">↗</i></span
+                  >
+                </div>
+              </button>
+            </div>
+          </section>
+          <section class="notes-section" aria-labelledby="notes-title">
+            <div class="notes-heading">
+              <h2 id="notes-title">
+                All notes <span id="result-count">6</span>
+              </h2>
+              <button id="add-note" class="primary" disabled>
+                <span aria-hidden="true">＋</span> New note
+              </button>
+            </div>
+            <div class="toolbar">
+              <label class="search"
+                ><span aria-hidden="true">⌕</span
+                ><input
+                  type="search"
+                  id="search"
+                  placeholder="Find something worth keeping…"
+                  aria-label="Search notes"
+                  disabled
+                /><span class="search-hint" aria-hidden="true">/</span></label
+              ><label class="sort"
+                >Sort
+                <select id="sort" disabled>
+                  <option value="recent">Newest first</option>
+                  <option value="title">Title A–Z</option>
+                </select></label
+              >
+            </div>
+            <div id="notes" class="notes">
+              <p>
+                Enable JavaScript to explore and edit this local sample library.
+              </p>
+            </div>
+            <div id="empty" hidden>
+              <h3>A little room for something new.</h3>
+              <p id="empty-copy">No notes match your search.</p>
+              <button class="quiet" id="reset" disabled>Clear filters</button>
+            </div>
+          </section>
+          <div class="library-footer">
+            <span id="storage-note">Sample library · saved on this device</span
+            ><span>Take your time. It's yours.</span>
+          </div>
+          <p id="status" class="sr-only" role="status"></p>
+        </main>
+      </div>
+    </div>
+    <dialog id="editor">
+      <form id="note-form">
+        <div class="dialog-top">
+          <span>A new thought</span
+          ><button
+            type="button"
+            class="close"
+            data-close="editor"
+            aria-label="Close note editor"
+            disabled
+          >
+            ×
+          </button>
+        </div>
+        <h2>Keep it in the margin.</h2>
+        <label
+          >Title<input
+            id="note-title"
+            required
+            maxlength="100"
+            placeholder="Give your thought a name" /></label
+        ><label
+          >Collection<select id="note-collection">
+            <option>Design</option>
+            <option>Nature</option>
+            <option>Ideas</option>
+          </select></label
+        ><label
+          >Your note<textarea
+            id="note-body"
+            required
+            maxlength="8000"
+            rows="6"
+            placeholder="A passage, a question, a small discovery…"
+          ></textarea>
+        </label>
+        <p id="form-error" class="form-error" role="alert" hidden></p>
+        <div class="dialog-actions">
+          <button type="button" class="quiet" data-close="editor" disabled>
+            Cancel</button
+          ><button class="primary" type="submit" disabled>Save note ↗</button>
+        </div>
+      </form>
+    </dialog>
+    <dialog id="reader">
+      <div class="dialog-top">
+        <span id="read-category"></span
+        ><button
+          class="close"
+          data-close="reader"
+          aria-label="Close reading view"
+          disabled
+        >
+          ×
+        </button>
+      </div>
+      <article>
+        <h2 id="read-title"></h2>
+        <p id="read-body"></p>
+      </article>
+      <div class="dialog-actions">
+        <button id="archive" class="quiet" disabled>Archive note</button
+        ><button class="primary" data-close="reader" disabled>
+          Back to library
+        </button>
+      </div>
+    </dialog>
+  </body>
+</html>

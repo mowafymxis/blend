@@ -1,8 +1,14 @@
+@font-face {
+  font-family: Manrope;
+  src: url("fonts/manrope.woff2") format("woff2");
+  font-weight: 400 800;
+  font-display: swap;
+}
 :root {
-  --paper: #f5f3ed;
-  --ink: #2a2a26;
-  --muted: #66665e;
-  --line: #d8d6ce;
+  --paper: #f8f9fb;
+  --ink: #242b35;
+  --muted: #606d7b;
+  --line: #dce2e9;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 * {
@@ -13,7 +19,8 @@ body {
   background: var(--paper);
   color: var(--ink);
   font:
-    14px/1.6 Arial,
+    14px/1.6 Manrope,
+    Arial,
     Helvetica,
     sans-serif;
 }
@@ -168,6 +175,29 @@ footer {
   }
   .example:hover img,
   .example:hover h2 span {
+    transform: none;
+  }
+}
+
+.preview {
+  border-radius: 12px;
+  background: #eef1f4;
+}
+.intro h1 {
+  font-weight: 500;
+  letter-spacing: -3px;
+}
+.label h2 {
+  font-weight: 500;
+}
+a.example:focus-visible {
+  outline-offset: 8px;
+}
+.example:focus-visible img {
+  transform: scale(1.025);
+}
+@media (prefers-reduced-motion: reduce) {
+  .example:focus-visible img {
     transform: none;
   }
 }
