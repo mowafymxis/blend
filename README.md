@@ -1,49 +1,48 @@
 # Blend
 
-A design skill for frontends with a clear visual direction and working task flows. Blend helps an agent choose a composition, build with real content, and revise the rendered result before delivery. Motion is used where it serves the product.
+A design skill for distinctive frontends, complete task flows, and motion with clear staging, continuity, and pace. Blend helps agents choose a direction, build it, and revise the rendered result.
 
-## See it in use
+## See it in motion
 
-### Bench · Bicycle workshop
+### Aperture · A study in light
 
-[![Bench repair queue with green navigation, aligned job records, and an editable detail panel](assets/bench-preview.png)](examples/bench/index.html)
+[![Aperture optical elements before assembly](assets/aperture-preview.png)](examples/aperture/index.html)
 
-A dense workshop tool: find a repair, inspect it, update its status, or add a sample job. [Explore Bench](examples/bench/index.html).
+A live SVG assembly driven by scroll: separated elements align, hold, and reveal a converging light path. Reverse scrolling takes it apart. Narrow screens use a larger, compact still. [Explore Aperture](examples/aperture/index.html), or [watch a captured scroll traversal](assets/aperture-motion.gif).
 
-### Afterlight · Observatory evening
+### Waypoint · A day out
 
-[![Afterlight observatory page with expressive serif typography and an original illustrated night sky](assets/afterlight-preview.png)](examples/afterlight/index.html)
+[![Waypoint route choices beside an original illustrated map](assets/waypoint-preview.png)](examples/waypoint/index.html)
 
-An illustrated public-facing experience: choose an arrival time and activity, then download a matching visit plan. [Explore Afterlight](examples/afterlight/index.html).
+Choose a destination, scrub along the route, and download the matching itinerary. Changing destination retains your journey progress; the marker retargets from its current position. [Explore Waypoint](examples/waypoint/index.html).
 
-Both are fictional, dependency-free demonstrations. They show possible design outcomes; they are not a benchmark of model reliability. No forms send data and no reservations are made. [Run the examples locally](examples/README.md).
+Both are fictional, dependency-free demonstrations with original SVG artwork. Aperture is an illustrative optical diagram, not a simulation. Waypoint has no live schedules or bookings. Still previews show composition; run the examples to inspect motion. [Run and verify](examples/README.md).
 
 ## Use Blend
 
 Copy this repository into your Codex skills directory as a folder named `blend`. Keep `SKILL.md`, references, and examples together. No source skills need to be installed separately.
 
-For a new design:
-
 ```text
-Use $blend to build a repair scheduling tool. Make finding and updating
-a job easy, with a distinct visual direction and a usable mobile layout.
+Use $blend to build a product story where the object assembles as I scroll.
+Use live elements, no video. Give it clear staging and a convincing final frame.
 ```
 
 For existing work:
 
 ```text
 Use $blend to refine this frontend. Preserve our copy, brand, and routes.
-Inspect the render and fix the most important visual weaknesses.
+Inspect the render and fix the most important visual and motion weaknesses.
 ```
 
 ## Inside the skill
 
 - [Core workflow](SKILL.md): scope, design, copy, behavior, and the visual revision pass.
-- [Art direction](references/art-direction.md): choose a composition, type roles, density, and assets from the brief.
+- [Art direction](references/art-direction.md): composition, type roles, density, and assets.
 - [Product workflows](references/product-workflows.md): navigation, records, forms, and task continuity.
 - [Landing pages](references/landing-pages.md): offer, evidence, conversion paths, and discovery checks.
+- [Motion direction](references/motion-direction.md): staging, continuity, pacing, holds, and diagnosing an off-feeling scene.
 - [Motion recipes](references/motion-recipes.md), [scroll scenes](references/scroll-scenes.md), and [3D and mascots](references/3d-and-mascots.md): conditional techniques, not required effects.
-- [Verification](references/verification.md): behavior checks and a method for evaluating draft quality across fresh runs.
+- [Verification](references/verification.md): behavior checks and evaluating draft quality across fresh runs.
 
 ## Develop and verify
 
@@ -53,7 +52,7 @@ With Python 3 installed, serve the repository from its root:
 python -m http.server 18789 --bind 127.0.0.1
 ```
 
-Open [the example gallery](http://127.0.0.1:18789/examples/). There is no package installation or build step. Follow the [example checks and preview instructions](examples/README.md) after changes, and the [verification guide](references/verification.md) when revising the skill. Keep local captures and experiments in the ignored `.maintainer/` directory; commit only the selected documentation previews.
+Open [the example gallery](http://127.0.0.1:18789/examples/). There is no package installation or build step. Follow the [example checks and preview instructions](examples/README.md) after changes. Keep local captures and experiments in ignored `.maintainer/`; commit only selected documentation previews. Handcrafted examples demonstrate possibilities, not reliable improvements across future model runs.
 
 ## Credits
 

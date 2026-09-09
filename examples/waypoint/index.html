@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta
+      name="description"
+      content="Plan a fictional rail journey and explore its route."
+    />
+    <title>Waypoint — Take the scenic route</title>
+    <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="../"><span aria-hidden="true">↗</span> waypoint</a
+      ><a href="../aperture/">Aperture study ↗</a>
+    </header>
+    <main>
+      <div class="intro">
+        <h1>A day out.<br />All mapped out.</h1>
+        <p>
+          A window seat. A little more time.<br />Find your way out of the city.
+        </p>
+      </div>
+      <div class="planner">
+        <section class="choices" aria-labelledby="choose">
+          <h2 id="choose">Where to?</h2>
+          <div class="routes" role="group" aria-label="Choose a route">
+            <button
+              class="route active"
+              data-route="coast"
+              aria-pressed="true"
+              disabled
+            >
+              <span class="route-number">01</span
+              ><span
+                ><strong>The coast</strong
+                ><small>Central → Saltbay</small></span
+              ><span class="duration">1h 40m <b aria-hidden="true">↗</b></span>
+            </button>
+            <button
+              class="route"
+              data-route="forest"
+              aria-pressed="false"
+              disabled
+            >
+              <span class="route-number">02</span
+              ><span
+                ><strong>The forest</strong
+                ><small>Central → Pinewood</small></span
+              ><span class="duration">2h 15m <b aria-hidden="true">↗</b></span>
+            </button>
+            <button
+              class="route"
+              data-route="hills"
+              aria-pressed="false"
+              disabled
+            >
+              <span class="route-number">03</span
+              ><span
+                ><strong>The hills</strong
+                ><small>Central → Highfield</small></span
+              ><span class="duration">1h 20m <b aria-hidden="true">↗</b></span>
+            </button>
+          </div>
+          <div class="itinerary">
+            <div><span>Departure</span><strong>09:20</strong></div>
+            <span aria-hidden="true">——→</span>
+            <div><span>Arrival</span><strong id="arrival">11:00</strong></div>
+          </div>
+          <p id="description">
+            Past the river and through the dunes, with the sea waiting at the
+            end.
+          </p>
+          <button id="save" disabled>
+            Download this itinerary <span aria-hidden="true">↓</span>
+          </button>
+          <p class="disclosure">
+            Fictional routes and times. Nothing is booked.
+          </p>
+          <p id="message" role="status"></p>
+          <noscript
+            ><p>
+              JavaScript enables route selection and downloads. The coast
+              itinerary above remains readable.
+            </p></noscript
+          >
+        </section>
+        <section class="map-panel" aria-label="Illustrated journey map">
+          <div class="map-heading">
+            <span id="map-title">Central to Saltbay</span
+            ><span>Illustrative map</span>
+          </div>
+          <svg
+            id="map"
+            viewBox="0 0 800 640"
+            role="img"
+            aria-labelledby="map-label"
+          >
+            <title id="map-label">
+              Three illustrative routes from Central to Saltbay, Pinewood, and
+              Highfield. Choose a destination to highlight a route.
+            </title>
+            <defs>
+              <pattern
+                id="grid"
+                width="40"
+                height="40"
+                patternUnits="userSpaceOnUse"
+              >
+                <path
+                  d="M40 0H0V40"
+                  fill="none"
+                  stroke="#b7c4c4"
+                  stroke-opacity=".2"
+                />
+              </pattern>
+            </defs>
+            <rect width="800" height="640" fill="#e7ece7" />
+            <path
+              d="M540-20C470 95 690 125 581 230S710 366 608 462S660 573 585 670H850V-20Z"
+              fill="#bdd9dc"
+            />
+            <path
+              d="M550-20C480 95 700 125 591 230S720 366 618 462S670 573 595 670"
+              stroke="#a4c3c3"
+              fill="none"
+            />
+            <rect width="800" height="640" fill="url(#grid)" />
+            <g fill="none" stroke="#c9d2c6" stroke-width="1.4">
+              <path
+                d="M-20 165C145 48 175 290 364 82S553 82 572 123M-20 180C145 63 175 305 364 97S553 97 572 138M-20 195C145 78 175 320 364 112S553 112 572 153M-20 210C145 93 175 335 364 127S553 127 572 168"
+              />
+              <path
+                d="M-40 490C74 360 240 580 403 450S577 442 582 612M-40 510C74 380 240 600 403 470S577 462 582 632M-40 530C74 400 240 620 403 490S577 482 582 652"
+              />
+            </g>
+            <path
+              d="M290-10C360 170 130 200 252 338S391 470 300 680"
+              fill="none"
+              stroke="#b5ced0"
+              stroke-width="16"
+            />
+            <path
+              d="M290-10C360 170 130 200 252 338S391 470 300 680"
+              fill="none"
+              stroke="#e7ece7"
+              stroke-width="2"
+            />
+            <g fill="#adbd9f" opacity=".65">
+              <path
+                d="M385 125l9-20 9 20h-6l7 14h-20l7-14ZM420 110l9-20 9 20h-6l7 14h-20l7-14ZM448 145l9-20 9 20h-6l7 14h-20l7-14ZM380 170l9-20 9 20h-6l7 14h-20l7-14ZM422 167l9-20 9 20h-6l7 14h-20l7-14Z"
+              />
+            </g>
+            <g
+              fill="none"
+              stroke="#a8b5ae"
+              stroke-width="3"
+              stroke-linecap="round"
+            >
+              <path
+                id="coast"
+                d="M180 400C250 400 280 290 350 300S460 360 535 300"
+              />
+              <path
+                id="forest"
+                d="M180 400C230 360 285 360 294 270S355 198 408 215"
+              />
+              <path
+                id="hills"
+                d="M180 400C160 350 100 320 130 260S180 190 155 130"
+              />
+            </g>
+            <path
+              id="selected-path"
+              d="M180 400C250 400 280 290 350 300S460 360 535 300"
+              fill="none"
+              stroke="#c34a28"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+            <g fill="#f7f7ed" stroke="#32453b" stroke-width="2">
+              <circle cx="180" cy="400" r="7" />
+              <circle cx="535" cy="300" r="6" />
+              <circle cx="408" cy="215" r="6" />
+              <circle cx="155" cy="130" r="6" />
+            </g>
+            <g fill="#33483c" font-family="Arial,sans-serif" font-size="16">
+              <text x="150" y="437" font-weight="bold">Central</text>
+              <text x="537" y="278">Saltbay</text>
+              <text x="390" y="245">Pinewood</text>
+              <text x="119" y="103">Highfield</text>
+              <text
+                x="666"
+                y="370"
+                fill="#507f83"
+                font-family="Georgia,serif"
+                font-style="italic"
+                transform="rotate(90 666 370)"
+              >
+                The open sea
+              </text>
+            </g>
+            <g id="marker" transform="translate(180 400)" aria-hidden="true">
+              <circle r="18" fill="#c34a28" fill-opacity=".13" />
+              <circle r="8" fill="#c34a28" stroke="#fff9ec" stroke-width="3" />
+            </g>
+            <g
+              transform="translate(716 72)"
+              fill="#50685e"
+              font-family="Arial,sans-serif"
+              font-size="12"
+              text-anchor="middle"
+            >
+              <text y="-18">N</text>
+              <path d="M0-8L-5 12 0 8 5 12Z" />
+            </g>
+          </svg>
+          <div class="scrubber">
+            <div>
+              <label for="journey">Explore the journey</label
+              ><output for="journey" id="position">Departure · Central</output>
+            </div>
+            <input
+              id="journey"
+              type="range"
+              min="0"
+              max="100"
+              value="0"
+              disabled
+            />
+            <div class="endpoints">
+              <span>Central</span><span id="destination">Saltbay</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <a href="../">Blend studies</a
+      ><span>Original illustration · Local demo</span>
+    </footer>
+  </body>
+</html>

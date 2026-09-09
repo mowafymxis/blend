@@ -10,6 +10,8 @@ Inspect narrow and wide layouts, a short viewport, long text, and zoom. Check to
 
 ## Motion review
 
+Before checking implementation correctness, judge the direction: can you follow one subject across the sequence, does its transformation explain anything, are the important intermediate frames composed, and is there time to recognize the result? If the brief asks for a cinematic live scene, a stack of reveal-on-scroll sections fails that brief even if its listeners and reduced-motion branch are correct. Use [motion direction](motion-direction.md) to revise the weakest beat.
+
 | Test | Pass condition |
 |---|---|
 | Rapid pointer enter/leave | Effect reverses from current pose, no queues or flicker |

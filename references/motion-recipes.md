@@ -44,3 +44,5 @@ Do not copy complex keyboard patterns from an animation snippet. Reuse accessibl
 Define easing, distance, duration, and spring character at system level. Use 2–4 short beats for an entrance only when an entrance improves the experience. Avoid delayed access to the main action. A press compresses the visual inside a steady hit box; a selection indicator explains a change. A page transition must not suppress native navigation, browser history, anchor jumps, or focus management.
 
 For expressive scenes, anticipation, follow-through, and an occasional overshoot can establish character. Quiet utility controls should settle quickly. Linear motion is appropriate for a scroll-linked pose or continuous progress. No single easing is inherently premium.
+
+For a worked example of retargeting, inspect [Waypoint](../examples/waypoint/app.js). Its marker moves from the current visible point when the destination changes, while slider input remains immediate. The same element has one transform owner. The transition communicates selection continuity; it does not simulate a train traveling between routes.
