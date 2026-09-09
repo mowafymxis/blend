@@ -1,125 +1,70 @@
-const reduce = matchMedia("(prefers-reduced-motion: reduce)");
-document.querySelectorAll(":disabled").forEach((control) => {
-  control.disabled = false;
-});
-document.querySelectorAll(".case-toggle").forEach((button) => {
+import { scrollScene, illustrations, download } from "../shared/motion.js";
+document.querySelectorAll(":disabled").forEach((el) => (el.disabled = false));
+document.querySelectorAll(".case-toggle").forEach((button) =>
   button.addEventListener("click", () => {
     const expanded = button.getAttribute("aria-expanded") === "true";
     button.setAttribute("aria-expanded", String(!expanded));
     document.getElementById(button.getAttribute("aria-controls")).hidden =
       expanded;
     button.querySelector("span").textContent = expanded ? "+" : "−";
-  });
-});
-const form = document.getElementById("brief-form");
-const requiredText = ["project-name", "project-detail"].map((id) =>
-  document.getElementById(id),
-);
-requiredText.forEach((field) =>
-  field.addEventListener("input", () => {
-    field.setCustomValidity("");
-    document.getElementById("brief-status").textContent = "";
   }),
 );
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  for (const field of requiredText) {
+const form = document.querySelector("form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const name = form.elements.name,
+    notes = form.elements.notes;
+  for (const field of [name, notes]) {
     field.setCustomValidity(
-      field.value.trim() ? "" : "Please add a few words here.",
+      field.value.trim() ? "" : "Please add a few words.",
     );
   }
   if (!form.reportValidity()) return;
-  const data = new FormData(form);
-  const content = `PROJECT BRIEF\n\nProject: ${data.get("project").trim()}\nFocus: ${data.get("type")}\n\nThe idea\n${data.get("detail").trim()}\n\nThings to consider next\n- Who is this for?\n- What needs to change?\n- What should the finished work include?\n- What are the timing and budget constraints?\n\nPrepared locally with the Format studio concept. Nothing was submitted.\n`;
-  const url = URL.createObjectURL(
-    new Blob([content], { type: "text/plain;charset=utf-8" }),
+  download(
+    `FORMAT — PROJECT BRIEF\n\nProject: ${name.value.trim()}\nScope: ${form.elements.type.value}\n\n${notes.value.trim()}\n\nCreated locally. Not submitted to a studio.\n`,
+    "format-project-brief.txt",
   );
-  const link = document.createElement("a");
-  link.href = url;
-  link.download = "format-project-brief.txt";
-  document.body.append(link);
-  link.click();
-  link.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
-  document.getElementById("brief-status").textContent =
-    "Your brief is ready. Check your downloads; you can edit it and download again.";
+  document.querySelector("#brief-status").textContent =
+    "Your brief has been downloaded.";
 });
-const svg = document.getElementById("registration-art");
-const inkA = document.getElementById("ink-a");
-const inkB = document.getElementById("ink-b");
-const stamp = document.getElementById("finish-stamp");
-const check = document.getElementById("finish-check");
-const replay = document.getElementById("replay");
-let frame = 0,
-  running = false;
-const clamp = (x) => Math.max(0, Math.min(1, x));
-const phase = (p, a, b) => {
-  const t = clamp((p - a) / (b - a));
-  return t * t * (3 - 2 * t);
-};
-function pose(p) {
-  const withdraw = phase(p, 0, 0.17),
-    arrive = phase(p, 0.49, 0.73);
-  const scale = 1 - withdraw + arrive;
-  const separation = phase(p, 0.12, 0.35) - phase(p, 0.35, 0.62);
-  inkA.setAttribute(
-    "transform",
-    `translate(${-16 * separation} ${-5 * separation})`,
+form.addEventListener("input", (e) => {
+  if (e.target.setCustomValidity) e.target.setCustomValidity("");
+  document.querySelector("#brief-status").textContent = "";
+});
+scrollScene(document.querySelector(".design-story"), (p) => {
+  const q = p * p * (3 - 2 * p);
+  document
+    .querySelectorAll(".system-mark path")
+    .forEach((path, i) =>
+      path.setAttribute(
+        "transform",
+        `translate(${(i - 4) * 17 * (1 - q)},${Math.abs(i - 4) * 7 * (1 - q)})`,
+      ),
+    );
+  const shift = Math.min(
+    110,
+    document.querySelector(".system-stage").clientWidth * 0.18,
   );
-  inkB.setAttribute(
-    "transform",
-    `translate(${16 * separation} ${5 * separation})`,
+  document.querySelector(".system-mark").style.transform =
+    `translate(${-shift * q}px,${-10 * q}px) scale(${1 - 0.13 * q})`;
+  document.querySelector(".construction-grid").style.opacity = String(
+    1 - 0.88 * q,
   );
-  stamp.setAttribute(
-    "transform",
-    `translate(166 127) scale(${scale}) translate(-166 -127)`,
-  );
-  const drawn = 1 - phase(p, 0, 0.1) + phase(p, 0.7, 0.89);
-  check.style.strokeDasharray = "1";
-  check.style.strokeDashoffset = 1 - drawn;
-}
-function settle() {
-  cancelAnimationFrame(frame);
-  frame = 0;
-  running = false;
-  pose(1);
-  svg.dataset.motion = "settled";
-}
-function play() {
-  if (running || document.hidden) return;
-  if (reduce.matches) {
-    settle();
-    document.getElementById("motion-status").textContent =
-      "The print layers are aligned. Animation is reduced to a still.";
-    return;
+  for (const selector of [
+    ".system-word",
+    ".system-caption",
+    ".system-number",
+    ".system-rule",
+  ]) {
+    const el = document.querySelector(selector);
+    el.style.opacity = String(Math.max(0, (p - 0.3) / 0.7));
+    el.style.transform = `translateY(${20 * (1 - q)}px)`;
   }
-  running = true;
-  svg.dataset.motion = "running";
-  const start = performance.now();
-  const step = (now) => {
-    const p = Math.min(1, (now - start) / 2200);
-    pose(p);
-    if (p < 1) frame = requestAnimationFrame(step);
-    else {
-      settle();
-    }
-  };
-  frame = requestAnimationFrame(step);
-}
-replay.addEventListener("click", play);
-replay.addEventListener("focus", play);
-svg.parentElement.addEventListener("pointerenter", (event) => {
-  if (event.pointerType === "mouse" || event.pointerType === "pen") play();
+  document
+    .querySelectorAll(".story-progress i")
+    .forEach(
+      (el, i) =>
+        (el.style.transform = `scaleX(${Math.max(0, Math.min(1, p * 2 - i))})`),
+    );
 });
-window.addEventListener("pagehide", settle);
-reduce.addEventListener("change", settle);
-document.addEventListener("visibilitychange", () => {
-  if (document.hidden) settle();
-});
-new IntersectionObserver(
-  (entries) => {
-    if (!entries[0].isIntersecting) settle();
-  },
-  { threshold: 0 },
-).observe(svg);
-settle();
+illustrations();

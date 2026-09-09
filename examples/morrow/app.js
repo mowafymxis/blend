@@ -1,80 +1,182 @@
-import { mountMotion } from "./motion.js";
-
-const examples = {
-  plan: {
-    name: "A neighbourhood book swap",
-    prompt:
-      "I’d love to start a neighbourhood book swap. Nothing complicated. Just a good reason to meet. Where do I begin?",
-    response: `<h2>Start with one table<br>and an open invitation.</h2><p>Keep the first gathering small enough to enjoy. You’re making a place for people to connect; the books are a lovely way in.</p><ol><li><strong>Pick a simple setting.</strong> A shared garden, a community room, or a café that’s happy to host.</li><li><strong>Make the invitation easy.</strong> “Bring a book you liked. Leave with one you haven’t read.”</li><li><strong>Leave room for conversation.</strong> A handwritten note inside each book gives people something to talk about.</li></ol>`,
+import {
+  scrollScene,
+  illustrations,
+  reduced,
+  download,
+} from "../shared/motion.js";
+const samples = {
+  research: {
+    prompt: "What should we consider before moving to a four-day workweek?",
+    title: "Start with the work,\nnot the calendar.",
+    intro:
+      "A shorter week changes more than working hours. Separate the decision into three questions before choosing a pilot.",
+    points: [
+      [
+        "What needs coverage?",
+        "Map customer-facing hours and critical handovers.",
+      ],
+      [
+        "What can change?",
+        "Audit meetings and recurring work before compressing the schedule.",
+      ],
+      [
+        "What would count as success?",
+        "Compare service quality, workload, and team feedback.",
+      ],
+    ],
   },
-  explain: {
-    name: "The idea behind a commonplace book",
+  plan: {
     prompt:
-      "I keep saving interesting things and never returning to them. What’s a commonplace book, and how could I make one that I’d actually use?",
-    response: `<h2>A collection with<br>a conversation inside it.</h2><p>Think of a commonplace book as a place for ideas you want to keep thinking about. The useful part isn’t how much you collect; it’s what you add to it.</p><ol><li><strong>Keep one small place.</strong> A notebook or a simple document is enough to start.</li><li><strong>Add your own sentence.</strong> Why did this catch your attention? What does it connect to?</li><li><strong>Return with a question.</strong> Look for a recurring theme, a disagreement, or an idea you’d like to try.</li></ol>`,
+      "Help me turn a promising idea into a small, useful research project.",
+    title: "Make the question\nsmall enough to answer.",
+    intro:
+      "Start with one decision the research should inform. Build the project around evidence you can actually collect.",
+    points: [
+      [
+        "Write the decision.",
+        "Name what you will do differently when you know more.",
+      ],
+      [
+        "Choose the evidence.",
+        "Find the people, observations, or sources that can challenge your assumptions.",
+      ],
+      [
+        "Set a review point.",
+        "Bring the findings together before expanding the scope.",
+      ],
+    ],
   },
   write: {
-    name: "An invitation that sounds like you",
     prompt:
-      "Help me write a warm invitation to our first book swap. Saturday, 11am, in the community garden. Friendly, short, and not too polished.",
-    response: `<h2>Bring a book.<br>Find a new favourite.</h2><p>We’re having a little book swap in the community garden this Saturday at 11am. Bring a book you enjoyed and pick up something new to you.</p><p>No need to wrap it or write a review. But if you feel like leaving a note about why you liked it, we’d love that.</p><p>Come for a browse, a chat, or both. See you in the garden.</p>`,
+      "Help me write a concise update: our research is complete, but we need another week to review the findings.",
+    title: "A clear update.\nA useful next step.",
+    intro:
+      "The research is complete. We are taking one more week to review the findings and make sure the recommendations reflect the evidence.",
+    points: [
+      [
+        "What is ready",
+        "The source material and initial observations are organized.",
+      ],
+      [
+        "What happens next",
+        "We will compare the findings, resolve open questions, and prepare a short brief.",
+      ],
+      [
+        "What to expect",
+        "The next update will include the recommendations and the reasoning behind them.",
+      ],
+    ],
   },
 };
-
-let current = "plan";
-const motion = mountMotion();
-const copy = document.querySelector("#copy");
-const status = document.querySelector("#copy-status");
-
-document.querySelectorAll("button:disabled").forEach((button) => {
-  button.disabled = false;
+let selected = "research";
+document
+  .querySelectorAll("button:disabled")
+  .forEach((b) => (b.disabled = false));
+const creature = document.querySelector(".creature");
+let greeting = [];
+let companionVisible = false;
+function greet() {
+  if (
+    !companionVisible ||
+    reduced.matches ||
+    greeting.some((a) => a.playState === "running")
+  )
+    return;
+  greeting = [
+    creature.animate(
+      [
+        { transform: "translateY(0)" },
+        { transform: "translateY(-3px)", offset: 0.35 },
+        { transform: "translateY(0)", offset: 0.7 },
+        { transform: "translateY(0)" },
+      ],
+      { duration: 850, easing: "ease-in-out" },
+    ),
+    document
+      .querySelector(".eyes")
+      .animate(
+        [
+          { transform: "scaleY(1)" },
+          { transform: "scaleY(.2)", offset: 0.3 },
+          { transform: "scaleY(1)", offset: 0.45 },
+          { transform: "scaleY(1)" },
+        ],
+        { duration: 850 },
+      ),
+  ];
+}
+const settle = () => {
+  greeting.forEach((a) => a.cancel());
+  greeting = [];
+};
+new IntersectionObserver(([entry]) => {
+  companionVisible = entry.isIntersecting;
+  if (!companionVisible) settle();
+}).observe(creature);
+document.querySelector("#greet").addEventListener("click", greet);
+reduced.addEventListener("change", settle);
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) settle();
 });
-
-document.querySelectorAll("[data-example]").forEach((button) => {
-  button.addEventListener("click", () => {
-    const key = button.dataset.example;
-    if (current === key) return;
-    current = key;
-    const example = examples[key];
-    document.querySelectorAll("[data-example]").forEach((item) => {
-      item.setAttribute("aria-pressed", String(item === button));
+document.querySelectorAll("[data-example]").forEach((b) =>
+  b.addEventListener("click", () => {
+    selected = b.dataset.example;
+    const s = samples[selected];
+    document
+      .querySelectorAll("[data-example]")
+      .forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    document.querySelector("#prompt").textContent = s.prompt;
+    const response = document.querySelector("#response");
+    response.replaceChildren();
+    const title = document.createElement("h3");
+    title.style.whiteSpace = "pre-line";
+    title.textContent = s.title;
+    const intro = document.createElement("p");
+    intro.textContent = s.intro;
+    const list = document.createElement("ol");
+    s.points.forEach(([a, c]) => {
+      const li = document.createElement("li");
+      const strong = document.createElement("strong");
+      strong.textContent = a + " ";
+      li.append(strong, document.createTextNode(c));
+      list.append(li);
     });
-    document.querySelector("#conversation-name").textContent = example.name;
-    document.querySelector("#prompt").textContent = example.prompt;
-    // These are authored, static samples. No user input is interpolated as HTML.
-    document.querySelector("#response").innerHTML = example.response;
-    status.textContent = "";
-    motion.greet();
-  });
-});
-
-copy.addEventListener("click", async () => {
-  const selected = current;
-  const text = document.querySelector("#response").innerText;
-  copy.disabled = true;
+    response.append(title, intro, list);
+    document.querySelector("#copy-status").textContent = "";
+    greet();
+  }),
+);
+document.querySelector("#copy").addEventListener("click", async () => {
+  const key = selected,
+    text = document.querySelector("#response").innerText;
   try {
     await navigator.clipboard.writeText(text);
-    if (selected === current) status.textContent = "Copied";
+    if (selected === key)
+      document.querySelector("#copy-status").textContent = "Copied";
   } catch {
-    // A useful fallback when clipboard permissions are unavailable.
-    const url = URL.createObjectURL(
-      new Blob([text], { type: "text/plain;charset=utf-8" }),
-    );
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = `morrow-${selected}-sample.txt`;
-    link.click();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
-    if (selected === current) status.textContent = "Downloaded as a text file";
-  } finally {
-    copy.disabled = false;
+    download(text, `morrow-${key}.txt`);
+    if (selected === key)
+      document.querySelector("#copy-status").textContent = "Downloaded as text";
   }
 });
-
-window.addEventListener(
-  "pagehide",
-  (event) => {
-    if (!event.persisted) motion.destroy();
-  },
-  { once: true },
-);
+const story = document.querySelector(".story");
+scrollScene(story, (p) => {
+  const merge = Math.min(1, p / 0.7),
+    q = merge * merge * (3 - 2 * merge);
+  document.querySelector(".source-a").style.transform =
+    `translate(${-155 + 105 * q}%,${-10 + 32 * q}px) rotate(${-8 + 8 * q}deg)`;
+  document.querySelector(".source-b").style.transform =
+    `translate(${55 - 105 * q}%,${10 + 12 * q}px) rotate(${8 - 8 * q}deg)`;
+  document
+    .querySelectorAll(".source")
+    .forEach((el) => (el.style.opacity = String(1 - q * 0.93)));
+  document.querySelector(".brief").style.transform =
+    `translateX(-50%) translateY(${35 * (1 - q)}px) scale(${0.82 + 0.18 * q})`;
+  document
+    .querySelectorAll(".story-meter i")
+    .forEach(
+      (el, i) =>
+        (el.style.transform = `scaleX(${Math.max(0, Math.min(1, p * 2 - i))})`),
+    );
+});
+illustrations();

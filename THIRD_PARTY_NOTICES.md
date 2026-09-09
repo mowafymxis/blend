@@ -6,7 +6,7 @@ Blend also incorporates the project's premium-frontend and frontend-motion-desig
 
 Morrow and Format are original fictional company landing-page demonstrations. All sample text, illustrations, mascot shapes, maps/diagrams, print designs, and packaging artwork are authored for this repository. Morrow's conversations are prewritten samples; Format's projects are self-initiated concepts. Neither represents real products, customers, clients, or businesses.
 
-The examples bundle Latin WOFF2 subsets of Newsreader, DM Sans, and Manrope from Google Fonts, under the SIL Open Font License 1.1. Full notices are retained with the files: [Newsreader](https://github.com/mowafymxis/blend/blob/main/examples/fonts/newsreader-LICENSE.txt), [DM Sans](https://github.com/mowafymxis/blend/blob/main/examples/fonts/dm-sans-LICENSE.txt), and [Manrope](https://github.com/mowafymxis/blend/blob/main/examples/fonts/manrope-LICENSE.txt). Font files are distributed unmodified from the Google Fonts CSS service.
+The examples bundle Latin WOFF2 subsets of DM Sans and Manrope from Google Fonts, under the SIL Open Font License 1.1. Full notices are retained with the files: [DM Sans](https://github.com/mowafymxis/blend/blob/main/examples/fonts/dm-sans-LICENSE.txt), and [Manrope](https://github.com/mowafymxis/blend/blob/main/examples/fonts/manrope-LICENSE.txt). Font files are distributed unmodified from the Google Fonts CSS service.
 
 The documented upstream revisions describe provenance, not automatic synchronization with future source changes. Adapted guidance now lives in the focused folders under `skills/`. The installer includes these notices and the project license with each installed skill.
 

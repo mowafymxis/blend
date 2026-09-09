@@ -26,13 +26,11 @@ The inspected [Claude mascot article](https://ayotomcs.me/claude-mascot) present
 
 Transfer silhouette economy, consistent proportions, pose readability, and grounded secondary motion. Do not treat a brand character as the default mascot for every app. Choose the user's character when supplied, or develop an original one that belongs to the app. A displayed animation does not prove integration with real application status.
 
-## The supplied card recording: animate inside a stable frame
+## Small illustrations inside stable frames
 
-In the newly supplied 3.285-second recording, the text and card stay in place while a small grid-and-badge illustration changes. Sampled frames show the badge appearing and its interior arrow resolving, followed by a held result. An earlier, longer suite reference includes withdrawal and grid reorganization. Keep those observations separate; neither sampled sequence establishes the input trigger or precise easing.
+Separate the fixed card, reading layer, and hit area from the parts that change. A compact sequence can withdraw an accent, reorganize supporting geometry, return the accent, and resolve an interior mark. Use [part choreography](../../blend-micro-motion/references/staged-illustrations.md) to author an original action.
 
-Transfer the division of labor: static information remains easy to read, while a small illustration performs a coherent visual action. Another product might use a connector linking nodes, a folded route revealing a destination, or a pair of objects aligning. Those are possible interpretations, not required motifs. The closer sampled analysis and an implementation model are in [staged illustration choreography](../../blend-micro-motion/references/staged-illustrations.md). Match the part relationships and pacing when requested, not merely the green palette or an icon scale effect.
-
-The two supplied app screenshots offer a related static lesson: slightly irregular light outlines depict a hand and geometric objects on charcoal; small filled areas support the drawing. A clear heading, short explanation, and one rounded action sit below. The stills establish drawing language and composition, not whether or how the hands animate. Use [drawn illustration craft](../../blend-micro-motion/references/drawn-illustrations.md) for an original family in this language.
+Static references establish drawing language and composition, not animation behavior. Slightly irregular outlines, restrained fills, and a clear local subject can support a short heading and action. Use [drawn illustration craft](../../blend-micro-motion/references/drawn-illustrations.md) for a coherent family.
 
 ## Combine principles, not borrowed parts
 

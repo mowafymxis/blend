@@ -2,26 +2,11 @@
 
 Use when a reference shows an object contracting, reorganizing, returning, and resolving inside a stationary card. The task is to direct a miniature sequence, not apply an entrance animation to an icon. Use the user's visual language; the shapes below are an explanation of mechanics, not assets to copy.
 
-## Earlier reference episode
+## Sequence structure
 
-An earlier suite study described a roughly 4.87-second clip at 30 fps with the sequence below. This is historical reference analysis, not a timing measurement of every subsequently supplied recording. The newer 3.285-second clip is described separately below.
+A useful sequence is **withdraw an accent → reorganize its supporting structure → return the accent → resolve its interior → rest**. Keep the frame and reading layer stable. A slight scale change alone misses that structure.
 
-| Approximate clip time | Observed change |
-|---|---|
-| 0.0–0.7 s | A grid, a round badge, and its arrow remain recognizable and mostly settled. |
-| 0.8–1.0 s | The badge and arrow contract toward an anchored point; the badge disappears. |
-| 1.0–1.5 s | The grid's internal vertical divisions change position while its outer frame stays put. |
-| 1.6–1.9 s | A small badge returns at the same anchor and expands. Its interior is initially sparse. |
-| 2.0–2.4 s | The interior arrow changes shape/orientation into the resolved mark. |
-| About 2.5 s onward | The complete illustration holds, giving the action time to be recognized. |
-
-These are sampled observations, not exact keyframe values or knowledge of the source code. The recording does not establish the trigger, easing function, event semantics, or whether it loops. Its slightly irregular lines do not establish that noise is regenerated each frame. Do not reproduce those unknowns as facts.
-
-## New supplied excerpt, 2026-09-09
-
-The 20:47:03 screen recording is approximately 3.285 seconds at 30 fps, 1698 × 422. Four samples per second show an initially visible grid without a substantial badge, the filled circular accent appearing near the lower-right grid corner by about 0.25 seconds, the internal line changing toward an upward arrow over the next samples, and a resolved pose from around one second onward. The surrounding card, words, and button stay stable. These samples do not establish a complete prior withdrawal episode, exact easing, the trigger, or loop behavior. Use the source clip for finer timing decisions rather than applying the earlier episode's timestamps to it.
-
-The important structure is **withdraw an accent → reorganize its supporting structure → return the accent → resolve its interior → rest**. The frame and reading layer remain stable. A slight scale change alone misses most of the sequence.
+When studying a reference, distinguish observed poses from inferred triggers, easing, or loop behavior. An excerpt may show only the return and resolution. Measure timing from the actual supplied clip; do not transfer timestamps from a different recording.
 
 ## Author a related action for this product
 
@@ -41,11 +26,11 @@ Separate groups by ownership: placement wrapper, fixed structure, deforming piec
 Use a single normalized progress value for the scene. Each part receives a bounded local phase; avoid unrelated timeouts for each child. An illustrative starting timeline for a roughly two-second cycle is:
 
 ```text
-0.00–0.18  retract the interior mark and contract the accent
-0.12–0.48  reorganize the underlying parts around their anchor
-0.42–0.70  return the accent body, with a material-appropriate arrival
-0.62–0.86  resolve the interior mark in a deliberate stroke/shape order
-0.86–1.00  hold the complete composition; stop work
+0.00â€“0.18  retract the interior mark and contract the accent
+0.12â€“0.48  reorganize the underlying parts around their anchor
+0.42â€“0.70  return the accent body, with a material-appropriate arrival
+0.62â€“0.86  resolve the interior mark in a deliberate stroke/shape order
+0.86â€“1.00  hold the complete composition; stop work
 ```
 
 Overlapping tracks express causality: the structure can begin changing as the accent clears it, and the mark can begin as the body finishes growing. They are not equal child delays. Tune these proportions from travel and legibility. Utility feedback may be much shorter; an opted-in illustration may take longer. Reference timings are not a global motion token.
