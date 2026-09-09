@@ -2,6 +2,8 @@
 
 Use these as adaptable patterns. Do not add every effect to one page. The snippets below describe techniques; verify them in the actual project rather than treating them as complete components.
 
+Choose the effect with [motion direction](motion-direction.md#find-the-small-moments) first. A hover scribble is a good fit for some ink-and-paper identities, not a universal premium treatment. Material, target, and user intent matter more than the effect's name.
+
 ## Stroke drawing and handwriting
 
 Use an SVG path with `pathLength="1"`, `stroke-dasharray: 1`, and `stroke-dashoffset: 1`. Transition the offset to `0` on the parent control's hover/focus. Normalized path length avoids hardcoded pixel-length measurement. Use rounded caps/joins and deliberate irregularity. Multiple strokes get small staggered delays in actual pen order, not random letter order.
@@ -21,6 +23,8 @@ Use an SVG path with `pathLength="1"`, `stroke-dasharray: 1`, and `stroke-dashof
 ```
 
 For actual filled handwritten lettering, draw a stroke through a mask to uncover the glyph shape. A fade or character scramble is not handwriting. Preserve the readable HTML label and hide decorative vector duplicates from assistive technology. Use unique mask/clip IDs per component instance. Check stroke ends and bounds for clipping. Do not hide essential words until hover.
+
+For simple monoline words, author letter paths directly and reveal them in pen order. Keep the readable action separate; the drawing can be a short optional aside. Avoid stretching a font outline's dash offset and calling it writing: that traces the letter's perimeter. [Postscript](../examples/postscript/index.html) demonstrates a short drawn aside next to a working action, not handwriting on every link.
 
 Reversal should continue from the current drawn length when the pointer leaves. Rapid enter/leave must not queue animations or leave fragments. CSS transitions naturally retarget; in WAAPI, cancel/rebase an existing animation before replacing it. Keep a stable hit area and a separate visible focus ring. Coarse pointers can show the finished mark or omit it; never require a first tap just to reveal an action.
 

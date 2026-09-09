@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta
+      name="description"
+      content="Explore the layers of a tabletop speaker in a live three-dimensional design study."
+    />
+    <title>Relay — Sound, in good company</title>
+    <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body id="top">
+    <header>
+      <a href="../" class="brand" aria-label="Relay, back to examples"
+        >relay<span aria-hidden="true">®</span></a
+      ><span>Objects for everyday listening</span
+      ><a class="skip" href="#details"
+        >Skip to the details <span aria-hidden="true">↗</span></a
+      >
+    </header>
+    <main>
+      <section class="story" aria-label="Speaker construction study">
+        <div class="stage">
+          <div class="stage-copy">
+            <h1>Sound,<br />in good<br />company.</h1>
+            <div class="scene-headings" aria-hidden="true">
+              <p>A place for<br />every part.</p>
+              <p>Made to<br />stay a while.</p>
+            </div>
+            <div class="copy-notes" aria-hidden="true">
+              <p>A small speaker with<br />a little more presence.</p>
+              <p>
+                A shell, two drivers, a grille.<br />See how they come together.
+              </p>
+              <p>One considered object.<br />Ready for its next record.</p>
+            </div>
+          </div>
+          <div
+            class="object-view"
+            role="img"
+            aria-label="Three-dimensional speaker illustration"
+          >
+            <img
+              class="poster"
+              src="speaker-poster.webp"
+              width="1200"
+              height="1000"
+              alt="A clay-orange speaker with a dark perforated grille, two round drivers, rubber feet, and a top dial"
+            /><canvas id="scene" aria-hidden="true"></canvas>
+          </div>
+          <div class="stage-footer">
+            <p class="scroll-cue">
+              Scroll to look inside <span aria-hidden="true">↓</span>
+            </p>
+            <p class="part-caption" aria-hidden="true">
+              A familiar shape. A new perspective.
+            </p>
+            <span class="scene-number" aria-hidden="true">01 — 03</span>
+          </div>
+          <div class="progress" aria-hidden="true"><i></i></div>
+        </div>
+      </section>
+      <section class="details" id="details" tabindex="-1">
+        <div class="detail-intro">
+          <h2>A little room<br />for listening.</h2>
+          <p>
+            Relay is a tabletop speaker concept. Explore its shape, choose a
+            finish, and look at how the parts fit together.
+          </p>
+          <p class="disclosure">
+            An illustrative design study, not a product for sale. No audio
+            playback or performance claims.
+          </p>
+        </div>
+        <div class="controls">
+          <fieldset>
+            <legend>Choose a finish</legend>
+            <div class="finishes">
+              <button
+                type="button"
+                data-finish="clay"
+                class="finish active"
+                aria-pressed="true"
+                disabled
+              >
+                <i style="--color: #c4512d"></i>Clay</button
+              ><button
+                type="button"
+                data-finish="chalk"
+                class="finish"
+                aria-pressed="false"
+                disabled
+              >
+                <i style="--color: #d6cebc"></i>Chalk</button
+              ><button
+                type="button"
+                data-finish="ink"
+                class="finish"
+                aria-pressed="false"
+                disabled
+              >
+                <i style="--color: #343e42"></i>Ink
+              </button>
+            </div>
+          </fieldset>
+          <div class="angle-label">
+            <label for="angle">Change the view</label
+            ><output id="angle-value" for="angle">0°</output>
+          </div>
+          <input
+            type="range"
+            id="angle"
+            min="-40"
+            max="40"
+            value="0"
+            step="1"
+            disabled
+          />
+          <p class="angle-help">The same object, from another angle.</p>
+          <a class="return" href="#top"
+            >See your finish <span aria-hidden="true">↑</span></a
+          >
+          <p id="viewer-status" role="status">
+            Interactive view loads when available.
+          </p>
+          <button id="reload" hidden>Reload the interactive view</button>
+        </div>
+        <div class="construction">
+          <details>
+            <summary>
+              What you’re looking at <span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              The outer shell holds the form. Two illustrated drivers sit behind
+              a perforated grille. A dial and rubber feet complete the object.
+              The scroll scene separates these parts, then brings them back
+              together.
+            </p>
+          </details>
+          <details>
+            <summary>About the study <span aria-hidden="true">+</span></summary>
+            <p>
+              This is a live model made from original procedural geometry. It is
+              not a video or an image sequence. Narrow screens and
+              reduced-motion settings use an assembled view; if 3D is
+              unavailable, a still image preserves the design.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="../">Blend examples ↗</a><span>Relay / Concept no. 01</span
+      ><a href="../postscript/">Explore Postscript ↗</a>
+    </footer>
+  </body>
+</html>

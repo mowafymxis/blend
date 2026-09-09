@@ -1,4 +1,4 @@
 interface:
   display_name: "Blend"
-  short_description: "Distinctive frontends with clear, complete task flows"
-  default_prompt: "Use $blend to build or refine this frontend with a coherent visual direction, clear task flows, and a rendered revision pass; use motion where it serves the product."
+  short_description: "Distinctive UI with purposeful motion and imagery"
+  default_prompt: "Use $blend to build or refine this frontend with a coherent visual direction, clear task flows, and a rendered revision pass; choose crafted interactions, scroll scenes, and visual media to suit the page."

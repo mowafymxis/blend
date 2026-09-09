@@ -22,6 +22,8 @@ For expressive work, give one coherent visual idea room to develop: a distinctiv
 
 ## Resolve assets before dependent polish
 
+Choose the visual medium alongside the motion direction. Use the [medium decision table](motion-direction.md#choose-the-experience-then-the-medium) when deciding between an interactive object, generated image, supplied media, and code-native drawing. Choose the strongest expected composition and behavior, not the most elaborate renderer. Imagery can stay still while the surrounding interface responds with carefully chosen micro-interactions.
+
 For each prominent asset, establish its purpose, subject, source/permission, aspect ratio, focal point, and mobile crop. Inspect it at the size it will appear, including any text overlay. Use supplied product captures for product evidence; clearly identify illustrative concepts. Generate original imagery when available and appropriate, without inventing product capabilities or endorsements.
 
 If suitable material is unavailable, choose a complete alternative: an original explanatory SVG, a labeled illustrative diagram, or a composition led by typography and actual content. Change the layout to support the alternative. Do not leave a broken image, empty hero rectangle, or unrelated stock photograph as the final draft. Disclose missing essential product evidence to the requester; decoration cannot replace it.

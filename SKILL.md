@@ -47,9 +47,11 @@ Use authentic claims and data. In a prototype, identify sample content visibly w
 
 ## Design motion as behavior
 
-For a substantial build or motion task, map applicable entry, interaction, state change, navigation, and signature motion. Implement what the interface needs; never invent features to fill the map. Small fixes retain existing motion. A repeated app visit should not replay a long intro. A static or reduced-motion request remains valid.
+For a substantial build or motion task, read [motion direction](references/motion-direction.md). Decide the experience before the engine: which moments deserve a small crafted response, whether the page earns a continuous scroll scene, and whether its strongest visual should be live geometry, generated imagery, supplied media, or typography. Base these choices on the brief, material character, user task, asset quality, and interaction needs. Do not wait for the user to name every effect; make and implement a coherent choice within scope.
 
-Choose motion from the current product and user intent. Examples demonstrate decisions, not a house template: do not automatically reuse their layouts, illustrations, or interactions. A complete quiet interface is a valid outcome; pinned storytelling belongs only where it explains something useful.
+Look for a few meaningful opportunities in the actual interface: an invitation, selection, reveal, manipulation, or completion. A stroke that feels like ink, a paper edge lifting, or a precisely traveling indicator can give a site character without a large scene. These are possibilities, not defaults or quotas. A material metaphor, a moment of delight, or a stronger sense of place can justify motion; it need not always communicate new data. Keep repeated work immediate and attention deliberate. A static request remains static.
+
+For a signature scene, establish a subject, opening frame, transformation, recognition hold, and landing composition. A page of fade-up entrances does not satisfy a request for a video-like live scroll animation. Conversely, “premium” does not require pinning, a 3D model, or hover scribbles. Compare the plausible treatments and choose the one that makes this page better. Small fixes inherit the surrounding design.
 
 Give each motion an origin, destination, trigger, duration or scroll range, interruption rule, and accessible fallback. Start with roughly 90–180 ms direct feedback, 160–360 ms component transitions, and 280–700 ms scene transitions, then tune by travel and product character. These are starting ranges, not limits on requested narratives. Scroll progression uses distance, not playback duration. Use linear mapping for direct scrubbing and eased sub-beats where appropriate; springs are not mandatory everywhere.
 
@@ -60,7 +62,7 @@ Read only the relevant recipe:
 - [Motion recipes](references/motion-recipes.md): hover scribbles, handwriting reveals, menus, tabs, and interruptible component motion.
 - [Pinned scroll scenes](references/scroll-scenes.md): a fixed-looking stage that transforms as the page scrolls, including live DOM/SVG/3D narratives with no video.
 - [3D and mascots](references/3d-and-mascots.md): spatial scenes, rigs, expression states, original character animation, and resource lifecycle.
-- [Built frontend examples](examples/README.md): an optical assembly and a route planner demonstrate scroll-driven motion and working task flows. They are examples to study, not house templates.
+- [Built frontend examples](examples/README.md): Postscript combines generated imagery with small paper-and-ink interactions; Relay uses a live 3D object and a continuous scroll scene. Their documentation explains why each medium was chosen. Study the decisions, not their layouts or effect combinations.
 
 ## Make every mode complete
 

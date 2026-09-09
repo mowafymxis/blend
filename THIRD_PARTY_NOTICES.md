@@ -4,7 +4,11 @@ Blend incorporates ideas and adapted guidance from [Taste Skill](https://github.
 
 Blend also incorporates the project's premium-frontend and frontend-motion-design guidance. Neither skill is required as a separate installation.
 
-Bench and Afterlight are original fictional frontend demonstrations. Their bicycle graphic, observatory illustration, interface layouts, and sample content are authored for these examples. They contain no third-party photography, customer records, or live event claims. The documented upstream revisions describe provenance, not automatic synchronization with future source changes.
+Postscript and Relay are original fictional frontend demonstrations. Postscript's poppy still life was generated for this example; its interface and handwriting paths are authored locally. Relay uses original procedural geometry and textures. Neither represents real products, customers, or businesses.
+
+Relay includes unmodified `three.module.js` and `three.core.js` from Three.js 0.186.0, Copyright 2010–2026 Three.js Authors, under the MIT license. The full license is retained in [examples/relay/vendor/LICENSE](examples/relay/vendor/LICENSE). These are runtime dependencies, not unused source archives.
+
+The documented upstream revisions describe provenance, not automatic synchronization with future source changes.
 
 ## Taste Skill license
 
