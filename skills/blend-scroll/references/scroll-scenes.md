@@ -22,7 +22,7 @@ phase(p, start, end) = clamp((p - start) / (end - start), 0, 1)
 
 Use a single controller for the timeline. Separate camera movement, object movement, masks, and captions into tracks driven by the same progress. Direct scrub should feel attached to the user's scroll; excessive smoothing causes lag after reversals. Never accumulate pose with `rotation += ...` in a scroll renderer. Derive it from progress.
 
-Keep scrubbed properties free of CSS transitions. Ease local phases only when their arrivals need shaping, and use holds where the viewer needs to recognize a result. Do not crossfade every caption over every moving part. Keep semantic text available outside the decorative stage; avoid hidden duplicate headings in the accessible tree. See [Relay](https://github.com/mowafymxis/blend/tree/main/examples/relay) for a live modeled object with connected assembly beats and a normal-flow exit. Its geometry is an illustrative product concept, not an engineering model.
+Keep scrubbed properties free of CSS transitions. Ease local phases only when their arrivals need shaping, and use holds where the viewer needs to recognize a result. Do not crossfade every caption over every moving part. Keep semantic text available outside the decorative stage; avoid hidden duplicate headings in the accessible tree. For an object assembly, compose connected separation, hold, and return beats with a normal-flow exit. Distinguish illustrative geometry from an engineering model.
 
 ## Pick the renderer
 

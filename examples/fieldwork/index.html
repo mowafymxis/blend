@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta
+      name="description"
+      content="Fieldwork is a fictional walking club for unhurried weekends. Explore three imagined walks and make room for outside."
+    />
+    <title>Fieldwork — Make room for outside.</title>
+    <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="nav">
+      <a class="brand" href="./" aria-label="Fieldwork home"
+        ><svg viewBox="0 0 36 36" aria-hidden="true">
+          <path
+            d="M3 28 14 7l7 12 5-8 8 17M9 28l7-13 8 13"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          /></svg
+        >FIELDWORK<span>THE WALKING CLUB</span></a
+      >
+      <nav aria-label="Main">
+        <a href="#why">Our kind of outside</a><a href="#walks">The walks</a>
+      </nav>
+      <a class="nav-cta" href="#walks">Find your pace <span>↗</span></a>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <img
+          class="landscape"
+          src="landscape.svg"
+          width="1440"
+          height="800"
+          alt="An illustrated landscape of rolling green hills, a winding path, pine trees, and a small orange sun"
+        />
+        <div class="hero-top">
+          <p class="eyebrow">FRESH AIR. NO FINISH LINE.</p>
+          <h1>Make room<br />for <em>outside.</em></h1>
+          <p>
+            A walking club for the long way home.<br />Good company. Open paths.
+            Time to look up.
+          </p>
+          <a class="round-link" href="#walks"
+            >Explore the walks <span>↗</span></a
+          >
+        </div>
+        <div class="sun-stamp" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs>
+              <path
+                id="circle"
+                d="M60 60m-45 0a45 45 0 1 1 90 0a45 45 0 1 1-90 0"
+              />
+            </defs>
+            <text>
+              <textPath href="#circle">
+                A LITTLE FURTHER · A LITTLE SLOWER ·
+              </textPath>
+            </text>
+            <path d="M60 35v50M35 60h50M42 42l36 36M42 78l36-36" />
+          </svg>
+        </div>
+        <div class="hero-bottom">
+          <span>LESS SCREEN TIME.<br />MORE SKY TIME.</span
+          ><span>TAKE THE SCENIC ROUTE <b>↓</b></span>
+        </div>
+      </section>
+      <section class="intro" id="why">
+        <div>
+          <p class="eyebrow">YOU DON’T HAVE TO GO FAR.</p>
+          <h2>Just far enough<br />to feel <em>elsewhere.</em></h2>
+        </div>
+        <div class="intro-right">
+          <p>
+            Not every walk needs a summit. Sometimes it’s a bend in the river, a
+            thermos on a wall, or a conversation that finds its own way.
+          </p>
+          <p>
+            Fieldwork is an idea for a different kind of walking club. Small
+            adventures, an easy pace, and plenty of room to stop.
+          </p>
+          <a class="underlink" href="#walks"
+            >Find a walk that feels like you <span>↗</span></a
+          >
+        </div>
+      </section>
+      <section class="walks" id="walks">
+        <div class="walks-heading">
+          <div>
+            <p class="eyebrow">THREE WAYS TO GET OUT THERE</p>
+            <h2>Follow your <em>feet.</em></h2>
+          </div>
+          <p>Pick the feeling.<br />We’ll show you the way.</p>
+        </div>
+        <div class="trail-layout">
+          <div
+            class="trail-list"
+            role="group"
+            aria-label="Choose an illustrated walk"
+          >
+            <button
+              class="trail"
+              data-route="river"
+              aria-pressed="true"
+              disabled
+            >
+              <span class="trail-number">01</span
+              ><span
+                ><strong>The river wander</strong
+                ><small>Easy company. Water for a soundtrack.</small
+                ><span class="trail-meta"
+                  >5 KM <i>·</i> GENTLE <i>·</i> A LONG LUNCH</span
+                ></span
+              ><b>↗</b>
+            </button>
+            <button
+              class="trail"
+              data-route="pines"
+              aria-pressed="false"
+              disabled
+            >
+              <span class="trail-number">02</span
+              ><span
+                ><strong>Between the pines</strong
+                ><small>Soft ground. Deep green. A little quiet.</small
+                ><span class="trail-meta"
+                  >8 KM <i>·</i> STEADY <i>·</i> HALF A DAY</span
+                ></span
+              ><b>↗</b>
+            </button>
+            <button
+              class="trail"
+              data-route="ridge"
+              aria-pressed="false"
+              disabled
+            >
+              <span class="trail-number">03</span
+              ><span
+                ><strong>The open ridge</strong
+                ><small>A little uphill. A whole lot of horizon.</small
+                ><span class="trail-meta"
+                  >11 KM <i>·</i> HILLY <i>·</i> MAKE A DAY OF IT</span
+                ></span
+              ><b>↗</b>
+            </button>
+            <p class="concept-note">
+              Imagined walks for this concept. Distances are illustrative; these
+              are not navigation maps or scheduled outings.
+            </p>
+          </div>
+          <div class="map-panel">
+            <div class="map-top">
+              <span>FIELD NOTES / <b id="map-number">001</b></span
+              ><span aria-hidden="true">N ↑</span>
+            </div>
+            <svg
+              class="map"
+              viewBox="0 0 580 420"
+              role="img"
+              aria-labelledby="map-title"
+            >
+              <title id="map-title">
+                Illustrated route for The river wander
+              </title>
+              <defs>
+                <pattern
+                  id="map-grid"
+                  width="40"
+                  height="40"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <path
+                    d="M40 0H0V40"
+                    fill="none"
+                    stroke="#d4d5b9"
+                    stroke-width=".6"
+                  />
+                </pattern>
+              </defs>
+              <rect width="580" height="420" fill="url(#map-grid)" />
+              <g fill="none" stroke="#bfc5a4" stroke-width="1">
+                <path
+                  d="M-30 190Q50 90 160 170T340 130T620 120M-30 210Q60 100 160 185T350 148T620 138M-30 235Q60 130 160 200T360 170T620 155M-30 260Q80 155 170 223T375 190T620 180M-30 290Q70 190 180 250T385 211T620 210M-30 330Q110 200 190 280T405 239T620 242M-30 365Q110 220 200 305T420 265T620 280M-30 400Q110 250 210 335T435 295T620 315M-30 430Q100 290 220 365T450 322T620 350"
+                />
+                <path
+                  d="M20 0q40 70 160 58t190-80M35-10q35 45 155 40t175-50M-10 20q70 70 180 65t215-70M-20 45q80 82 190 64T410 0M-20 73q80 85 200 57T450 0"
+                />
+              </g>
+              <path
+                d="M175-20Q320 58 245 148T268 294T361 450"
+                fill="none"
+                stroke="#8baead"
+                stroke-width="17"
+              />
+              <path
+                d="M175-20Q320 58 245 148T268 294T361 450"
+                fill="none"
+                stroke="#c2d4c7"
+                stroke-width="6"
+              />
+              <g fill="#687e56">
+                <path
+                  d="m91 235 9-20 9 20zm24-12 9-20 9 20zm-13-24 9-20 9 20zm313-53 9-20 9 20zm23-8 9-20 9 20zm-14-22 9-20 9 20zm32 50 9-20 9 20z"
+                />
+              </g>
+              <g
+                class="route-line"
+                fill="none"
+                stroke="#c35732"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  id="route-path"
+                  d="M173 332Q190 288 191 245T218 178Q232 137 213 103Q180 93 165 130T166 223Q146 293 173 332"
+                />
+              </g>
+              <circle
+                id="route-start"
+                cx="173"
+                cy="332"
+                r="7"
+                fill="#294e3b"
+                stroke="#fff"
+                stroke-width="3"
+              />
+              <g
+                fill="#4c604b"
+                font-family="sans-serif"
+                font-size="9"
+                letter-spacing="1.3"
+              >
+                <text x="320" y="90">HIGH MEADOW</text>
+                <text x="58" y="279">THE OLD PINES</text>
+                <text x="343" y="353">MILL BRIDGE</text>
+              </g>
+            </svg>
+            <div class="map-bottom">
+              <div>
+                <span>THE GOOD BIT</span>
+                <p id="route-detail" aria-live="polite">
+                  The bend where the water slows.<br />Bring something good for
+                  lunch.
+                </p>
+              </div>
+              <button
+                id="field-notes"
+                type="button"
+                aria-label="Download field notes for The river wander"
+                disabled
+              >
+                ↓
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="values">
+        <p class="eyebrow">A FEW THINGS WE WALK BY</p>
+        <div class="values-grid">
+          <article>
+            <svg viewBox="0 0 100 90" aria-hidden="true">
+              <g
+                class="boot"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="m30 13 30 3-5 37 22 9q9 6 3 16H21l3-29zM23 68h61M44 27l15 2M42 37l15 2M40 47l15 2"
+                />
+              </g>
+            </svg>
+            <h3>Your pace is the pace.</h3>
+            <p>
+              No leaderboards. No personal bests. Just one foot, then the other.
+            </p>
+          </article>
+          <article>
+            <svg viewBox="0 0 100 90" aria-hidden="true">
+              <g
+                class="thermos"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="30" y="26" width="33" height="52" rx="6" />
+                <path d="M33 26v-9h27v9M64 36h8q9 0 9 12t-9 12h-8M30 65h33" />
+                <path class="steam" d="M42 8q-8-8 0-15M54 8q-8-8 0-15" />
+              </g>
+            </svg>
+            <h3>There’s always time for tea.</h3>
+            <p>
+              The stops are part of the walk. A warm cup tastes better out here.
+            </p>
+          </article>
+          <article>
+            <svg viewBox="0 0 100 90" aria-hidden="true">
+              <g
+                class="leaf"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M23 72Q5 17 77 15q4 66-54 57zm0 0 38-40M39 54V35m0 19h19"
+                />
+                <path d="m23 72-9 12" />
+              </g>
+            </svg>
+            <h3>Leave a lighter footprint.</h3>
+            <p>
+              Take your time. Take your litter. Leave the good bits for the next
+              person.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="last-call">
+        <div>
+          <p class="eyebrow">YOUR WEEKEND HAS OTHER PLANS.</p>
+          <h2>Out of office.<br /><em>Into the open.</em></h2>
+          <a class="round-link" href="#walks"
+            >Find your kind of walk <span>↗</span></a
+          >
+        </div>
+        <svg class="signpost" viewBox="0 0 310 340" aria-hidden="true">
+          <path d="M148 80h14v243h-14z" fill="#d9cda4" />
+          <path
+            d="M37 78h192l35 29-35 29H37z"
+            fill="#dbe993"
+            stroke="#173e30"
+            stroke-width="2"
+          />
+          <path
+            d="M75 154h193v57H75l-35-28z"
+            fill="#ebedda"
+            stroke="#173e30"
+            stroke-width="2"
+          />
+          <g
+            fill="#173e30"
+            font-family="sans-serif"
+            font-size="12"
+            letter-spacing="2"
+          >
+            <text x="67" y="112">THE LONG WAY</text>
+            <text x="90" y="188">SOMEWHERE GOOD</text>
+          </g>
+          <path
+            d="M79 326q-7-29 5-46m0 47q4-41 18-50m111 47q-7-29 5-46m0 47q4-41 18-50"
+            fill="none"
+            stroke="#95af77"
+            stroke-width="3"
+          />
+        </svg>
+      </section>
+    </main>
+    <footer>
+      <a class="brand" href="./">FIELDWORK</a
+      ><span>A fictional walking club, made with Blend.</span
+      ><a href="../">Back to the examples ↗</a>
+    </footer>
+    <noscript
+      ><p class="no-js">
+        All three walks are described above. Enable JavaScript to change the
+        illustrated map and download field notes.
+      </p></noscript
+    >
+  </body>
+</html>

@@ -1,11 +1,11 @@
-# Frontend examples
+# Landing-page examples
 
-These examples use the Blend suite for different tasks. They are handcrafted demonstrations, not templates to repeat or independent proof of improved model output.
+Two original landing pages built with the Blend suite. Both lead with an offer, explain it through a visual demonstration, and provide a working local action. They are handcrafted examples, not templates to repeat or proof of consistent model output quality.
 
 | Example | Direction | Working behavior |
 |---|---|---|
-| [Margin](margin/index.html) | A warm reading workspace; Newsreader display type and DM Sans UI; small original SVG illustrations and a bookmark companion | Search, collection filters, favorites, reading view, new notes, archive/restore, local persistence, and motion toggle |
-| [Relay](relay/index.html) | A cool product study; Manrope typography, a soft contact shadow, and a considered object composition | Reversible live 3D assembly, finish selection, view angle, local illustration motion, and failure fallback |
+| [Fold](fold/index.html) | A playful animation tool; lavender paper shapes, DM Sans, and Newsreader accents | Flower replay, illustrated hover/focus gestures, three character personalities, timing control, and animated SVG export |
+| [Fieldwork](fieldwork/index.html) | An unhurried walking club; bold Manrope type, an original landscape illustration, and cartographic details | Three imagined trails, route drawing, field-note updates, and a text download for the selected walk |
 
 ## Run
 
@@ -15,33 +15,34 @@ From the repository root with Python 3:
 python -m http.server 18789 --bind 127.0.0.1
 ```
 
-Open [the gallery](http://127.0.0.1:18789/examples/), [Margin](http://127.0.0.1:18789/examples/margin/), or [Relay](http://127.0.0.1:18789/examples/relay/). Use an HTTP server rather than opening Relay as a file, because its renderer uses JavaScript modules. No npm installation or build is required. Fonts and the Three.js runtime are local assets.
+Open [the gallery](http://127.0.0.1:18789/examples/), [Fold](http://127.0.0.1:18789/examples/fold/), or [Fieldwork](http://127.0.0.1:18789/examples/fieldwork/). No installation or build is required. Fonts and illustrations are local; there are no external asset requests or runtime dependencies.
 
-## Margin: a stable reading surface
+## Fold: show the feeling
 
-The composition keeps recurring tasks close: navigation, collections, search, and a list of notes. The collection card boundaries stay still while their illustrations perform distinct local sequences. The book lifts and settles, the leaves contract and unfold, and the filament redraws before its rays resolve. Hover and keyboard focus drive the same timeline intention; rapid leave reverses from the current pose. Touch directly filters the collection.
+The landing page introduces a fictional motion tool through a large paper flower, three small original illustrations, and a hands-on playground. The scene boundaries and surrounding copy stay still. The flower performs one short greeting and can be replayed. Hover or keyboard focus changes each small illustration independently.
 
-The companion is an original lavender bookmark character, built from separate body, face, and accent groups. It makes a short reaction after a note is saved or favorited. It does not bounce indefinitely or invent background work. The Motion button and reduced-motion preference suppress the decorative sequences. A textual status reports actual outcomes.
+The playground's Curious, Sleepy, and Excited buttons choose distinct motion sequences. A timing slider adjusts duration; Replay repeats the chosen motion. The download button produces an SVG containing the selected character and a single CSS animation. Reopening the file replays it. Reduced-motion settings suppress animation in both the page and exported SVG.
 
-Notes are stored under `margin-library-v1` in this origin's local storage; the motion preference uses `margin-motion`. If storage is denied, edits remain available for that visit and the interface says so. No notes are uploaded. The six initial essays are original sample content. Clearing those two storage keys restores the demo defaults on reload. Without JavaScript, the composition remains visible with dependent controls disabled and an explanation.
+This is a working local demonstration, not a full animation editor or signup service. Nothing is uploaded or stored. JavaScript-disabled visitors can read the page and see the illustrations; dependent controls remain disabled with a visible explanation.
 
-## Relay: a connected object study
+## Fieldwork: make the invitation tangible
 
-The live scene contains an original procedural shell, two drivers, a grille, feet, and a top dial. Scrolling separates the parts, turns the grille enough to reveal the drivers, holds the assembly, and returns it to a complete object. Positions are derived from measured scroll progress; reversing or jumping reproduces the same pose. The camera pulls back slightly during separation to preserve the composition.
+The landing page introduces a fictional walking club through an original layered landscape, a short explanation of its ethos, and three imagined walks. Its bold type, map contours, trail numbering, and signpost illustration belong to the outdoor identity.
 
-Finish and angle controls change the same object. “View your object” returns to the assembled view. Three local technical drawings below the scene have restrained pointer responses; their explanatory text remains stationary. They are decorative rather than controls.
+Choosing a walk updates the path, map title, starting marker, field-note number, descriptive text, and download label. The route draws once; repeated selection replaces the previous animation. The download contains the selected description and a clear fictional-route notice. All distances and routes are illustrative. There are no real outings, navigation directions, reservations, or member signups.
 
-The renderer works on demand, stops when hidden or out of view, and disposes owned resources on teardown. The simple contact shadow is an authored soft texture. Small screens and reduced-motion settings use an assembled view without pin space. A captured poster and disabled controls provide a truthful alternative if initialization or WebGL context is lost. Relay is an illustrative concept, not an acoustic simulation or a product for sale.
+Reduced motion makes route changes immediate. Without JavaScript, all walk descriptions and the initial map remain readable, with a visible explanation of unavailable interaction. No data is collected or persisted.
 
 ## Verify a change
 
-- Margin: find a note, filter a collection, open/close it without losing the filter, create a note, reload, favorite it, archive it, and restore it. Test no matches, whitespace-only input, long text, and blocked storage.
-- Margin motion: hover/focus each collection, interrupt it midway, toggle Motion, and change reduced motion while open. Save or favorite repeatedly; the companion must not queue reactions.
-- Relay: inspect start, separation, hold, return, reverse, direct jumps, and restored scroll. Select each finish and change the angle. Resize midway; check the skip/return links and renderer-failure fallback.
-- Both: inspect wide, narrow, and short layouts; keyboard focus; console and asset errors; JavaScript-disabled behavior; initial and live reduced motion; and actual text contrast.
+- Follow each navigation and call-to-action link, including direct section links and the return to the gallery.
+- Fold: activate all three personalities, change timing, replay, interrupt a sequence, and download each variant. Open an exported SVG and check its artwork and animation.
+- Fold: hover and focus the small illustrations. Their text and containing surfaces should stay stable; leaving should restore the initial pose.
+- Fieldwork: choose all three walks, interrupt a route draw, and check that the map, copy, accessible title, and downloaded text agree.
+- Both: inspect desktop, narrow mobile, and short layouts; keyboard focus; failed asset requests; JavaScript-disabled behavior; and initial/live reduced motion.
 
-Use the [suite review guide](../skills/blend-review/references/verification.md) for broader evaluation. Local test scripts, trial captures, and historical reports belong in ignored `.maintainer/`, not in these example folders. Selected preview images live under `assets/` at the repository root.
+Use the [suite review guide](../skills/blend-review/references/verification.md) for broader evaluation. Local test scripts and trial captures belong in ignored `.maintainer/`; selected previews live in `assets/`.
 
 ## Asset provenance
 
-All example UI, text, illustrations, character shapes, and procedural geometry are authored for this repository. Newsreader, DM Sans, and Manrope are bundled Latin font subsets from Google Fonts under the SIL Open Font License; their notices are in [fonts/](fonts/). The unmodified Three.js modules and license are in [Relay's vendor folder](relay/vendor/). See [repository attribution](../THIRD_PARTY_NOTICES.md).
+All example text, illustrations, characters, maps, and landscape artwork are original to this repository. DM Sans, Manrope, and Newsreader are bundled Latin font subsets from Google Fonts under the SIL Open Font License. Their notices are in [fonts/](fonts/). See [repository attribution](../THIRD_PARTY_NOTICES.md).

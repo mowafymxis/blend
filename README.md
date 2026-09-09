@@ -64,23 +64,23 @@ The [reference lenses](skills/blend-art-direction/references/reference-lenses.md
 
 ## Technique examples
 
-Two handcrafted frontends with different purposes, type systems, and motion. They demonstrate selected techniques; they are not default starting templates or evidence of consistent model output quality.
+Two handcrafted landing pages with different ideas, compositions, and interactive demonstrations. They are technique examples, not default templates or evidence of consistent model output quality.
 
-[![Margin reading library](assets/margin-preview.png)](examples/margin/index.html)
+[![Fold animation tool landing page](assets/fold-preview.png)](examples/fold/index.html)
 
-**Margin** is a local reading library. Newsreader and DM Sans frame illustrated collections, a working note editor, favorites, archive, and search. A small original bookmark character responds to saving and favoriting. Hover or focus the collection cards to see their separate illustrated sequences. [Explore its source](examples/margin/index.html).
+**Fold** introduces a playful motion tool through an original paper flower, small illustrated gestures, and a working animation playground. Choose a personality, change its timing, and download the result as an animated SVG. [Explore its source](examples/fold/index.html).
 
-[![Relay speaker concept](assets/relay-preview.png)](examples/relay/index.html)
+[![Fieldwork walking club landing page](assets/fieldwork-preview.png)](examples/fieldwork/index.html)
 
-**Relay** gives a speaker concept a cool studio setting, Manrope typography, and a reversible live assembly scene. Change its finish and viewing angle; small technical illustrations respond independently below the main scene. [Explore its source](examples/relay/index.html).
+**Fieldwork** introduces an unhurried walking club through an original landscape illustration, bold typography, and a trail selector. Switch between three imagined routes, watch the map redraw, and download the selected field notes. [Explore its source](examples/fieldwork/index.html).
 
-Both are fictional. Margin's supplied essays are original sample content; notes stay in the current browser, with session-only behavior if storage is unavailable. Relay has no audio playback or sale flow and makes no performance claims.
+Both brands are fictional. Fold exports a local demonstration, not a full animation editor. Fieldwork's routes and distances are illustrative; no real outings, navigation, bookings, or signups are offered.
 
 ```sh
 python -m http.server 18789 --bind 127.0.0.1
 ```
 
-Open [the local gallery](http://127.0.0.1:18789/examples/). There is no build step. Fonts and runtime dependencies are bundled; viewing requires no third-party asset requests. See [example behavior and checks](examples/README.md).
+Open [the local gallery](http://127.0.0.1:18789/examples/). There is no build step. Fonts and illustrations are bundled; viewing requires no third-party asset requests. See [example behavior and checks](examples/README.md).
 
 ## Maintain and verify
 
