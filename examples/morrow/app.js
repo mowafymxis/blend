@@ -73,51 +73,68 @@ document
   .querySelectorAll("button:disabled")
   .forEach((b) => (b.disabled = false));
 const creature = document.querySelector(".creature");
-let greeting = [];
-let companionVisible = false;
-function greet() {
-  if (
-    !companionVisible ||
-    reduced.matches ||
-    greeting.some((a) => a.playState === "running")
-  )
-    return;
-  greeting = [
+const eyes = document.querySelector(".eyes");
+const help = document.querySelector("#companion-help");
+let acting = [],
+  visible = false;
+function settle() {
+  acting.forEach((a) => a.cancel());
+  acting = [];
+}
+function react(kind = "notice") {
+  help.dataset.state = kind;
+  if (!visible || reduced.matches || document.hidden) return;
+  const bodyStart = getComputedStyle(creature).transform;
+  const eyesStart = getComputedStyle(eyes).transform;
+  settle();
+  // Feet remain planted; attention shifts through the gaze and a small hip pivot.
+  acting = [
     creature.animate(
       [
-        { transform: "translateY(0)" },
-        { transform: "translateY(-3px)", offset: 0.35 },
-        { transform: "translateY(0)", offset: 0.7 },
-        { transform: "translateY(0)" },
+        { transform: bodyStart },
+        { transform: "rotate(-2deg)", offset: 0.28 },
+        { transform: "rotate(1deg)", offset: 0.62 },
+        { transform: "rotate(0deg)" },
       ],
-      { duration: 850, easing: "ease-in-out" },
+      { duration: 720, easing: "ease-in-out" },
     ),
-    document
-      .querySelector(".eyes")
-      .animate(
-        [
-          { transform: "scaleY(1)" },
-          { transform: "scaleY(.2)", offset: 0.3 },
-          { transform: "scaleY(1)", offset: 0.45 },
-          { transform: "scaleY(1)" },
-        ],
-        { duration: 850 },
-      ),
+    eyes.animate(
+      [
+        { transform: eyesStart },
+        {
+          transform: kind === "copied" ? "scaleY(.15)" : "translateX(2px)",
+          offset: 0.28,
+        },
+        {
+          transform: kind === "copied" ? "scaleY(1)" : "translateX(2px)",
+          offset: 0.6,
+        },
+        { transform: "translateX(0) scaleY(1)" },
+      ],
+      { duration: 720, easing: "ease-in-out" },
+    ),
   ];
 }
-const settle = () => {
-  greeting.forEach((a) => a.cancel());
-  greeting = [];
-};
 new IntersectionObserver(([entry]) => {
-  companionVisible = entry.isIntersecting;
-  if (!companionVisible) settle();
+  visible = entry.isIntersecting;
+  if (!visible) settle();
 }).observe(creature);
-document.querySelector("#greet").addEventListener("click", greet);
+help.addEventListener("click", () => {
+  const expanded = help.getAttribute("aria-expanded") === "true";
+  help.setAttribute("aria-expanded", String(!expanded));
+  help.setAttribute(
+    "aria-label",
+    expanded ? "Show sample guide" : "Hide sample guide",
+  );
+  document.querySelector("#sample-guide").hidden = expanded;
+  react("guide");
+});
 reduced.addEventListener("change", settle);
 document.addEventListener("visibilitychange", () => {
   if (document.hidden) settle();
 });
+addEventListener("pagehide", settle);
+
 document.querySelectorAll("[data-example]").forEach((b) =>
   b.addEventListener("click", () => {
     selected = b.dataset.example;
@@ -143,7 +160,7 @@ document.querySelectorAll("[data-example]").forEach((b) =>
     });
     response.append(title, intro, list);
     document.querySelector("#copy-status").textContent = "";
-    greet();
+    react();
   }),
 );
 document.querySelector("#copy").addEventListener("click", async () => {
@@ -153,6 +170,7 @@ document.querySelector("#copy").addEventListener("click", async () => {
     await navigator.clipboard.writeText(text);
     if (selected === key)
       document.querySelector("#copy-status").textContent = "Copied";
+    if (selected === key) react("copied");
   } catch {
     download(text, `morrow-${key}.txt`);
     if (selected === key)

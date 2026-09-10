@@ -73,7 +73,7 @@ footer {
   top: 10px;
 }
 .header {
-  height: 110px;
+  height: 85px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,7 +100,7 @@ nav a:last-child {
   border-bottom: 1px solid;
 }
 .intro {
-  padding-block: 35px 60px;
+  padding-block: 30px;
 }
 .intro-top {
   display: flex;
@@ -111,11 +111,11 @@ nav a:last-child {
   color: #666c61;
 }
 .intro h1 {
-  font-size: clamp(85px, 12.5vw, 180px);
+  font-size: clamp(52px, 6vw, 86px);
   font-weight: 480;
   line-height: 0.92;
-  letter-spacing: -10px;
-  margin: 55px 0 42px;
+  letter-spacing: -4px;
+  margin: 0;
 }
 .period {
   color: #667e60;
@@ -158,7 +158,7 @@ nav a:last-child {
   margin-bottom: 70px;
 }
 .index-art {
-  height: 650px;
+  height: 480px;
   background: #dddcd3;
   position: relative;
   overflow: hidden;
@@ -904,5 +904,92 @@ footer > a:last-child {
   * {
     scroll-behavior: auto !important;
     transition: none !important;
+  }
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 20px 50px;
+  align-items: center;
+}
+.intro-top {
+  grid-column: 1/-1;
+}
+.intro-bottom {
+  display: block;
+}
+.intro-bottom p {
+  font-size: 16px;
+}
+.intro-bottom a {
+  margin-top: 18px;
+  justify-content: space-between;
+}
+.system-stage {
+  background: #dce0d3;
+}
+.system-poster {
+  position: absolute;
+  inset: 0;
+  background: #283e34;
+}
+.system-poster .system-mark {
+  transform: translateX(-28%) scale(0.87);
+}
+.system-stage canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.system-stage.is-3d .system-poster {
+  visibility: hidden;
+}
+@media (max-width: 700px) {
+  .intro {
+    display: block;
+    padding-block: 20px;
+  }
+  .intro h1 {
+    font-size: 48px;
+    letter-spacing: -2px;
+    margin: 18px 0;
+  }
+  .intro h1 br {
+    display: none;
+  }
+  .intro-bottom p {
+    font-size: 14px;
+  }
+  .intro-bottom a {
+    margin-top: 12px;
+  }
+  .intro-top {
+    font-size: 9px;
+  }
+  .index-art {
+    height: 340px;
+  }
+  .folio {
+    height: 280px;
+  }
+  .index-card {
+    min-height: 215px;
+  }
+  .header {
+    height: 70px;
+  }
+}
+
+@media (max-width: 700px),
+  (max-height: 540px),
+  (prefers-reduced-motion: reduce) {
+  .system-stage.is-3d canvas {
+    display: none;
+  }
+  .system-stage.is-3d .system-poster {
+    visibility: visible;
   }
 }

@@ -1,6 +1,6 @@
 # “A video playing as I scroll”: select the intended behavior
 
-Clarify two independent decisions: what drives progress and what renders the scene. A continuous scrub advances and reverses with scroll position. An entry-triggered clip plays on its own clock. Neither implies a particular renderer. Do not silently interpret “video-like” as “no video,” and do not replace an explicit live/no-video request with pre-rendered media.
+Separate the progress controller from the renderer. A continuous scrub advances and reverses with scroll position; an entry-triggered clip uses its own clock. For a requested 3D scene, including video-like 3D scrolling, use Three.js or an equivalent mesh-based renderer by default. Camera, geometry, materials, and light must explain the spatial change. Explicit requests for actual video or rendered frames retain that medium; do not replace supplied footage with a model or pass flat layers off as 3D.
 
 | Medium | Fits | Tradeoff to explain |
 |---|---|---|

@@ -30,13 +30,13 @@ Keep scrubbed properties free of CSS transitions. Ease local phases only when th
 
 | Need | Good mechanism |
 |---|---|
-| A panel expands, letters align, layers assemble | DOM + CSS transforms, with CSS 3D if depth is enough |
+| A panel expands, letters align, flat layers assemble | DOM + CSS transforms for the 2D layout |
 | An outline becomes an illustration | SVG stroke drawing, masks, carefully prepared compatible path morphs |
 | A product needs true geometry, lighting, camera orbit | Three.js or the project's existing WebGL renderer |
 | A very specific pre-rendered visual sequence | Canvas frames only if the user accepts raster frames; disclose that these are pre-rendered, not live geometry |
 | The user explicitly wants video seeking | A separate video workflow; do not substitute it for a no-video request |
 
-CSS 3D is a real spatial transform system but does not provide mesh geometry or physical lighting. Label examples accurately. Avoid adding WebGL merely for a flat card tilt.
+For requested 3D scenes, including cinematic scroll sequences, use Three.js or an equivalent mesh-based renderer. CSS perspective remains a layout effect; do not use it to satisfy a request for geometry, camera movement, materials, or lighting. A genuinely 2D diagram can stay in SVG/DOM.
 
 ## Layout and lifecycle
 

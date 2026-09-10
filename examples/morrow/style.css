@@ -101,11 +101,15 @@ nav a:last-child {
   border-bottom: 1px solid #72756c;
   padding-bottom: 7px;
 }
+.opening {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 48px;
+  align-items: center;
+  padding-block: 35px 65px;
+}
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-block: 76px 92px;
+  padding: 0;
 }
 .eyebrow {
   color: var(--muted);
@@ -113,10 +117,10 @@ nav a:last-child {
   letter-spacing: 0.02em;
 }
 .hero h1 {
-  font-size: clamp(52px, 6.2vw, 86px);
+  font-size: clamp(42px, 4.6vw, 66px);
   font-weight: 450;
   line-height: 1.07;
-  letter-spacing: -4px;
+  letter-spacing: -2.8px;
   margin: 24px 0;
 }
 .hero h1 span {
@@ -144,21 +148,10 @@ nav a:last-child {
 .primary:hover {
   background: #fff;
 }
-.companion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 18px;
-  padding: 0 34px 14px;
-}
-.companion > span {
-  font-size: 12px;
-  color: var(--muted);
-}
 .mascot-button {
   background: none;
-  width: 94px;
-  height: 90px;
+  width: 52px;
+  height: 48px;
   padding: 0;
 }
 .mascot-button svg {
@@ -188,7 +181,7 @@ nav a:last-child {
 }
 .workspace {
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 1fr;
   border: 1px solid #45483f;
   border-radius: 12px;
   overflow: hidden;
@@ -196,25 +189,14 @@ nav a:last-child {
   box-shadow: 0 30px 80px #0002;
 }
 .workspace aside {
-  padding: 30px 18px;
+  padding: 14px 18px;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
   background: #1d1f1b;
 }
-.workspace-brand {
-  font-size: 22px;
-  margin: 0 12px 40px;
-  letter-spacing: -1px;
-}
-.workspace aside p {
-  font-size: 11px;
-  color: var(--muted);
-  padding-left: 12px;
-  margin-bottom: 12px;
-}
 .sample-nav {
-  display: grid;
+  display: flex;
   gap: 4px;
 }
 .sample-nav button {
@@ -235,15 +217,9 @@ nav a:last-child {
 .sample-nav button:hover {
   background: #2a2e25;
 }
-.aside-note {
-  margin: auto 12px 0;
-  font-size: 12px;
-  color: #969b91;
-  padding-top: 40px;
-}
 .conversation {
-  padding: 40px 54px;
-  min-height: 560px;
+  padding: 22px 28px;
+  min-height: 440px;
 }
 .prompt {
   margin: 0 0 34px auto;
@@ -267,7 +243,7 @@ nav a:last-child {
   font-size: 26px;
 }
 #response h3 {
-  font-size: 29px;
+  font-size: 26px;
   line-height: 1.25;
   font-weight: 450;
   letter-spacing: -0.8px;
@@ -554,14 +530,8 @@ footer > a:last-child {
   .conversation {
     padding: 30px;
   }
-  .workspace {
-    grid-template-columns: 210px 1fr;
-  }
   .hero h1 {
     letter-spacing: -2.5px;
-  }
-  .companion {
-    padding-right: 0;
   }
   .story-heading h2 {
     font-size: 38px;
@@ -601,17 +571,9 @@ footer > a:last-child {
   .wide {
     display: none;
   }
-  .companion {
-    position: absolute;
-    right: 6%;
-    top: 126px;
-  }
   .mascot-button {
     width: 52px;
     height: 48px;
-  }
-  .companion > span {
-    display: none;
   }
   .hero-copy {
     width: 100%;
@@ -631,11 +593,7 @@ footer > a:last-child {
     border-right: 0;
     border-bottom: 1px solid var(--line);
   }
-  .workspace-brand,
-  .workspace aside > p,
-  .aside-note {
-    display: none;
-  }
+
   .sample-nav {
     grid-template-columns: repeat(3, 1fr);
     gap: 4px;
@@ -745,5 +703,113 @@ footer > a:last-child {
   * {
     scroll-behavior: auto !important;
     transition: none !important;
+  }
+}
+
+.workspace-brand,
+.workspace aside > p,
+.sample-nav button {
+  flex: 1;
+  font-size: 11px;
+  gap: 8px;
+}
+.sample-nav button span {
+  display: none;
+}
+.response-heading small {
+  font-size: 10px;
+  color: var(--muted);
+}
+.sample-guide {
+  padding: 12px;
+  background: #343b2b;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.intro {
+  font-size: 17px;
+}
+.wide {
+  display: none;
+}
+.prompt {
+  margin-bottom: 16px;
+  font-size: 12px;
+  padding: 12px 15px;
+}
+#response p,
+#response li {
+  font-size: 12px;
+}
+#response ol {
+  margin: 15px 0;
+}
+.section-label {
+  gap: 12px;
+}
+.section-label h2 {
+  font-size: 15px;
+}
+.section-label > span {
+  font-size: 9px;
+}
+@media (max-width: 900px) {
+  .opening {
+    gap: 28px;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  }
+  .hero h1 {
+    font-size: 45px;
+    letter-spacing: -2px;
+  }
+  .conversation {
+    padding: 20px;
+  }
+  .intro {
+    font-size: 15px;
+  }
+}
+@media (max-width: 700px) {
+  .opening {
+    display: block;
+    padding-block: 20px 45px;
+  }
+  .hero {
+    padding: 0 0 30px;
+  }
+  .hero h1 {
+    font-size: 42px;
+    margin: 12px 0;
+  }
+  .eyebrow {
+    display: none;
+  }
+  .intro {
+    font-size: 14px;
+  }
+  .primary {
+    margin-top: 18px;
+    padding: 10px 15px;
+  }
+  .section-label {
+    margin-bottom: 12px;
+  }
+  .workspace aside {
+    padding: 10px;
+  }
+  .sample-nav {
+    display: flex;
+  }
+  .conversation {
+    padding: 18px;
+    min-height: 0;
+  }
+  .mascot-button {
+    width: 48px;
+    height: 44px;
+  }
+  .hero-copy {
+    width: 100%;
   }
 }

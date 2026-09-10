@@ -30,7 +30,7 @@ Use $blend-micro-motion to animate the drawing inside this card.
 Keep the text stable and give the sequence a deliberate resting pose.
 ```
 
-Blend reuses your answers and asks only about unresolved choices. It has no mandatory palette, font pairing, mascot, or animation library. Specialists can be called directly.
+Blend reuses your answers and asks only about unresolved choices. It has no mandatory palette, font pairing, or mascot. Requested 3D uses Three.js or an equivalent 3D renderer. Specialists can be called directly.
 
 | Skill | Owns |
 |---|---|
@@ -52,11 +52,11 @@ Two runnable, fictional landing pages with original artwork and local interactio
 
 [![Morrow: dark AI workspace with a pixel companion](assets/morrow-preview.png)](examples/morrow/index.html)
 
-**[Morrow](examples/morrow/)** — a dark, sans-serif AI workspace with an original pixel companion, three authored conversation samples, a continuous source-to-brief scroll sequence, and small drawn animations. The demo uses prewritten text and supports copying a response.
+**[Morrow](examples/morrow/)** — a dark, sans-serif AI workspace that opens with three authored conversation samples. Its pixel companion provides contextual help inside the response panel. Includes response copying, a source-to-brief scroll sequence, and small drawn animations.
 
 [![Format: light design studio with original identity artwork](assets/format-preview.png)](examples/format/index.html)
 
-**[Format](examples/format/)** — a light, sans-serif studio with new Index and Serein projects, expandable project details, a continuous identity-building scroll sequence, and a brief that downloads locally.
+**[Format](examples/format/)** — a light, sans-serif studio that brings Index and Serein artwork forward, with expandable project details, a Three.js folio assembly controlled by scroll, and a brief that downloads locally.
 
 ```sh
 python -m http.server 18789 --bind 127.0.0.1

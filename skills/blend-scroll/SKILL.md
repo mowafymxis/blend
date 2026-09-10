@@ -15,7 +15,7 @@ Decide whether the page earns the scene. A transformation, spatial relation, pro
 
 Write a concrete visual sentence: subject, change, insight, destination. Compose opening, revealing intermediate poses, recognition hold, and landing frame. Carry the same subject or spatial anchor across beats. Keep type quiet during complex object motion; hold the object when readers need to absorb text.
 
-Choose the strongest adequate medium with the available assets. Real spatial inspection may earn WebGL; line explanation may need SVG; authorized media may best show an actual product. Do not describe a flat image tilt as live mesh geometry. Coordinate geometry and asset quality with blend-visual-assets when available.
+For requested 3D or cinematic 3D scroll animation, use Three.js or an equivalent real 3D renderer with mesh geometry, a camera, materials, and lighting. Treat “video-like” as a continuity/quality description when the requested subject is 3D; do not substitute CSS perspective, flat SVG layers, a tilted image, or footage for the live scene. Use actual video/frame seeking when the user explicitly selects supplied or pre-rendered media. Keep genuinely 2D explanations in SVG/DOM. Coordinate model quality and fallbacks with blend-visual-assets.
 
 Do not mistake the references' overall finish for a request to animate every section. A small card recording informs local choreography, not scroll-trigger choice. Use the page's actual narrative to decide whether a sustained stage belongs. When a scene is warranted, inspect its payoff frame as critically as its hero: scale, materials, cropping, and a readable next step should stay convincing after motion stops.
 

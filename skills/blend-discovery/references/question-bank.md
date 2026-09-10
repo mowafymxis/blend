@@ -9,7 +9,7 @@ Infer from the brief and references before using these prompts. Select roughly t
 | Theme | Light, dark, or both? | Routine implementation within existing product conventions |
 | Type conflict | Keep editorial serif headings or move toward clean sans-serif? | Exact suitable family, weights, sizing, and spacing unless specified |
 | Character identity | Improve the current character or create an original pixel-style one? | Poses, rigging, and restrained timing consistent with its identity |
-| Drawn mini animations | Would you like small drawn animations, or should we leave them out? | Their craft and timing only after the user opts in; reference quality alone is not inclusion |
+| Drawn mini animations | Would a small drawn explanation help here, and does this drawing language fit? | Ask only when consequential; reuse approved preferences and choose relevant placements |
 | Major motion | Include a continuous scroll-controlled scene? | Choreography within the selected scene; this does not select drawn mini animations |
 | Product/content gap | What should the main action let someone do? | Existing demo scope and supplied product purpose |
 | Asset direction | Keep the current concept work or replace it with a different kind of project? | Crop, lighting, layout, and production method within scope |

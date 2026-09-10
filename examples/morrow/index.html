@@ -23,103 +23,102 @@
       </nav>
     </header>
     <main id="main">
-      <section class="hero wrap">
-        <div class="hero-copy">
-          <p class="eyebrow">A little more perspective.</p>
-          <h1>Room to think.<br /><span>Clarity to move.</span></h1>
-          <p class="intro">
-            A thoughtful workspace for the questions<br class="wide" />
-            worth spending time with.
-          </p>
-          <a class="primary" href="#demo"
-            >Explore Morrow <span aria-hidden="true">↗</span></a
-          >
-        </div>
-        <div class="companion">
-          <button
-            id="greet"
-            class="mascot-button"
-            aria-label="Greet the Morrow companion"
-            disabled
-          >
-            <svg viewBox="0 0 80 72" aria-hidden="true">
-              <g class="feet" fill="#bbaa8f">
-                <path d="M22 55h8v9h-12v-5h4zM50 55h8v4h4v5H50z" />
-              </g>
-              <g class="creature">
-                <path
-                  fill="#d5bda0"
-                  d="M24 12h32v6h8v12h6v18h-6v10H16V48h-6V30h6V18h8z"
-                />
-                <path fill="#ebd8bf" d="M24 12h32v6H24z" />
-                <g class="eyes" fill="#24211d">
-                  <path d="M24 31h6v8h-6zM49 31h6v8h-6z" />
-                </g>
-                <path fill="#80664a" d="M34 47h12v3H34z" />
-              </g>
-            </svg></button
-          ><span>Here for the next idea.</span>
-        </div>
-      </section>
-      <section class="demo wrap" id="demo" aria-labelledby="demo-heading">
-        <div class="section-label">
-          <h2 id="demo-heading">See a different angle.</h2>
-          <span>Scripted example · No live model</span>
-        </div>
-        <div class="workspace">
-          <aside>
-            <span class="workspace-brand">morrow</span>
-            <p>Explore a sample</p>
-            <div class="sample-nav">
-              <button data-example="research" aria-pressed="true" disabled>
-                Compare the evidence <span>↗</span></button
-              ><button data-example="plan" aria-pressed="false" disabled>
-                Make a plan <span>↗</span></button
-              ><button data-example="write" aria-pressed="false" disabled>
-                Find the words <span>↗</span>
-              </button>
-            </div>
-            <div class="aside-note">
-              Good work starts<br />with a good question.
-            </div>
-          </aside>
-          <div class="conversation">
-            <p id="prompt" class="prompt">
-              What should we consider before moving to a four-day workweek?
+      <div class="opening wrap">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">A little more perspective.</p>
+            <h1>Room to think.<br /><span>Clarity to move.</span></h1>
+            <p class="intro">
+              A thoughtful workspace for the questions<br class="wide" />
+              worth spending time with.
             </p>
-            <div class="response-heading">
-              <span class="spark" aria-hidden="true">✳</span
-              ><span>Morrow</span>
-            </div>
-            <div id="response">
-              <h3>Start with the work,<br />not the calendar.</h3>
-              <p>
-                A shorter week changes more than working hours. Separate the
-                decision into three questions before choosing a pilot.
+            <a class="primary" href="#demo"
+              >Explore Morrow <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </section>
+        <section class="demo" id="demo" aria-labelledby="demo-heading">
+          <div class="section-label">
+            <h2 id="demo-heading">Try a different angle.</h2>
+            <span>Scripted example · No live model</span>
+          </div>
+          <div class="workspace">
+            <aside>
+              <div class="sample-nav">
+                <button data-example="research" aria-pressed="true" disabled>
+                  Compare the evidence <span>↗</span></button
+                ><button data-example="plan" aria-pressed="false" disabled>
+                  Make a plan <span>↗</span></button
+                ><button data-example="write" aria-pressed="false" disabled>
+                  Find the words <span>↗</span>
+                </button>
+              </div>
+            </aside>
+            <div class="conversation">
+              <p id="prompt" class="prompt">
+                What should we consider before moving to a four-day workweek?
               </p>
-              <ol>
-                <li>
-                  <strong>What needs coverage?</strong> Map customer-facing
-                  hours and critical handovers.
-                </li>
-                <li>
-                  <strong>What can change?</strong> Audit meetings and recurring
-                  work before compressing the schedule.
-                </li>
-                <li>
-                  <strong>What would count as success?</strong> Compare service
-                  quality, workload, and team feedback.
-                </li>
-              </ol>
-            </div>
-            <div class="response-actions">
-              <button id="copy" disabled>
-                Copy response <span aria-hidden="true">⧉</span></button
-              ><span id="copy-status" role="status"></span>
+              <div class="response-heading">
+                <button
+                  id="companion-help"
+                  class="mascot-button"
+                  aria-label="Show sample guide"
+                  aria-expanded="false"
+                  aria-controls="sample-guide"
+                  disabled
+                >
+                  <svg viewBox="0 0 80 72" aria-hidden="true">
+                    <g class="feet" fill="#bbaa8f">
+                      <path d="M22 55h8v9h-12v-5h4zM50 55h8v4h4v5H50z" />
+                    </g>
+                    <g class="creature">
+                      <path
+                        fill="#d5bda0"
+                        d="M24 12h32v6h8v12h6v18h-6v10H16V48h-6V30h6V18h8z"
+                      />
+                      <path fill="#ebd8bf" d="M24 12h32v6H24z" />
+                      <g class="eyes" fill="#24211d">
+                        <path d="M24 31h6v8h-6zM49 31h6v8h-6z" />
+                      </g>
+                      <path fill="#80664a" d="M34 47h12v3H34z" />
+                    </g>
+                  </svg></button
+                ><span>Morrow<br /><small>Your sample workspace</small></span>
+              </div>
+              <p id="sample-guide" class="sample-guide" hidden>
+                Choose a sample to explore a different task. Each response is
+                prewritten; use Copy response to keep it.
+              </p>
+              <div id="response">
+                <h3>Start with the work,<br />not the calendar.</h3>
+                <p>
+                  A shorter week changes more than working hours. Separate the
+                  decision into three questions before choosing a pilot.
+                </p>
+                <ol>
+                  <li>
+                    <strong>What needs coverage?</strong> Map customer-facing
+                    hours and critical handovers.
+                  </li>
+                  <li>
+                    <strong>What can change?</strong> Audit meetings and
+                    recurring work before compressing the schedule.
+                  </li>
+                  <li>
+                    <strong>What would count as success?</strong> Compare
+                    service quality, workload, and team feedback.
+                  </li>
+                </ol>
+              </div>
+              <div class="response-actions">
+                <button id="copy" disabled>
+                  Copy response <span aria-hidden="true">⧉</span></button
+                ><span id="copy-status" role="status"></span>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <section class="story" id="approach" aria-labelledby="story-heading">
         <div class="story-sticky">
           <div class="story-heading wrap">

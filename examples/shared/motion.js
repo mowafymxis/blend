@@ -1,12 +1,12 @@
 // Finite illustration episodes and deterministic scroll poses share no properties.
 export const reduced = matchMedia("(prefers-reduced-motion: reduce)");
 const clamp = (x) => Math.max(0, Math.min(1, x));
-export function scrollScene(section, render) {
+export function scrollScene(section, render, ready = () => true) {
   let frame = 0;
   const compact = matchMedia("(max-width: 700px), (max-height: 540px)");
   function update() {
     frame = 0;
-    const enabled = !reduced.matches && !compact.matches;
+    const enabled = ready() && !reduced.matches && !compact.matches;
     section.classList.toggle("is-scrubbing", enabled);
     const rect = section.getBoundingClientRect();
     const p = enabled
@@ -18,6 +18,7 @@ export function scrollScene(section, render) {
   const schedule = () => {
     if (!frame && !document.hidden) frame = requestAnimationFrame(update);
   };
+  section.addEventListener("scenechange", schedule);
   addEventListener("scroll", schedule, { passive: true });
   addEventListener("resize", schedule);
   addEventListener("pageshow", schedule);

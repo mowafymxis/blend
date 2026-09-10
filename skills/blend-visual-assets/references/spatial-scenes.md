@@ -4,7 +4,7 @@ Use for spatial storytelling and interactive objects.
 
 ## Choose the medium
 
-CSS 3D handles layered planes and simple solids. SVG is ideal for scalable line art and small articulated characters. Canvas can handle many sprites. WebGL is appropriate for mesh geometry, camera depth, materials, and lighting. Use an existing renderer where it fits; do not require React or a new animation stack.
+Implement requested 3D with Three.js or an equivalent real 3D engine, including mesh geometry, camera depth, materials, and lighting. CSS perspective and tilted planes are layout effects, not substitutes for a requested 3D scene. SVG remains appropriate for genuinely 2D drawings and articulated characters. Reuse an existing capable renderer; do not require React or a new application framework.
 
 For genuine Three.js work, establish scene/camera/renderer ownership, size the canvas from its container, update camera aspect on resize, and cap pixel ratio based on measured performance. Load a real model or intentionally model simple geometry. Set a coherent light/material system and camera framing before motion. Provide a static poster or equivalent DOM content if WebGL creation, asset load, or context restoration fails. Do not claim CSS planes are a loaded 3D asset.
 

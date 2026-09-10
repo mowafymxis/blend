@@ -9,8 +9,8 @@ Own visual character and composition. Produce decisions that can be seen in a re
 
 For new or substantially changed identity, use [discovery](../blend-discovery/SKILL.md) to resolve consequential uncertainty before choosing. Ask about reference roles, desired closeness, dislikes, visual density, leading subject, theme coverage, and material character. Direct invocation does not bypass the interview. Reuse an existing decision record; do not re-ask settled choices. For light/dark systems, read [themes and surfaces](references/themes-and-surfaces.md).
 
-
 Apply discovery selectively: infer shape and feel from the brief, references, and prior answers first. Topic lists below are internal considerations, not mandatory questions. Ask only about consequential uncertainty within the project's small question set; make routine craft choices yourself and do not start a new interview for each specialist.
+
 ## Interpret references at three levels
 
 Separate appearance (scale, contrast, type, crop, spacing), behavior (trigger, sequence, pacing, interruption), and transferable principle (why attention or comprehension improves). Inspect the live page or supplied recording for behavior; a still establishes only appearance. Read [reference lenses](references/reference-lenses.md) when studying the suite's motivating examples. Do not infer hidden implementation from appearance.

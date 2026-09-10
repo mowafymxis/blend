@@ -31,40 +31,47 @@ form.addEventListener("input", (e) => {
   if (e.target.setCustomValidity) e.target.setCustomValidity("");
   document.querySelector("#brief-status").textContent = "";
 });
-scrollScene(document.querySelector(".design-story"), (p) => {
-  const q = p * p * (3 - 2 * p);
-  document
-    .querySelectorAll(".system-mark path")
-    .forEach((path, i) =>
-      path.setAttribute(
-        "transform",
-        `translate(${(i - 4) * 17 * (1 - q)},${Math.abs(i - 4) * 7 * (1 - q)})`,
-      ),
-    );
-  const shift = Math.min(
-    110,
-    document.querySelector(".system-stage").clientWidth * 0.18,
-  );
-  document.querySelector(".system-mark").style.transform =
-    `translate(${-shift * q}px,${-10 * q}px) scale(${1 - 0.13 * q})`;
-  document.querySelector(".construction-grid").style.opacity = String(
-    1 - 0.88 * q,
-  );
-  for (const selector of [
-    ".system-word",
-    ".system-caption",
-    ".system-number",
-    ".system-rule",
-  ]) {
-    const el = document.querySelector(selector);
-    el.style.opacity = String(Math.max(0, (p - 0.3) / 0.7));
-    el.style.transform = `translateY(${20 * (1 - q)}px)`;
+const story = document.querySelector(".design-story");
+const stage = document.querySelector(".system-stage");
+let folio = null,
+  disposed = false;
+scrollScene(
+  story,
+  (p) => {
+    folio?.render(p);
+    document.querySelectorAll(".story-progress i").forEach((el, i) => {
+      el.style.transform = `scaleX(${Math.max(0, Math.min(1, p * 2 - i))})`;
+    });
+  },
+  () => Boolean(folio),
+);
+const observer = new IntersectionObserver(
+  async ([entry]) => {
+    if (!entry.isIntersecting) return;
+    observer.disconnect();
+    try {
+      const { createFolio } = await import("./folio.js");
+      if (disposed) return;
+      folio = createFolio(stage);
+      story.dispatchEvent(new Event("scenechange"));
+    } catch {
+      folio = null;
+      story.dispatchEvent(new Event("scenechange"));
+    }
+  },
+  { rootMargin: "600px" },
+);
+observer.observe(stage);
+stage.addEventListener("rendererfailure", () => {
+  folio = null;
+  story.dispatchEvent(new Event("scenechange"));
+});
+addEventListener("pagehide", (e) => {
+  if (!e.persisted) {
+    disposed = true;
+    observer.disconnect();
+    folio?.dispose();
+    folio = null;
   }
-  document
-    .querySelectorAll(".story-progress i")
-    .forEach(
-      (el, i) =>
-        (el.style.transform = `scaleX(${Math.max(0, Math.min(1, p * 2 - i))})`),
-    );
 });
 illustrations();

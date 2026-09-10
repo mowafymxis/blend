@@ -7,19 +7,19 @@ description: Create clean local UI animations and small illustrated sequences, i
 
 Animate a small relationship with clarity. A static card can contain a miniature scene; animating its whole container is often the wrong target. This skill owns local behavior, not full-page scroll timelines or character state machines.
 
-Small drawn animations are optional, even in a reference-led or premium design. Before adding them, ask whether the user wants them unless their inclusion or exclusion is already explicit. Do not infer inclusion from a liked reference, a mascot request, or permission for a continuous scroll scene. A direct request to animate a supplied drawing already answers this question. Ordinary control feedback does not require a drawn illustration.
+Look for useful drawn explanations in feature descriptions, process steps, onboarding, empty states, and local results. When the style is approved or clearly supported by the brief, include them where they improve understanding without asking about every placement. Give each drawing a content-specific action; do not repeat the same wobble across icons or animate every section. Respect exclusions and keep ordinary controls direct.
 
 Before inventing a sequence, use the relevant [discovery](../blend-discovery/SKILL.md) questions: drawn or precise material, subjects, target size, trigger, pace, replay, and areas that should stay still. When the user supplies a complete animation brief, proceed without re-asking it. For pencil/ink-like artwork, read [drawn illustration craft](references/drawn-illustrations.md); for a selected ambient text/particle field, read [ambient motion](references/ambient-motion.md). Do not equate either with scroll storytelling.
 
-
 Apply discovery selectively: infer shape and feel from the brief, references, and prior answers first. Topic lists below are internal considerations, not mandatory questions. Ask only about consequential uncertainty within the project's small question set; make routine craft choices yourself and do not start a new interview for each specialist.
+
 ## Choose an object and a visual verb
 
 Find a meaningful opportunity in the actual content: connect, collect, unfold, compare, resolve, draw, inspect, or select. Match the art's material and the site's character. Hand-drawn work may use organic strokes; a precise tool may use indexed stops. Neither style is a suite default.
 
 For an illustrated vignette, separate the stable frame and reading layer from the parts that change. Design the resting image, revealing intermediate state, and resolved image before coding. Read [vignette direction](references/vignettes.md) for how to build a short coherent sequence. Read [motion recipes](references/motion-recipes.md) for strokes, handwriting, controls, and interruption mechanics.
 
-When the supplied example shows contracting parts, a reorganizing structure, and an interior mark resolving, read [staged illustration choreography](references/staged-illustrations.md). It explains the observed recording, part ownership, phase overlap, and replay policies. A root-level spin, scale, or bounce does not satisfy that request even when its easing is smooth.
+When the supplied example shows contracting parts, a reorganizing structure, and an interior mark resolving, read [staged illustration choreography](references/staged-illustrations.md). It explains part ownership, phase overlap, and replay policies. A root-level spin, scale, or bounce does not satisfy that request even when its easing is smooth.
 
 ## Direct a short sequence
 

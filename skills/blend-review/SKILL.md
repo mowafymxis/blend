@@ -9,11 +9,11 @@ Judge the result against its brief, not the reviewer's favorite style. Audit-onl
 
 Start with the [user decision record](../blend-discovery/references/design-brief.md). Verify chosen typography, theme coverage, reference roles, illustration style, mascot identity/prominence, motion triggers, scroll medium, and explicit dislikes against the render. Call out unchosen defaults and material deviations, even when individually attractive. A reviewer must not replace a selected style with personal taste. If a new design lacks consequential answers, request the missing preferences through discovery; keep audit-only work read-only.
 
-
 Apply discovery selectively: infer shape and feel from the brief, references, and prior answers first. Topic lists below are internal considerations, not mandatory questions. Ask only about consequential uncertainty within the project's small question set; make routine craft choices yourself and do not start a new interview for each specialist.
+
 ## Inspect in the order that changes the outcome
 
-First verify purpose and primary action. Then examine composition, type, assets, spacing and optical alignment. Finally inspect interaction, pacing, and fine detail. A beautiful easing curve does not compensate for an undersized subject or poorly set text.
+First verify purpose, primary action, and meaningful product/project evidence in the opening viewport. Flag title-only openings and mascots used as unrelated side decoration. Verify that requested 3D uses actual geometry and a 3D renderer. Check mascot movement for correct pivots, attachment, contact, gaze, and settled poses. Then examine composition, type, assets, spacing and optical alignment. Finally inspect interaction, pacing, and fine detail. A beautiful easing curve does not compensate for an undersized subject or poorly set text.
 
 Look at actual renders at reading size and as a whole page. Compare a wide, narrow, and relevant short view; use real long content and required language. Check how emphasis moves between sections. Avoid scoring whitespace, card count, font novelty, or motion quantity as inherently good.
 
