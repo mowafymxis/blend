@@ -51,3 +51,5 @@ Distinguish responsive recomposition from shrinking: change hierarchy, crop, den
 ## Finish in the render
 
 For substantial changes use blend-review, correct the largest visible mismatch, and exercise the affected task and motion paths. Do not mistake a build, screenshot, or accessibility scan for proof of taste or smooth timing. Report the visible outcome, meaningful checks, and material limitations. The example pages in the repository demonstrate techniques; they are not required starting layouts or evidence of consistent future output quality.
+
+For editorial drawings with film-like movement, route to [drawn animation and cartoon holds](../blend-micro-motion/references/drawn-film.md). Inspect temporal behaviour before choosing the renderer. Preserve accepted art and navigation animation outside the requested scope, and respect explicit Replay/Pause exclusions.

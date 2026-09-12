@@ -40,3 +40,7 @@ Honor reduced motion initially and live, stop hidden/offscreen work, and release
 ## Judge the motion in context
 
 Watch it at its actual small size alongside the label and neighboring items. Check start, middle, resolved pose, and repeated activation. Then use fast enter/leave, focus/blur, touch, and reduced motion. Does the drawing remain recognizable? Is there time to read the result? Does the fourth activation still feel good? Fix muddy paths, wrong pivots, competing movement, or an abrupt reset before tuning easing again.
+
+## Cartoon and illustrated-film references
+
+When a reference shows changing ink contours or the brief asks for a continuing cartoon hold after the main action, read [drawn animation and cartoon holds](references/drawn-film.md). It covers temporal reference inspection, staged gestures, living-ink holds, hero composition, distinct scene sets and user-directed controls.
